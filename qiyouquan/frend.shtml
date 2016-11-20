@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="/styles/baes.css">
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <style>
+    .chess-center .addfrend{
+      height:30px;
+      line-height: 30px;
+      margin:0px auto;
+      padding-left:17px;
+      padding-right:17px;
+      background-color: #e09e00;
+      border-radius: 5px;
+    }
+    .chess-center .addfrend img{
+      width:19px;
+      height:19px;
+      vertical-align: middle;
+    }
+    .chess-center .frendtitle{
+      height:25px;
+      line-height: 25px;
+      background-color: #efefef;
+    }
+    .chess-center .newfrendcontent.nullfrend{
+      padding-left: 10px;
+      padding-right: 10px;
+      height:40px;
+      line-height: 40px;
+    }
+    .frendQueryLi{
+      height:30px;
+      background-color: #e09e00;
+    }
+    .frendQueryLi .content{
+
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <div class="players_chess">
+    <ul class="chess-center">
+      <li class="list">
+        <!--#include virtual="/public/qiyouquan/tab.html"-->
+      </li>
+      <li class="list pb5 pt5 text-cen">
+        <a class="addfrend inline-block" class="addfrend" href="javascript:;">
+          <img class="" src="/images/addfrend.png" alt="">
+          <span class="fz14 col-fff">添加好友</span>
+        </a>
+      </li>
+      <li class="list">
+        <p class="frendtitle col-e09e00 text-cen">
+          <span>新朋友</span>
+        </p>
+        <div class="newfrendcontent nullfrend">
+          <p class="col-7e7e7e">无新朋友</p>
+        </div>
+      </li>
+      <li class="list">
+        <p class="frendtitle col-e09e00 text-cen">我的好友</p>
+      </li>
+      <li class="list frendQuery">
+        <div class="content">
+          <div class=""></div>
+        </div>
+      </li>
+      <li class="list">
+        <!--#include virtual="/public/qishou/user.html"-->
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  $(".gender button:eq(2)").addClass("select")
+</script>
+</body>
+</html>
