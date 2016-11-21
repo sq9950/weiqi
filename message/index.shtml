@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>围棋</title>
+	<link rel="stylesheet" href="/styles/baes.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<style>
+		.chess-center .message{
+			height:42px;
+			line-height: 42px;
+		}
+		.chess-center .message .bg{
+			width:27px;
+			height:27px;
+			line-height:27px;
+			border-radius: 50%;
+			margin:7px 10px 10px 10px;
+		}
+		.chess-center .message .bg span{
+			width:16px;
+			height: 16px;
+			line-height: 19px;
+			margin-top: 3.5px;
+			margin-left: 3.5px;
+			border:1px solid #fff;
+			border-radius: 50%;
+		}
+		.chess-center .message .bg img{
+			margin-top:6px;
+		}
+		.chess-center .message .text{
+			
+		}
+		.chess-center .message .num{
+			width:18px;
+			height: 18px;
+			line-height: 18px;
+			border-radius: 50%;
+			font-size: 1.2rem;
+			color:#fff;
+			display: inline-block;
+			text-align: center;
+			margin-top:12px;
+			margin-right:10px;
+			background-color: #da6c6e;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="players_chess">
+		<ul class="chess-center">
+			<li class="list message clearfix">
+				<div class="fl bg back-b676af inline-block text-cen fz12"><span class="block col-fff">?</span></div>
+				<p class="text fz14 inline-block col-636363">用户提问</p>
+				<span class="num">10</span>
+			</li>
+			<li class="list message clearfix">
+				<div class="fl bg back-449ecd inline-block text-cen fz12">
+					<img style="width:15px;height:17px;" src="/images/messagetongzhi.png" alt="">
+				</div>
+				<p class="text fz14 inline-block col-636363">系统通知</p>
+				<span class="num">10</span>
+			</li>
+			<li class="list message clearfix">
+				<div class="fl bg back-5bab60 inline-block text-cen fz12">
+					<img style="width:10px;height:17px;" src="/images/messagetili.png" alt="">
+				</div>
+				<p class="text fz14 inline-block col-636363">体力值</p>
+				<span class="num">10</span>
+			</li>
+			<li class="list message clearfix">
+				<div class="fl bg back-c3bd5d inline-block text-cen fz12">
+					<img style="width:15px;height:14px;" src="/images/messagepinglun.png" alt="">
+				</div>
+				<p class="text fz14 inline-block col-636363">评论/赞</p>
+				<span class="fr mr10 fz16">></span>
+			</li>
+			<li class="list message clearfix">
+				<div class="fl bg back-4fb5aa inline-block text-cen fz12">
+					<img style="width:16px;height:17px;" src="/images/messageyaoqing.png" alt="">
+				</div>
+				<p class="text fz14 inline-block col-636363">对弈邀请</p>
+				<span class="fr mr10 fz16">></span>
+			</li>
+			<li class="list text-cen clearfix back-efefef">
+				<div class="frendPieceTitle fz14">
+          <img width="18px" height='15px' class="" src="/images/messageweixin.png" alt="">
+          <span class="col-e09e00">聊天</span>
+        </div>
+			</li>
+			<li class="list pl10 pr10">
+				<!--#include virtual="/public/qishou/user.html"-->
+			</li>
+			<li class="list pl10 pr10">
+				<!--#include virtual="/public/qishou/user.html"-->
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+	$(".topTab a:eq(2)").addClass("select")
+</script>
+</body>
+</html>

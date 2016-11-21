@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>围棋</title>
+  <link rel="stylesheet" href="/styles/baes.css">
+  <link rel="stylesheet" href="/styles/qiyouquan.css">
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <style>
+    
+  </style>
+</head>
+<body>
+<div class="content">
+  <div class="players_chess">
+    <ul class="chess-center">
+      <li class="list">
+        <!--#include virtual="/public/qiyouquan/tab.html"-->
+      </li>
+      <li class="list frendQuery back-col-d4d4d4 text-cen fz0">
+        <!--#include virtual="/public/qiyouquan/queryFrend.html"-->
+      </li>
+      <li class="list text-cen fz0">
+        <div class="frendPieceTitle fz14">
+          <img width="12px" height='13px' class="" src="/images/hotqishouicon.png" alt="">
+          <span class="col-e09e00">热推棋手群聊</span>
+        </div>
+      </li>
+      <li class="list pt10 text-cen clearfix">
+        <div class="hotGroup fl">
+          <img class="userImg" src="/images/titleMax.jpg" alt="">
+          <p class="hotUser">
+            <span class="fz14 col-1b4175">聂卫平</span>
+            <img style="width:13px;height:17px" src="/images/certificationMax.jpg" alt="">
+          </p>
+          <a class="groupNum block fz8 col-e09e00" href="javascript:;">1000人群聊></a>
+        </div>
+        <div class="hotGroup fl">
+          <img class="userImg" src="/images/titleMax.jpg" alt="">
+          <p class="hotUser">
+            <span class="fz14 col-1b4175">聂卫平</span>
+            <img style="width:13px;height:17px" src="/images/certificationMax.jpg" alt="">
+          </p>
+          <a class="groupNum block fz8 col-e09e00" href="javascript:;">1000人群聊></a>
+        </div>
+        <div class="hotGroup fl">
+          <img class="userImg" src="/images/titleMax.jpg" alt="">
+          <p class="hotUser">
+            <span class="fz14 col-1b4175">聂卫平</span>
+            <img style="width:13px;height:17px" src="/images/certificationMax.jpg" alt="">
+          </p>
+          <a class="groupNum block fz8 col-e09e00" href="javascript:;">1000人群聊></a>
+          
+        </div>
+        <a class="moreGroup block fz12 fr col-e09e00 pr10" href="javascript:;">查看更多棋手群聊&nbsp;>&nbsp;</a>
+      </li>
+      <li class="list text-cen">
+        <div class="frendPieceTitle fz14">
+          <img width="12px" height='15px' class="" src="/images/addrIcon.png" alt="">
+          <span class="col-e09e00">按地域位置推荐</span>
+        </div>
+        <div class="addGroup clearfix borT1 pb5">
+          <div class="addGroupCon w33 fl">
+            <p class="p fz14 col-7e7e7e">北京中和堂</p>
+            <p class="num fz8 col-e09e00">1000人群聊></p>
+          </div>
+          <div class="addGroupCon w33 fl">
+            <p class="p fz14 col-7e7e7e">北京中和堂</p>
+            <p class="num fz8 col-e09e00">1000人群聊></p>
+          </div>
+          <div class="addGroupCon w33 fl">
+            <p class="p fz14 col-7e7e7e">北京中和堂</p>
+            <p class="num fz8 col-e09e00">1000人群聊></p>
+          </div>
+        </div>
+        <a class="moreGroup block fz12 col-e09e00 pr10" href="javascript:;">查看更多棋手群聊&nbsp;>&nbsp;</a>
+      </li>
+      <li class="list text-cen">
+        <div class="frendPieceTitle fz14">
+          <img width="12px" height='13px' class="" src="/images/mygroupIcon.png" alt="">
+          <span class="col-e09e00">我的群聊</span>
+        </div>
+        <!--#include virtual="/public/qishou/user.html"-->
+        <!--#include virtual="/public/qishou/user.html"-->
+        <!--#include virtual="/public/qishou/user.html"-->
+        <!--#include virtual="/public/qishou/user.html"-->
+        <!--#include virtual="/public/qishou/user.html"-->
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  $(".gender button:eq(1)").addClass("select")
+</script>
+</body>
+</html>
