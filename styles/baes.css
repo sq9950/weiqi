@@ -46,8 +46,14 @@ html {
 .fz10 {
   font-size: 1.0rem;
 }
+.fz22 {
+  font-size: 2.2rem;
+}
 .fz26 {
   font-size: 2.6rem;
+}
+.fz38 {
+  font-size: 3.8rem;
 }
 
 /*******************全局颜色*************************/
@@ -94,6 +100,9 @@ html {
 }
 .back-efefef {
   background-color: #efefef;
+}
+.back-fff{
+  background-color: #fff;
 }
 /*******************全局样式*************************/
 .block {
@@ -604,4 +613,30 @@ html {
 }
 .chess-center .addGroupCon .num {
   height: 17px;
+}
+
+
+/**************************体力********************************/
+.chess-center .tili .p,
+.chess-center .duihuan .p{
+  height:42px;
+  line-height: 42px;
+}
+.chess-center .tili .year{
+  height:18px;
+  line-height: 18px;
+}
+.chess-center .tili .number{
+  height:39px;
+  line-height: 39px;
+}
+.chess-center .tili .monthPeriod{
+  border-bottom: 1px solid #efefef;
+}
+.chess-center .tili .monthPeriod .month{
+  margin-top: 10px;
+  height: 16px;
+}
+.chess-center .tili .monthPeriod .period{
+  height: 12px;
 }

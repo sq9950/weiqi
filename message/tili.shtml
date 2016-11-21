@@ -7,21 +7,41 @@
 	<title>围棋</title>
 	<link rel="stylesheet" href="/styles/baes.css">
 	<script src="/js/jquery-3.1.1.min.js"></script>
-	<style>
-		.chess-center.tili{
-			
-		}
-	</style>
 </head>
 <body>
 <div class="content">
 	<div class="players_chess">
-		<ul class="chess-center tili">
-			<li class="list text-cen">
-				<p class="col-e09e00">
-					<span class="fz14">当前体力值</span>
-					<span class="fz26">12312123</span>
-				</p>
+		<ul class="chess-center">
+			<li class="tili">
+				<!--#include virtual="/public/tili/nowtili.html"-->
+				<p class="year pl10 col-7e7e7e back-efefef">2016</p>
+				<div class="pl10 monthPeriod clearfix">
+					<div class="fl left">
+						<p class="col-3b3b3d month fz12">10月体力值</p>
+						<p class="col-7e7e7e period fz8">10.1-11.1</p>
+					</div>
+					<div class="right number fr fz14 pr10 col-e09e00">
+						1800&nbsp;&nbsp;>
+					</div>
+				</div>
+				<div class="pl10 monthPeriod clearfix">
+					<div class="fl left">
+						<p class="col-3b3b3d month fz12">10月体力值</p>
+						<p class="col-7e7e7e period fz8">10.1-11.1</p>
+					</div>
+					<div class="right number fr fz14 pr10 col-e09e00">
+						1800&nbsp;&nbsp;>
+					</div>
+				</div>
+				<div class="pl10 monthPeriod clearfix">
+					<div class="fl left">
+						<p class="col-3b3b3d month fz12">10月体力值</p>
+						<p class="col-7e7e7e period fz8">10.1-11.1</p>
+					</div>
+					<div class="right number fr fz14 pr10 col-e09e00">
+						1800&nbsp;&nbsp;>
+					</div>
+				</div>
 			</li>
 		</ul>
 	</div>

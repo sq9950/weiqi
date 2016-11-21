@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>围棋</title>
+	<link rel="stylesheet" href="/styles/baes.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<style>
+		.duihuan .waring{
+			height:30px;
+			line-height: 30px;
+		}
+		.duihuan .val{
+			height: 63px;
+			line-height: 63px;
+		}
+		.duihuan .voucherList{
+			padding-left:8px;
+		}
+		.duihuan .voucherList .btn{
+			border:1px solid #e09e00;
+			border-radius: 5px;
+			padding-left:5px;
+			padding-right:5px;
+			background-color: transparent;
+		}
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="players_chess">
+		<ul class="chess-center">
+			<li class="duihuan list back-efefef">
+				<!--#include virtual="/public/tili/nowtili.html"-->
+				<p class="waring pl10 back-efefef col-7e7e7e">使用规则：您可以用当前体力值兑换话费。</p>
+				<div class="voucherList clearfix col-e09e00 back-fff mr10 ml10">
+					<dvi class="left fl">
+						<div class="val">
+							<span class="fz22">15000</span>
+							<span class="fz14">体力值</span>
+						</div>
+						<div class="waring fz8 col-7e7e7e">我们将在24小时内为您完成兑换。</div>
+					</dvi>
+					<div class="right fr">
+						<div class="money">
+							<strong class="num fz38">50</strong>
+							<span class="fz14">元话费</span>
+						</div>
+						<button class="btn fz12 col-e09e00">我要兑换</button>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
