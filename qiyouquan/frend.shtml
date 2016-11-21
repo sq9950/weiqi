@@ -6,50 +6,8 @@
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>围棋</title>
   <link rel="stylesheet" href="/styles/baes.css">
+  <link rel="stylesheet" href="/styles/qiyouquan.css">
   <script src="/js/jquery-3.1.1.min.js"></script>
-  <style>
-    .chess-center .addfrend{
-      height:30px;
-      line-height: 30px;
-      margin:0px auto;
-      padding-left:17px;
-      padding-right:17px;
-      background-color: #e09e00;
-      border-radius: 5px;
-    }
-    .chess-center .addfrend img{
-      width:19px;
-      height:19px;
-      vertical-align: middle;
-    }
-    .chess-center .frendtitle{
-      height:25px;
-      line-height: 25px;
-      background-color: #efefef;
-    }
-    .chess-center .newfrendcontent.nullfrend{
-      padding-left: 10px;
-      padding-right: 10px;
-      height:40px;
-      line-height: 40px;
-    }
-    .chess-center .frendQuery{
-      background-color: #e09e00;
-      padding-top:5px;
-      padding-bottom:5px;
-
-    }
-    .chess-center .frendQueryCon{
-      background-color: #fff;
-      border-radius: 5px;
-    }
-    .chess-center .frendQueryCon input{
-      height:22.5px;
-      line-height: 22.5px;
-      vertical-align: top;
-      background-color: transparent;
-    }
-  </style>
 </head>
 <body>
 <div class="content">

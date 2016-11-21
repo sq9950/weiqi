@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>围棋</title>
+  <link rel="stylesheet" href="/styles/baes.css">
+  <link rel="stylesheet" href="/styles/qiyouquan.css">
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <style>
+    .chess-center .frendPieceTitle{
+      height:40px;
+      line-height: 40px;
+    }
+    .chess-center .hotGroup{
+      width:33.333333%;
+    }
+    .chess-center .hotGroup p{
+      height:20px;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="content">
+  <div class="players_chess">
+    <ul class="chess-center">
+      <li class="list">
+        <!--#include virtual="/public/qiyouquan/tab.html"-->
+      </li>
+      <li class="list frendQuery back-col-d4d4d4 text-cen fz0">
+        <!--#include virtual="/public/qiyouquan/queryFrend.html"-->
+      </li>
+      <li class="list text-cen fz0">
+        <div class="frendPieceTitle fz14">
+          <img width="12px" height='13px' class="" src="/images/hotqishouicon.png" alt="">
+          <span class="col-e09e00">热推棋手群聊</span>
+        </div>
+      </li>
+      <li class="list pt10 pb10 pl10 pr10 text-cen">
+        <div class="hotGroup fl">
+          <img src="/images/titleMax.jpg" alt="">
+          <p>
+            <span class="fz14 col-1b4175">聂卫平</span>
+            <img style="width:13px;height:17px" src="/images/certificationMax.jpg" alt="">
+          </p>
+          <a class="fz8 col-e09e00" href="javascript:;">1000人群聊></a>
+        </div>
+        <div class="hotGroup fl">
+          <img src="/images/titleMax.jpg" alt="">
+          <p>
+            <span class="fz14 col-1b4175">聂卫平</span>
+            <img style="width:13px;height:17px" src="/images/certificationMax.jpg" alt="">
+          </p>
+          <a class="fz8 col-e09e00" href="javascript:;">1000人群聊></a>
+        </div>
+        <div class="hotGroup fl">
+          <img src="/images/titleMax.jpg" alt="">
+          <p>
+            <span class="fz14 col-1b4175">聂卫平</span>
+            <img style="width:13px;height:17px" src="/images/certificationMax.jpg" alt="">
+          </p>
+          <a class="fz8 col-e09e00" href="javascript:;">1000人群聊></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+  $(".topTab a:eq(2)").addClass("select")
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.chess-center .addfrend {
+  height: 30px;
+  line-height: 30px;
+  margin: 0px auto;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: #e09e00;
+  border-radius: 5px;
+}
+.chess-center .addfrend img {
+  width: 19px;
+  height: 19px;
+  vertical-align: middle;
+}
+.chess-center .frendtitle {
+  height: 25px;
+  line-height: 25px;
+  background-color: #efefef;
+}
+.chess-center .newfrendcontent.nullfrend {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+.chess-center .frendQuery{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.chess-center .frendQuery.back-col-e09e00{
+  background-color: #e09e00;
+}
+.chess-center .frendQuery.back-col-d4d4d4{
+  background-color: #d4d4d4;
+}
+.chess-center .frendQueryCon {
+  background-color: #fff;
+  border-radius: 10px;
+  padding-left:10px;
+}
+.chess-center .frendQueryCon input {
+  height: 22.5px;
+  line-height: 22.5px;
+  vertical-align: top;
+  background-color: transparent;
+}
