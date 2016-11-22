@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>围棋</title>
+	<link rel="stylesheet" href="/styles/baes.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<style>
+		
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="players_chess">
+		<ul class="chess-center">
+			<li class="list tilimingxi message clearfix">
+				<!--#include virtual="/public/tili/nowtili.html"-->
+			</li>
+			<li class="list">
+				<div>
+					<div>本月</div>
+					<div>查看月账单</div>
+				</div>
+				<div class="tilimingxiList clearfix">
+					<div class="left fl">
+						<img src="/images/riliIcon.png" alt="">
+						<span>10-01</span>
+					</div>
+					<div class="right fr">
+						<p>+1800</p>
+						<span>竞技比赛</span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+	$(".topTab a:eq(2)").addClass("select")
+</script>
+</body>
+</html>

@@ -618,7 +618,8 @@ html {
 
 /**************************体力********************************/
 .chess-center .tili .p,
-.chess-center .duihuan .p{
+.chess-center .duihuan .p,
+.chess-center .tilimingxi .p{
   height:42px;
   line-height: 42px;
 }
