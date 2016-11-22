@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="/styles/baes.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<style>
+		.input-tit{
+			border-bottom:1px solid #ccc;
+			line-height:33px;
+			width:100%;
+		}
+		.textarea{
+			height:75px;
+			resize:none;
+			width:100%;
+		}
+		.addPhoto{
+			line-height:20px;
+		}
+		.addPhotoWord{
+			height:42px;
+		}
+		.weiqiImg{
+			width:100%;
+		}
+		.addWord{
+			line-height: 31px;
+		}
+		.addMessage{
+			text-indent:8px;
+			padding-top:8px;
+			resize:none;
+			width:100%;
+			height:92px;
+			border:1px dashed #ccc;
+			border-radius:5px;
+			background:#f6f6f6;
+		}
+		.addPhoto2{
+			height:74px;
+			margin-top:23px;
+		}
+		.qipan{
+			line-height:29.5px;
+			width:100%;
+			color:#e09e00;
+			background:#e0e0e0;
+		}
+		.v-align-middle{
+			vertical-align: middle;
+		}
+		.option{
+			line-height:43.5px;
+			width:49.5%;
+			 background:#e09e00;
+			 color:#fff;
+		}
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="plr10">
+		<input class="input-tit block fz14" type="text" placeholder="取个标题">
+	</div>
+	<div class="plr10">
+		<textarea class="pt10 textarea" name="" id="" cols="30" rows="10" placeholder="说点什么......"></textarea>
+	</div>
+	<div class="text-cen col-c1c1c1 fz14">
+		<p class="sclace-half addPhoto">
+			<img src="/images/addPhoto.png" alt="">
+		</p>
+		<p class="addPhotoWord">添加照片</p>
+	</div>
+	<div class="plr10">
+		<img class="weiqiImg" src="/images/tiwen.jpg" alt="">
+	</div>
+	<div class="plr10 addWord">
+		<img class="sclace-half" src="/images/bottom.png" alt="">
+		<span class="col-c1c1c1 fz12">添加图片描述</span>
+	</div>
+	<div class="plr10">
+		<textarea class="addMessage" placeholder="说点什么......" name="" id="" cols="30" rows="10"></textarea>
+	</div>
+	<div class="addPhoto2 text-cen col-c1c1c1">
+		<p class="sclace-half">
+			<img src="/images/addPhoto.png" alt="">
+		</p>
+		<p class="addPhotoWord">添加照片</p>
+	</div>
+	<div class="qipan text-cen col-7e7e7e">
+		<span class="text-cen">
+			<img class="sclace-half v-align-middle" src="/images/qipan.png" alt="">
+		</span>
+		<span>调出棋盘</span>
+		<span>></span>
+	</div>
+	<ul class="clearfix">
+		<li class="fl text-cen fz12 option">
+			<img class="sclace-half v-align-middle" src="/images/yulan.png" alt="">
+			<span>预览</span>
+		</li>
+		<li class="fr text-cen fz12 option">
+			<img class="sclace-half v-align-middle" src="/images/baocun.png" alt="">
+			<span>保存草稿</span>
+		</li>
+	</ul>
+</div>	
+<script>
+	$(".topTab a:eq(0)").addClass("select")
+</script>
+</body>
+</html>

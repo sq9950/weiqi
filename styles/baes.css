@@ -78,6 +78,9 @@ html {
 .col-eb428a {
   color: #eb428a;
 }
+.col-c1c1c1{
+  color:#c1c1c1;
+}
 
 /*******************全局背景颜色*************************/
 .back-b676af {
@@ -154,7 +157,11 @@ html {
 .pt5 {
   padding-top: 5px;
 }
-.pb5 {
+<<<<<<< HEAD
+.pl5{
+  padding-left:5px;
+}
+.pb5{
   padding-bottom: 5px;
 }
 .mt10 {
@@ -177,6 +184,15 @@ html {
 }
 .pr10 {
   padding-right: 10px;
+}
+.plr10{
+  padding:0 10px;
+}
+.verticalTop {
+  vertical-align: top;
+}
+.verticalMiddle{
+  vertical-align: middle;
 }
 .w100 {
   width: 100%;
@@ -207,19 +223,28 @@ html {
 
 /******************* navbar *************************/
 .navbar {
+  position: relative;
   background-color: #e09e00;
 }
 .navbar .left {
   width: 20%;
+  position: absolute;
+  top:0;left:0;
   text-align: left;
 }
-.navbar img {
-  transform: scale(.5);
+.navbar .right {
+  width: 20%;
+  position: absolute;
+  top:0;right:0;
+  text-align: left;
 }
 .navbar .title {
-  width: 60%;
+  width: 100%;
   height: 35px;
   line-height: 35px;
+}
+.navbar .title img {
+  vertical-align: middle;
 }
 .navbar .title span {
   vertical-align: top

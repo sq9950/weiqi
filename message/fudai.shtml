@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>围棋</title>
+	<link rel="stylesheet" href="/styles/baes.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<style>
+		.chess-center .gender button{
+			width:50%;
+		}
+		.tongzhiList{
+			height: 65px;
+			border-top:2px solid #efefef;
+		}
+		.tongzhiList .left{
+			width:44%;
+			padding-left:4%;
+			font-size: 0px;
+		}
+		.tongzhiList .left .p{
+			height:25px;
+			line-height: 12px;
+			margin-top: 12px;
+			vertical-align: top;
+		}
+		.tongzhiList .left .span{
+			height: 27px;
+			vertical-align: top;
+		}
+		.tongzhiList .right{
+			width:48%;
+			height: 100%;
+			padding-right: 2%;
+			text-align: right;
+			vertical-align: top;
+			margin-top:20px;
+		}
+		.tongzhiList .right button{
+			width:50px;
+			height:22px;
+			color: #fff;
+			font-size: 1.2rem;
+			background-color: #e09e00;
+		}
+		.tongzhiList .right button.not{
+			background-color: #aaa;
+		}
+		.receivetili{
+			width:90%;
+			height: 83px;
+			line-height: 83px;
+			text-align: center;
+			margin:50px auto;
+			border:1px solid #cacaca;
+		}
+		.receivetili img{
+			vertical-align: middle;
+
+		}
+	</style>
+</head>
+<body>
+<div class="content back-efefef">
+	<div class="players_chess">
+		<ul class="chess-center ">
+			<li class="list back-fff">
+				<div class="gender fz0">
+				  <button class="message"><span>消息</span></button>
+				  <button class="message"><span>福袋</span></button>
+				</div>
+				<div class="tongzhiList fz0">
+					<div class="left inline-block fz12">
+						<p class="p fz16 col-1b4175">聂卫平冠军福袋</p>
+						<p class="span fz14">
+							您获得<span class="col-e09e00">200</span>体力值奖励
+						</p>
+					</div>
+					<div class="right inline-block">
+						<button class="not">领取</button>
+					</div>
+				</div>
+				<div class="tongzhiList fz0">
+					<div class="left inline-block fz12">
+						<p class="p fz16 col-1b4175">聂卫平冠军福袋</p>
+						<p class="span fz14">
+							您获得<span class="col-e09e00">200</span>体力值奖励
+						</p>
+					</div>
+					<div class="right inline-block">
+						<button class="not">领取</button>
+					</div>
+				</div>
+				<div class="tongzhiList fz0">
+					<div class="left inline-block fz12">
+						<p class="p fz16 col-1b4175">聂卫平冠军福袋</p>
+						<p class="span fz14">
+							您获得<span class="col-e09e00">200</span>体力值奖励
+						</p>
+					</div>
+					<div class="right inline-block">
+						<button class="not">领取</button>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="receivetili back-fff">
+					<img style="width:20px;height: 25px;" src="/images/liwu.png" alt="">
+					<span class="fz16">已领取<span class="col-e09e00">[200]</span>体力值奖励!</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+	$(".gender button:eq(1)").addClass("select")
+</script>
+</body>
+</html>
