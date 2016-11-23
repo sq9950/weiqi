@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="/styles/base.css"><link rel="stylesheet" href="/styles/qishou.css">
+	<link rel="stylesheet" href="/styles/person.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="content back-efefef">
+	<div class="players_chess back-fff">
+		<ul class="person-center">
+			<li class="list pl10 pr10">
+				<div class="banner pt10 clearfix">
+					<div class="left fl clearfix">
+						<img class="userIcon block fl" src="/images/userImg.png" alt="">
+						<div class="introduction fl">
+							<span class="name block fz14 col-1b4175">围棋小公主</span>
+							<span class="level block fz10 col-636363">段位：18K</span>
+							<a class="edit block fz10 col-e09e00" href="javascript:;">编辑资料</a>
+						</div>
+					</div>
+					<div class="right fr">
+						<p class="fz14 col-7e7e7e">
+							<span class="chongzhiIcon inline-block">+</span>
+							<span>充值</span>
+							<span class="duihuanIcon inline-block" src="" alt="">&yen;</span>
+							<span>兑换</span>
+						</p>
+						<p class="tilivalue fr">
+							<span class="fz30 col-e09e00">1000</span>
+							<span class="fz12">体力值</span>
+							<img class="dianchi block" src="/images/dianchi.png" alt="">
+						</p>
+						
+					</div>
+				</div>
+			</li>
+			<li class="list pt10 pb10 clearfix">
+				<!--#include virtual="/public/person/class.html"-->
+			</li>
+			<li class="">
+				<!--#include virtual="/public/person/menuList.html"-->
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+	$(".topTab a:eq(0)").addClass("select")
+</script>
+</body>
+</html>
