@@ -113,7 +113,7 @@
 			</li>
 			<li class="personBtn borT4 borB4">
 				<button class="whiteBtn block">私聊</button>
-				<button class="whiteBtn block">邀请对弈(19*19)</button>
+				<button class="whiteBtn block">邀请对弈<span class="fz12">(19*19)</span></button>
 			</li>
 			<li>
 				<!--#include virtual="/public/person/menuList.html"-->
