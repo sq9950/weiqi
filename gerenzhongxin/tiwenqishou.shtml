@@ -8,19 +8,38 @@
 	<link rel="stylesheet" href="/styles/base.css"><link rel="stylesheet" href="/styles/qishou.css">
 	<link rel="stylesheet" href="/styles/person.css">
 	<script src="/js/jquery-3.1.1.min.js"></script>
+	<style>
+		.tiwenqishou{
+			
+		}
+	</style>
 </head>
 <body>
 <div class="content back-efefef">
 	<div class="players_chess back-fff">
-		<ul class="person-center">
+		<ul class="person-center tiwenqishou">
 			<li class="list pl10 pr10">
-				<div class="setList">
-					<p class="left">
+				<div class="userbg">
+					<img src="/images/userbg2.png" alt="">
+					<button>已关注</button>
+				</div>
+				<div>
+					<img src="" alt="">
+					<div class="left">
 						
-					</p>
-					<p class="right">
-						
-					</p>
+					</div>
+					<div class="right">
+						<p>1000关注</p>
+						<p>
+							<img src="" alt="">
+							<span>体力值：1000</span>
+						</p>
+					</div>
+				</div>
+			</li>
+			<li class="list">
+				<div>
+					
 				</div>
 			</li>
 		</ul>
