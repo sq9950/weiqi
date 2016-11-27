@@ -31,7 +31,7 @@
       </li>
       <li class="list pt10 text-cen clearfix">
         <div class="hotGroup fl">
-            <img class="userImg" src="/images/titleMax.jpg" alt="">
+            <img class="userImg" src="/images/title.jpg" alt="">
             <p class="hotUser">
               <span class="fz14 col-1b4175">聂卫平</span>
               <img style="width:13px;height:17px" src="/images/certification.jpg" alt="">
@@ -39,7 +39,7 @@
             <a class="groupNum block fz8 col-e09e00" href="javascript:;">1000人群聊></a>
         </div>
         <div class="hotGroup fl">
-          <img class="userImg" src="/images/titleMax.jpg" alt="">
+          <img class="userImg" src="/images/title.jpg" alt="">
           <p class="hotUser">
             <span class="fz14 col-1b4175">聂卫平</span>
             <img style="width:13px;height:17px" src="/images/certification.jpg" alt="">
@@ -47,7 +47,7 @@
           <a class="groupNum block fz8 col-e09e00" href="javascript:;">1000人群聊></a>
         </div>
         <div class="hotGroup fl">
-          <img class="userImg" src="/images/titleMax.jpg" alt="">
+          <img class="userImg" src="/images/title.jpg" alt="">
           <p class="hotUser">
             <span class="fz14 col-1b4175">聂卫平</span>
             <img style="width:13px;height:17px" src="/images/certification.jpg" alt="">

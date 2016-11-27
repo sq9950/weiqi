@@ -74,14 +74,7 @@
   line-height: 26px;
   background-color: #e0e0e0;
 }
-.chess-center {
-}
-.chess-center .list {
-  border-bottom: 4px solid #efefef;
-}
-.chess-center .list.borb1 {
-  border-bottom-width: 1px;
-}
+
 .chess-center .chess-user {
   padding-top: 5px;
 }

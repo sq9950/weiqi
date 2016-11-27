@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>围棋</title>
+	<link rel="stylesheet" href="/styles/base.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<style>
+		.tiliNum {
+			height:33px;
+			line-height: 33px;
+		}
+		.guanzhan{
+			width:50%;
+			float: left;
+			display: block;
+			padding-left:10px;
+			position: relative;
+			box-sizing: border-box;
+		}
+		.guanzhan:nth-child(1){
+			border-right:1px solid #d2d2d2;
+		}
+		.titleMinImg{
+			width:30px;
+			height: 30px;
+		}
+		.result{
+			height:20px;
+			line-height:20px;
+		}
+		.name{
+			margin-top:3px;
+		}
+		.flagImg{
+			width:19px;
+			height:12px;
+			margin-top: 5px;
+		}
+		.h1{
+			height:28px;
+			line-height:28px;
+		}
+		.inp{
+			width: 75px;
+			padding-left: 5px;
+			height: 24px;
+			line-height: 24px;
+			border:1px solid #dfdfdf;
+			border-radius: 5px;
+		}
+		.btn{
+			width: 45px;
+			height: 25px;
+			background-color: #e09e00;
+			color:#fff;
+			border-radius: 5px;
+		}
+		.sheng{
+			background-color: #e09e00;
+			border-radius: 50%;
+			display: inline-block;
+			padding: 5px;
+			color: #fff;
+		}
+		.oddsNum{
+			vertical-align: bottom;
+		}
+		.tili{
+			height:34px;
+			line-height: 34px;
+		}
+
+		.left{
+			width:50%;
+			
+			float: left;
+			padding-left:10px;
+			padding-bottom:10px;
+			box-sizing: border-box;
+			border-right: 1px solid #efefef;
+		}
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="players_chess">
+		<ul class="chess-center">
+			<li class="list pl10">
+				<p class="tiliNum fz12 text-right col-898989">
+					当前体力值:5000000
+				</p>
+			</li>
+			<li class="list pl10 text-cen">
+				<p class=" fz14 mt10 mb5 col-e09e00">当前体力值:5000000</p>
+				<p class="fz10 mb10">2016-05-08&nbsp;&nbsp;19:00</p>
+			</li>
+			<li class="pb10 clearfix">
+				<a class="guanzhan mt10" href="javascript:;">
+					<div class="clearfix">
+						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
+						<p class="name fz14 fl col-1b4175">我是zouzou</p>
+						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
+					</div>
+					<img class="flagImg" src="/images/flag-china.jpg" alt="">
+				</a>
+				<a class="guanzhan mt10" href="javascript:;">
+					<div class="clearfix">
+						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
+						<p class="name fz14 fl col-1b4175">我是zouzou</p>
+						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
+					</div>
+					<img class="flagImg" src="/images/flag-china.jpg" alt="">
+				</a>
+			</li>
+			<li>
+				<p class="h1 text-cen col-e09e00 fz12 back-efefef">猜输赢</p>
+			</li>
+			<li class="clearfix">
+				<div class="left">
+					<p class="odds fz12 col-4e4e4e pt5 pb5">odds</p>
+					<p class=" col-e09e00">
+						<span class="oddsNum fz26">1:1.5</span>
+						<span class="sheng fz16 ml10">胜</span>
+					</p>
+					<p class="tili col-4e4e4e">
+						<span class="text fz10 verticalMiddle">竞猜体力值</span>
+						<span class="num fz24 ml10 verticalMiddle">1000</span>
+					</p>
+					<p>
+						<input class="inp" type="text" placeholder="输入框" />
+						<button class="btn">确定</button>
+					</p>
+				</div>
+				<div class="left">
+					<p class="odds fz12 col-4e4e4e pt5 pb5">odds</p>
+					<p class=" col-e09e00">
+						<span class="oddsNum fz26">1:1.5</span>
+						<span class="sheng fz16 ml10">胜</span>
+					</p>
+					<p class="tili col-4e4e4e">
+						<span class="text fz10 verticalMiddle">竞猜体力值</span>
+						<span class="num fz24 ml10 verticalMiddle">1000</span>
+					</p>
+					<p>
+						<input class="inp" type="text" placeholder="输入框" />
+						<button class="btn">确定</button>
+					</p>
+				</div>
+			</li>
+			<li>
+				<p class="h1 text-cen col-e09e00 fz12 back-efefef">猜持黑</p>
+				
+				<div class="left">
+					<div class="clearfix">
+						<div class="mt10 fl">
+							<img style='width: 20px;height: 20px;' src="/images/heiqi.jpg" alt="">
+							<p class="mt5 fz12 col-4e4e4e">持黑</p>
+						</div>
+						<p class="fl ml5 mt20 fz28 col-e09e00">11:11</p>
+					</div>
+					<p class="tili col-4e4e4e">
+						<span class="text fz10 verticalMiddle">竞猜体力值</span>
+						<span class="num fz24 ml10 verticalMiddle">1000</span>
+					</p>
+					<p>
+						<input class="inp" type="text" placeholder="输入框" />
+						<button class="btn">确定</button>
+					</p>
+				</div>
+				<div class="left">
+					<div class="clearfix">
+						<div class="mt10 fl">
+							<img style='width: 20px;height: 20px;' src="/images/heiqi.jpg" alt="">
+							<p class="mt5 fz12 col-4e4e4e">持黑</p>
+						</div>
+						<p class="fl ml5 mt20 fz28 col-e09e00">11:11</p>
+					</div>
+					<p class="tili col-4e4e4e">
+						<span class="text fz10 verticalMiddle">竞猜体力值</span>
+						<span class="num fz24 ml10 verticalMiddle">1000</span>
+					</p>
+					<p>
+						<input class="inp" type="text" placeholder="输入框" />
+						<button class="btn">确定</button>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+	$(".topTab a:eq(2)").addClass("select")
+</script>
+</body>
+</html>

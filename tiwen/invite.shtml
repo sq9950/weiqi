@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="/styles/base.css">
+	<link rel="stylesheet" href="/styles/qishou.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<style>
+		body{
+			background:#efefef;
+		}
+		.contacts{
+			position:relative;
+			width:100%;
+			height:64px;
+			line-height:64px;
+			background:#fff;
+		}
+		.contacts img{
+			width:40px;
+			height:40px;
+			vertical-align: middle;
+		}
+		.b-bottom{
+			border-bottom:1px solid #efefef;
+		}
+		.invite-btn{
+			position: absolute;
+			right:5%;
+			top:40%;
+			
+			width:39px;
+			height:16px;
+			border:1px solid #e09e00;
+			border-radius:5px;
+			line-height:16px;
+			text-align:center;
+		}
+	</style>
+</head>
+<body>
+<div class="content back-fff">
+	<div class="players_chess">
+		<ul class="chess-center">
+			<li>
+				<div class="contacts b-bottom fz14">
+					<img class="pl10" src="/images/head.png" alt="">
+					<span class="pl10">我是zuozuo</span>
+					<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+				</div>
+				<div class="contacts b-bottom fz14">
+					<img class="pl10" src="/images/head.png" alt="">
+					<span class="pl10">我是zuozuo</span>
+					<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+				</div>
+				<div class="contacts b-bottom fz14">
+					<img class="pl10" src="/images/head.png" alt="">
+					<span class="pl10">我是zuozuo</span>
+					<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+				</div>
+				<div class="contacts b-bottom fz14">
+					<img class="pl10" src="/images/head.png" alt="">
+					<span class="pl10">我是zuozuo</span>
+					<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+				</div>
+				<div class="contacts b-bottom fz14">
+					<img class="pl10" src="/images/head.png" alt="">
+					<span class="pl10">我是zuozuo</span>
+					<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+				</div>
+				<div class="contacts b-bottom fz14">
+					<img class="pl10" src="/images/head.png" alt="">
+					<span class="pl10">我是zuozuo</span>
+					<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+				</div>
+				<div class="contacts b-bottom fz14">
+					<img class="pl10" src="/images/head.png" alt="">
+					<span class="pl10">我是zuozuo</span>
+					<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+				</div>
+				<div class="contacts b-bottom fz14">
+					<img class="pl10" src="/images/head.png" alt="">
+					<span class="pl10">我是zuozuo</span>
+					<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+				</div>
+				<div class="contacts fz14">
+					<img class="pl10" src="/images/head.png" alt="">
+					<span class="pl10">我是zuozuo</span>
+					<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
