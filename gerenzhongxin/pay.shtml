@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>围棋</title>
+	<link rel="stylesheet" href="/styles/base.css">
+	<link rel="stylesheet" href="/styles/qishou.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/js/vue.js"></script>
+	<style>
+		.list{
+			padding:10px;
+			position: relative;
+		}
+		.kuan{
+			width:96px;
+			height:24px;
+			padding-left:40px;
+			padding-right:15px;
+			border-radius: 5px;
+			position: relative;
+			color:#fff;
+			line-height:24px;
+			background-size:20px 11px;
+		}
+		.yuan{
+			width:27px;
+			height:27px;
+			border-radius: 50%;
+			position: absolute;
+			top:-2px;
+			left:-4px;
+			z-index: 2;
+		}
+		.dianchi-white-Level{
+			width:20px;
+			height:11px;
+			position: absolute;
+			top:7px;left:7px;
+			z-index: 3;
+		}
+		.price{
+			height:24px;
+			line-height: 24px;
+			padding-left:30px;
+		}
+		.arrowLeft{
+			position: absolute;	top:13px;right:5px;
+		}
+	</style>
+</head>
+<body class="back-efefef">
+<div class="content">
+	<div class="players_chess" id="setList">
+		<ul class="chess-center back-fff">
+			<li class="list clearfix" v-for="_paylist in paylist">
+			    <!--#include virtual="/public/pay/payList.html"-->
+			</li>
+			
+		</ul>
+	</div>
+</div>
+<script>
+	var app_payList = new Vue({
+	  el: '#setList',
+	  data: {
+	    paylist: [
+	      { 
+	      	num: 1000,
+	      	color:"b676af",
+	      	money:"￥：110.00",
+	      	href:"javascript:;"
+	      },
+	      {
+	      	num: 2000,
+	      	color:"5bab60",
+	      	money:"￥：150.00",
+	      	href:"javascript:;"
+	      },
+	      {
+	      	num: 2000,
+	      	color:"c3bd5d",
+	      	money:"￥：160.00",
+	      	href:"javascript:;"
+	      },
+	      {
+	      	num: 2000,
+	      	color:"4fb5aa",
+	      	money:"￥：170.00",
+	      	href:"javascript:;"
+	      },
+	      {
+	      	num: 2000,
+	      	color:"7d6ec6",
+	      	money:"￥：140.00",
+	      	href:"javascript:;"
+	      }
+	    ]
+	  }
+	})
+</script>
+</body>
+</html>

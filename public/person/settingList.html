@@ -1,5 +1,6 @@
-<div class="contacts b-bottom fz16" v-for="aa in list">
-	<a class="pl10 col-636363" :href="aa.href">
-		{{aa.text}}
+<div class="contacts borB1 fz16" v-bind:class="{borB4:_list.borB4}" v-for="_list in list">
+	<a class="pl10 col-636363 clearfix" :href="_list.href">
+		<span class="fl">{{_list.text}}</span>
+		<span v-if="_list.span" class="fr pr40">{{_list.span}}</span>
 	</a>
 </div>
