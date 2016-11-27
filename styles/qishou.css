@@ -32,12 +32,7 @@
 }
 
 /*******************棋手关注*************************/
-.content {
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
-}
+
 .players_chess .topTab {
   background-color: #efefef;
 }
@@ -103,10 +98,6 @@
 }
 .chess-center .chess-user .user-details span {
   vertical-align: top
-}
-.chess-center .chess-user .user-details .name img {
-  width: 13px;
-  height: 17px;
 }
 .chess-center .chess-user .user-details .grade {
   height: 12px;
@@ -176,10 +167,11 @@
   height: 13px;
   vertical-align: middle;
 }
-.chess-center .p {
+/*因影响/qiyouquan/qunliao.shtml*页面的按地域位置，暂时注释/
+/*.chess-center .p {
   height: 29px;
   line-height: 29px;
-}
+}*/
 .chess-center .timeData {
   height: 25px;
   line-height: 25px;
@@ -401,20 +393,6 @@
   line-height: 25px;
   border-top: 1px solid #efefef;
   text-align: right;
-}
-.chess-center .addGroup {
-  padding-top: 7px;
-}
-.chess-center .addGroupCon {
-  border-right: 1px solid #efefef;
-  box-sizing: border-box;
-}
-.chess-center .addGroupCon .p {
-  height: 26px;
-  line-height: 26px;
-}
-.chess-center .addGroupCon .num {
-  height: 17px;
 }
 
 

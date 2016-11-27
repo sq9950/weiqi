@@ -20,7 +20,9 @@ html, body {
 html {
   font-size: 62.5%;
 }
-
+button{
+  outline: none;
+}
 /********************字体*************************/
 .fz0 {
   font-size: 0rem;
@@ -58,6 +60,9 @@ html {
 .fz38 {
   font-size: 3.8rem;
 }
+.fz60 {
+  font-size: 6rem;
+}
 
 /*******************全局颜色*************************/
 .col-fff {
@@ -83,6 +88,12 @@ html {
 }
 .col-c1c1c1{
   color:#c1c1c1;
+}
+.col-c3c3c3{
+  color:#c3c3c3;
+}
+.col-cecece{
+  color:#cecece;
 }
 
 /*******************全局背景颜色*************************/
@@ -148,6 +159,9 @@ html {
 }
 
 /*******************   margin   padding   *************************/
+.ml5 {
+  margin-left: 5px;
+}
 .mr5 {
   margin-right: 5px;
 }
@@ -157,35 +171,41 @@ html {
 .mb5 {
   margin-bottom: 5px;
 }
-.pt5 {
-  padding-top: 5px;
-}
 .pl5{
   padding-left:5px;
+}
+.pr5{
+  padding-right:5px;
+}
+.pt5 {
+  padding-top: 5px;
 }
 .pb5{
   padding-bottom: 5px;
 }
-.mt10 {
-  margin-top: 10px;
+.ml10 {
+  margin-left: 10px;
 }
 .mr10 {
   margin-right: 10px;
 }
-.ml10 {
-  margin-left: 10px;
+.mt10 {
+  margin-top: 10px;
 }
-.pt10 {
-  padding-top: 10px;
-}
-.pb10 {
-  padding-bottom: 10px;
+.mb10 {
+  margin-bottom: 10px;
 }
 .pl10 {
   padding-left: 10px;
 }
 .pr10 {
   padding-right: 10px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pb10 {
+  padding-bottom: 10px;
 }
 .plr10{
   padding:0 10px;
@@ -224,4 +244,63 @@ html {
 }
 .borT4 {
   border-top: 4px solid #efefef
+}
+.col-3{
+  width:33.333333333%;
+}
+
+.col-4{
+  width:25%;
+}
+
+
+/************************全局样式***************************************/
+.content {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.colListTab{
+  border-right: 1px solid #efefef;
+  box-sizing: border-box;
+  text-align: center;
+}
+.colListTab .p {
+  padding-top:7px;
+  height: 18px;
+}
+.colListTab.single .p {
+  height: 38px;
+  line-height: 38px;
+  padding-top:0px;
+}
+.colListTab.single .num {
+  display: none
+}
+.colListTab .num {
+  height: 12px;
+}
+.whiteBtn{
+  background-color: #fff;
+  color:#e09e00;
+  border:1px solid #e09e00;
+}
+/******************************************/
+
+
+
+.tiwenList{
+  height:40px;
+  line-height: 40px;
+}
+
+
+.certification{
+  width: 13px;
+  height: 17px;
+}
+.dianchi-vertical{
+  width:8px;
+  height: 13px;
 }

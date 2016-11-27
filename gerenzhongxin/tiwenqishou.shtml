@@ -5,12 +5,60 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title></title>
-	<link rel="stylesheet" href="/styles/base.css"><link rel="stylesheet" href="/styles/qishou.css">
+	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/person.css">
 	<script src="/js/jquery-3.1.1.min.js"></script>
 	<style>
-		.tiwenqishou{
-			
+		.tiwenqishou .userbg{
+			position: relative;
+
+		}
+		.tiwenqishou .userbg .userbgImg{
+			width:100%;
+		}
+		.tiwenqishou .userbg button{
+			position: absolute;
+			bottom:0;
+			right:0;
+			display: block;
+			padding-left:8px;
+			height:18px;
+			line-height: 18px;
+			vertical-align: top;
+			background-color:#b9b9b9;
+			text-align: center;
+			font-size: 1.2rem;
+		}
+		.tiwenqishou .userbg .heartWhite{
+			width:15px;
+			height: 13px;
+			vertical-align: middle;
+		}
+		.tiwenqishou .userIntroduction{
+			position: relative;;
+			padding-left: 80px;
+			height: 42px;
+		}
+		.tiwenqishou .userIntroduction .title{
+			width:64px;
+			height: 64px;
+			border:2px solid #fff;
+			border-radius: 50%;
+			position: absolute;
+			top:-32px;
+			left:0;
+		}
+		.tiwenqishou .userIntroduction .guanzhuNum{
+			height: 16px;
+			line-height: 16px;
+		}
+		.tewenTextarea{
+			width:96%;
+			padding:2%;
+			background-color: #efefef;
+			border:1px dashed #aeaeae;
+			resize: none;
+			border-radius: 5px;
 		}
 	</style>
 </head>
@@ -18,29 +66,78 @@
 <div class="content back-efefef">
 	<div class="players_chess back-fff">
 		<ul class="person-center tiwenqishou">
-			<li class="list pl10 pr10">
-				<div class="userbg">
-					<img src="/images/userbg2.png" alt="">
-					<button>已关注</button>
+			<li class="list">
+				<div class="userbg fz0">
+					<img class="userbgImg" src="/images/userbg2.png" alt="">
+					<button class="col-fff fz0">
+						<img class="heartWhite" src="/images/heartWhite.png" alt="">
+						<span>已关注</span>
+					</button>
 				</div>
-				<div>
-					<img src="" alt="">
-					<div class="left">
-						
-					</div>
-					<div class="right">
-						<p>1000关注</p>
+				<div class="userIntroduction">
+					<img class="title" src="/images/titleMax2.png" alt="">
+					<div class="left fl">
 						<p>
-							<img src="" alt="">
-							<span>体力值：1000</span>
+							<span class="fz14 col-1b4175">古力</span>
+							<img class="certification" src="/images/certification.jpg" alt="">
+						</p>
+						<p class="fz8 col-7e7e7e">
+							段位：9段
+						</p>
+					</div>
+					<div class="right fr pr10">
+						<p class="guanzhuNum text-right col-c3c3c3">1000关注</p>
+						<p class="mt10">
+							<img class="dianchi-vertical" src="/images/dianchi2.png" alt="">
+							<span class=" col-636363">体力值：1000</span>
 						</p>
 					</div>
 				</div>
 			</li>
-			<li class="list">
-				<div>
-					
+			<li class="list clearfix">
+				<div class="clearfix pt10 pb10">
+					<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+					<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+					<!--#include virtual="/public/qiyouquan/colListTab.html"-->
 				</div>
+			</li>
+			<li class="pl10 borB1">
+				<!--#include virtual="/public/qiyouquan/tiwenList.html"-->
+			</li>
+			<li class="pl10 pr10 pt10">
+				<textarea class="tewenTextarea" name="" id="" cols="30" rows="3" placeholder="写下像聂平提问题内容，等待回答，超过?小时未回答，将按支付路径全额退款"></textarea>
+			</li>
+			<style>
+				.addImgBtn{
+					width: 73px;
+					height: 73px;
+					background-color: transparent;
+					border: 1px solid #c9c9c9;
+				}
+				.addImgWaring{
+					height:33px;
+					line-height: 33px;
+				}
+				.lijitiwenBtn{
+					width:62%;
+					height: 35px;
+					line-height: 35px;
+					margin: 0 auto;
+					display: block;
+					border-radius: 5px;
+				}
+			</style>
+			<li class="pl10">
+				<p class="addImgWaring col-cecece">点击图片添加图片说明/长按图片调整顺序</p>
+				<button class="addImgBtn fz60"><img src="/images/addPhoto.png" alt=""></button>
+				<p class="addImgWaring col-cecece">提问共享，提问每被人旁听一次，你从中收益25体力值。</p>
+			</li>
+			<li class="list pb10">
+				<p class="col-7e7e7e text-cen mb10">-2000体力值</p>
+				<button class="lijitiwenBtn whiteBtn">asdfas</button>
+			</li>
+			<li>
+				<!--#include virtual="/public/person/menuList.html"-->
 			</li>
 		</ul>
 	</div>
