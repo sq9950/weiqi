@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>围棋</title>
 	<link rel="stylesheet" href="/styles/base.css">
-	<script src="/js/jquery-3.1.1.min.js"></script>
+	
 	<style>
 		.tiliNum {
 			height:33px;
@@ -191,8 +191,5 @@
 		</ul>
 	</div>
 </div>
-<script>
-	$(".topTab a:eq(2)").addClass("select")
-</script>
 </body>
 </html>

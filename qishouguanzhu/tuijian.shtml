@@ -7,7 +7,7 @@
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
-	<script src="/js/jquery-3.1.1.min.js"></script>
+	
 </head>
 <body>
 <div class="content">
@@ -44,8 +44,5 @@
 		</ul>
 	</div>
 </div>
-<script>
-	$(".topTab a:eq(2)").addClass("select")
-</script>
 </body>
 </html>
