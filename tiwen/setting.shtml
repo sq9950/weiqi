@@ -7,6 +7,7 @@
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/js/vue.js"></script>
 	<style>
 		body{
 			background:#efefef;
@@ -34,22 +35,32 @@
 	</style>
 </head>
 <body>
-<div class="">
-	<div class="contacts b-bottom fz16">
-		<a class="pl10 col-636363" href="http://baidu.com">把他推荐给朋友</a>
-	</div>
-	<div class="contacts b-bottom fz16">
-		<a class="pl10 col-636363" href="javascript:;">加入黑名单</a>
-	</div>
-	<div class="contacts fz16">
-		<a class="pl10 col-636363" href="javascript:;">投诉这个人</a>
-	</div>
+<div class="" id="settingList">
+	<!--#include virtual="/public/person/settingList.html"-->
 	<div class="btn fz16">
 		<a class="col-fff" href="jacascript:;">删除此人</a>
 	</div>
 </div>
 <script>
-	$(".topTab a:eq(0)").addClass("select")
+	var app4 = new Vue({
+	  el: '#settingList',
+	  data: {
+	    list: [
+	      { 
+	      	text: '把他推荐给朋友',
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '加入黑名单',
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '投诉这个人',
+	      	href:"javascript:;"
+	      }
+	    ]
+	  }
+	})
 </script>
 </body>
 </html>
