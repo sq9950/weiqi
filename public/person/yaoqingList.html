@@ -1,0 +1,7 @@
+<div class="contacts b-bottom fz14" v-for="_invitelist in invitelist">
+	<img class="pl10" :src="_invitelist.titleSrc" alt="">
+	<span class="pl10">{{_invitelist.name}}</span>
+	<a href="javascript:;" class="invite-btn col-e09e00" v-bind:class="{none:!_invitelist.showdel}" >移除</a>
+	<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
+
+</div>

@@ -7,7 +7,7 @@
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
-	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/js/vue.js"></script>
 	<style>
 		.contacts{
 			width:100%;
@@ -27,25 +27,34 @@
 </head>
 <body>
 <div class="content back-efefef">
-	<div class="players_chess">
+	<div class="players_chess" id="addfrendsTypelist">
 		<ul class="chess-center">
 			<li>
-				<div class="contacts b-bottom fz14">
-					<img class="pl10" src="/images/contacts.jpg" alt="">
-					<span class="pl10">手机通讯录添加好友</span>
-				</div>
-				<div class="contacts b-bottom fz14">
-					<img class="pl10" src="/images/weixin.jpg" alt="">
-					<span class="pl10">微信添加好友</span>
-				</div>
-				<div class="contacts fz14">
-					<img class="pl10" src="/images/leaderboard.jpg" alt="">
-					<span class="pl10">排行榜添加好友</span>
-				</div>
-
+				<!--#include virtual="/public/person/addfrendsTypelist.html"-->
 			</li>
 		</ul>
 	</div>
 </div>
+<script>
+	var app_addfrendsTypelist= new Vue({
+		el:"#addfrendsTypelist",
+		data:{
+			addfrendsTypelist:[
+			{
+				text:"手机通讯录添加好友",
+				imgSrc:"/images/contacts.jpg"
+			},
+			{
+				text:"微信添加好友",
+				imgSrc:"/images/weixin.jpg"
+			},
+			{
+				text:"排行榜添加好友",
+				imgSrc:"/images/leaderboard.jpg"
+			}
+			]
+		}
+	})
+</script>
 </body>
 </html>

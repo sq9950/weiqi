@@ -62,7 +62,13 @@
 .person-center .menulist {
 	height: 43px;
 	line-height: 43px;
+	position: relative;
 }
+.person-center .menulist .arrowLeft{
+	position: absolute;
+	top:15px;right:10px;
+}
+
 .person-center .menulist .menuIcon {
 	width: 27px;
 	height: 27px;

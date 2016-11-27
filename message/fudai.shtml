@@ -7,7 +7,7 @@
 	<title>围棋</title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
-	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/js/vue.js"></script>
 	<style>
 		.chess-center .gender button{
 			width:50%;
@@ -17,7 +17,6 @@
 			border-top:2px solid #efefef;
 		}
 		.tongzhiList .left{
-			width:44%;
 			padding-left:4%;
 			font-size: 0px;
 		}
@@ -32,8 +31,6 @@
 			vertical-align: top;
 		}
 		.tongzhiList .right{
-			width:48%;
-			height: 100%;
 			padding-right: 2%;
 			text-align: right;
 			vertical-align: top;
@@ -67,41 +64,19 @@
 <div class="content back-efefef">
 	<div class="players_chess">
 		<ul class="chess-center ">
-			<li class="list back-fff">
+			<li class="list back-fff" id="fudaiList">
 				<div class="gender fz0">
 				  <button class="message"><span>消息</span></button>
 				  <button class="message"><span>福袋</span></button>
 				</div>
-				<div class="tongzhiList fz0">
-					<div class="left inline-block fz12">
-						<p class="p fz16 col-1b4175">聂卫平冠军福袋</p>
+				<div class="tongzhiList fz0 clearfix" v-for="_fudaiList in fudaiList">
+					<div class="left fl fz12">
+						<p class="p fz16 col-1b4175">{{_fudaiList.name}}</p>
 						<p class="span fz14">
-							您获得<span class="col-e09e00">200</span>体力值奖励
+							您获得<span class="col-e09e00">{{_fudaiList.tiliNum}}</span>体力值奖励
 						</p>
 					</div>
-					<div class="right inline-block">
-						<button class="not">领取</button>
-					</div>
-				</div>
-				<div class="tongzhiList fz0">
-					<div class="left inline-block fz12">
-						<p class="p fz16 col-1b4175">聂卫平冠军福袋</p>
-						<p class="span fz14">
-							您获得<span class="col-e09e00">200</span>体力值奖励
-						</p>
-					</div>
-					<div class="right inline-block">
-						<button class="not">领取</button>
-					</div>
-				</div>
-				<div class="tongzhiList fz0">
-					<div class="left inline-block fz12">
-						<p class="p fz16 col-1b4175">聂卫平冠军福袋</p>
-						<p class="span fz14">
-							您获得<span class="col-e09e00">200</span>体力值奖励
-						</p>
-					</div>
-					<div class="right inline-block">
+					<div class="right fr">
 						<button class="not">领取</button>
 					</div>
 				</div>
@@ -116,7 +91,21 @@
 	</div>
 </div>
 <script>
-	$(".gender button:eq(1)").addClass("select")
+	var app_fudaiList = new Vue({
+		el:"#fudaiList",
+		data:{
+			fudaiList:[
+			{
+				tiliNum:"15001500",
+				name:"聂卫平冠军福袋"
+			},
+			{
+				tiliNum:"15001500",
+				name:"聂卫平冠军福袋"
+			}
+			]
+		}
+	})
 </script>
 </body>
 </html>

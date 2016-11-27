@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>围棋</title>
 	<link rel="stylesheet" href="/styles/base.css">
-	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/js/vue.js"></script>
 	<style>
 		.guanzhan{
 			width:50%;
@@ -45,146 +45,171 @@
 <body>
 <div class="content">
 	<div class="players_chess">
-		<ul class="chess-center">
-			<li class="list clearfix pos-rev">
+		<ul class="chess-center" id="resultlist">
+			<li class="list clearfix pos-rev" v-for="_resultlist in resultlist">
 				<a class="guanzhan mt10" href="javascript:;">
 					<div class="clearfix">
 						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
+						<p class="name fz14 fl col-1b4175">{{_resultlist.left.name}}</p>
+						<p class="level fz8 fl col-7e7e7e">段位：{{_resultlist.left.level}}</p>
 					</div>
 					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
+						<span class="col-111111">[{{_resultlist.left.shengli?"白":"黑"}}]-</span>
 						<span class="col-e09e00">胜</span>
 					</strong>
 				</a>
 				<a class="guanzhan mt10" href="javascript:;">
 					<div class="clearfix">
 						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
+						<p class="name fz14 fl col-1b4175">{{_resultlist.right.name}}</p>
+						<p class="level fz8 fl col-7e7e7e">段位：{{_resultlist.right.level}}</p>
 					</div>
 					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
-						<span class="col-e09e00">胜</span>
-					</strong>
-				</a>
-				<img class="arrowLeft" src="/images/left.png" alt="">
-				<p class="riqi pl10 fl col-7e7e7e">2015-12-12-18:24</p>
-			</li>
-			<li class="list clearfix pos-rev">
-				<a class="guanzhan mt10" href="javascript:;">
-					<div class="clearfix">
-						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
-					</div>
-					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
-						<span class="col-e09e00">胜</span>
-					</strong>
-					
-				</a>
-				<a class="guanzhan mt10" href="javascript:;">
-					<div class="clearfix">
-						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
-					</div>
-					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
+						<span class="col-111111">[{{_resultlist.right.shengli?"白":"黑"}}]-</span>
 						<span class="col-e09e00">胜</span>
 					</strong>
 				</a>
 				<img class="arrowLeft" src="/images/left.png" alt="">
-				<p class="riqi pl10 fl col-7e7e7e">2015-12-12-18:24</p>
-			</li>
-			<li class="list clearfix pos-rev">
-				<a class="guanzhan mt10" href="javascript:;">
-					<div class="clearfix">
-						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
-					</div>
-					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
-						<span class="col-e09e00">胜</span>
-					</strong>
-					
-				</a>
-				<a class="guanzhan mt10" href="javascript:;">
-					<div class="clearfix">
-						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
-					</div>
-					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
-						<span class="col-e09e00">胜</span>
-					</strong>
-				</a>
-				<img class="arrowLeft" src="/images/left.png" alt="">
-				<p class="riqi pl10 fl col-7e7e7e">2015-12-12-18:24</p>
-			</li>
-			<li class="list clearfix pos-rev">
-				<a class="guanzhan mt10" href="javascript:;">
-					<div class="clearfix">
-						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
-					</div>
-					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
-						<span class="col-e09e00">胜</span>
-					</strong>
-					
-				</a>
-				<a class="guanzhan mt10" href="javascript:;">
-					<div class="clearfix">
-						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
-					</div>
-					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
-						<span class="col-e09e00">胜</span>
-					</strong>
-				</a>
-				<img class="arrowLeft" src="/images/left.png" alt="">
-				<p class="riqi pl10 fl col-7e7e7e">2015-12-12-18:24</p>
-			</li>
-			<li class="list clearfix pos-rev">
-				<a class="guanzhan mt10" href="javascript:;">
-					<div class="clearfix">
-						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
-					</div>
-					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
-						<span class="col-e09e00">胜</span>
-					</strong>
-					
-				</a>
-				<a class="guanzhan mt10" href="javascript:;">
-					<div class="clearfix">
-						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
-						<p class="name fz14 fl col-1b4175">我是zouzou</p>
-						<p class="level fz8 fl col-7e7e7e">段位：初段</p>
-					</div>
-					<strong class="result fz14">
-						<span class="col-111111">[黑]-</span>
-						<span class="col-e09e00">胜</span>
-					</strong>
-				</a>
-				<img class="arrowLeft" src="/images/left.png" alt="">
-				<p class="riqi pl10 fl col-7e7e7e">2015-12-12-18:24</p>
+				<p class="riqi pl10 fl col-7e7e7e">{{_resultlist.time}}</p>
 			</li>
 		</ul>
 	</div>
 </div>
 <script>
-	$(".topTab a:eq(2)").addClass("select")
+	var duiyi = new Vue({
+		el:"#resultlist",
+		data:{
+			resultlist:[
+			{
+				left:{
+					name:"我是zouzou1",
+					level:"初段",
+					titleSrc:"/images/titleMin.jpg",
+					shengli:true
+				},
+				right:{
+					name:"我是zouzou2",
+					level:"初段",
+					titleSrc:"/images/titleMin.jpg"
+				},
+				
+				time:"2015-12-12-18:24"
+			},
+			{
+				left:{
+					name:"我是zouzou1",
+					level:"初段",
+					titleSrc:"/images/titleMin.jpg",
+					shengli:true
+				},
+				right:{
+					name:"我是zouzou2",
+					level:"初段",
+					shengli:false,
+					titleSrc:"/images/titleMin.jpg"
+				},
+				
+				time:"2015-12-12-18:24"
+			},
+			{
+				left:{
+					name:"我是zouzou1",
+					level:"初段",
+					titleSrc:"/images/titleMin.jpg",
+					shengli:true
+				},
+				right:{
+					name:"我是zouzou2",
+					level:"初段",
+					shengli:false,
+					titleSrc:"/images/titleMin.jpg"
+				},
+				
+				time:"2015-12-12-18:24"
+			},
+			{
+				left:{
+					name:"我是zouzou1",
+					level:"初段",
+					titleSrc:"/images/titleMin.jpg",
+					shengli:true
+				},
+				right:{
+					name:"我是zouzou2",
+					level:"初段",
+					shengli:false,
+					titleSrc:"/images/titleMin.jpg"
+				},
+				
+				time:"2015-12-12-18:24"
+			},
+			{
+				left:{
+					name:"我是zouzou1",
+					level:"初段",
+					titleSrc:"/images/titleMin.jpg",
+					shengli:true
+				},
+				right:{
+					name:"我是zouzou2",
+					level:"初段",
+					shengli:false,
+					titleSrc:"/images/titleMin.jpg"
+				},
+				
+				time:"2015-12-12-18:24"
+			},
+			{
+				left:{
+					name:"我是zouzou1",
+					level:"初段",
+					titleSrc:"/images/titleMin.jpg",
+					shengli:true
+				},
+				right:{
+					name:"我是zouzou2",
+					level:"初段",
+					shengli:false,
+					titleSrc:"/images/titleMin.jpg"
+				},
+				
+				time:"2015-12-12-18:24"
+			},
+			{
+				left:{
+					name:"我是zouzou1",
+					level:"初段",
+					titleSrc:"/images/titleMin.jpg",
+					shengli:true
+				},
+				right:{
+					name:"我是zouzou2",
+					level:"初段",
+					shengli:false,
+					titleSrc:"/images/titleMin.jpg"
+				},
+				
+				time:"2015-12-12-18:24"
+			},
+			{
+				left:{
+					name:"我是zouzou1",
+					level:"初段",
+					titleSrc:"/images/titleMin.jpg",
+					shengli:true
+				},
+				right:{
+					name:"我是zouzou2",
+					level:"初段",
+					shengli:false,
+					titleSrc:"/images/titleMin.jpg"
+				},
+				
+				time:"2015-12-12-18:24"
+			}
+			]
+		}
+	})
 </script>
 </body>
 </html>

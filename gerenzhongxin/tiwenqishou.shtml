@@ -7,7 +7,7 @@
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/person.css">
-	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/js/vue.js"></script>
 	<style>
 		.tiwenqishou .userbg{
 			position: relative;
@@ -131,9 +131,7 @@
 				</div>
 			</li>
 			<li class="list clearfix">
-				<div class="clearfix pt10 pb10">
-					<!--#include virtual="/public/qiyouquan/colListTab.html"-->
-					<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+				<div class="clearfix pt10 pb10" id="colListTab">
 					<!--#include virtual="/public/qiyouquan/colListTab.html"-->
 				</div>
 			</li>
@@ -162,14 +160,60 @@
 				<p class="col-7e7e7e text-cen mb10">-2000体力值</p>
 				<button class="lijitiwenBtn whiteBtn">asdfas</button>
 			</li>
-			<li>
+			<li id="menuList">
 				<!--#include virtual="/public/person/menuList.html"-->
 			</li>
 		</ul>
 	</div>
 </div>
 <script>
-	$(".topTab a:eq(0)").addClass("select")
+	var app_colListTab = new Vue({
+		el:"#colListTab",
+		data:{
+			colListTabList:[
+			{
+				p:"test",
+				span:"1000"
+			},
+			{
+				p:"test",
+				span:"1000"
+			},
+			{
+				p:"test",
+				span:"1000"
+			}
+			]
+		}
+	});
+	var app_menuList = new Vue({
+		el:"#menuList",
+		data:{
+			menuList:[
+			{
+				titleSrc:"/images/duiyiIcon.png",
+				name:"对弈",
+				iconColor:"4fb5aa",
+				span:'逃跑率<span class="col-e09e00">10%</span>&nbsp;&nbsp;&nbsp;战绩<span class="col-e09e00">89</span>'
+			},
+			{
+				titleSrc:"/images/shoucangIcon.png",
+				iconColor:"b676af",
+				name:"收藏"
+			},
+			{
+				titleSrc:"/images/huodongIcon.png",
+				iconColor:"449ecd",
+				name:"活动"
+			},
+			{
+				titleSrc:"/images/fangkeIcon.png",
+				iconColor:"c3bd5d",
+				name:"访客"
+			}
+			]
+		}
+	})
 </script>
 </body>
 </html>

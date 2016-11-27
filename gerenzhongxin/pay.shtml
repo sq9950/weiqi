@@ -58,7 +58,6 @@
 			<li class="list clearfix" v-for="_paylist in paylist">
 			    <!--#include virtual="/public/pay/payList.html"-->
 			</li>
-			
 		</ul>
 	</div>
 </div>

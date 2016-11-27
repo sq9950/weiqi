@@ -7,7 +7,7 @@
 	<title>围棋</title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
-	<script src="/js/jquery-3.1.1.min.js"></script>
+	<script src="/js/vue.js"></script>
 	<style>
 		.duihuan .waring{
 			height:30px;
@@ -55,36 +55,20 @@
 <div class="content">
 	<div class="players_chess">
 		<ul class="chess-center">
-			<li class="duihuan list back-efefef">
+			<li class="duihuan list back-efefef" id="duihuanList">
 				<!--#include virtual="/public/tili/nowtili.html"-->
 				<p class="waring pl10 back-efefef col-7e7e7e">使用规则：您可以用当前体力值兑换话费。</p>
-				<div class="voucherList clearfix col-e09e00 back-fff mr10 ml10">
-					<dvi class="left fl">
+				<div class="voucherList clearfix col-e09e00 back-fff mr10 ml10" v-for="_duihuanList in duihuanList">
+					<div class="left fl">
 						<div class="val">
-							<span class="fz22">15000</span>
+							<span class="fz22">{{_duihuanList.tiliNum}}</span>
 							<span class="fz14">体力值</span>
 						</div>
 						<div class="waring fz8 col-7e7e7e fz12">我们将在24小时内为您完成兑换。</div>
-					</dvi>
-					<div class="right fr text-cen pt10">
-						<div class="money">
-							<strong class="num fz38">50</strong>
-							<span class="fz14 pr10">元话费</span>
-						</div>
-						<button class="btn fz12 col-e09e00 mt5">我要兑换</button>
 					</div>
-				</div>
-				<div class="voucherList clearfix col-e09e00 back-fff mr10 ml10">
-					<dvi class="left fl">
-						<div class="val">
-							<span class="fz22">15000</span>
-							<span class="fz14">体力值</span>
-						</div>
-						<div class="waring fz8 col-7e7e7e fz12">我们将在24小时内为您完成兑换。</div>
-					</dvi>
 					<div class="right fr text-cen pt10">
 						<div class="money">
-							<strong class="num fz38">50</strong>
+							<strong class="num fz38">{{_duihuanList.money}}</strong>
 							<span class="fz14 pr10">元话费</span>
 						</div>
 						<button class="btn fz12 col-e09e00 mt5">我要兑换</button>
@@ -94,5 +78,22 @@
 		</ul>
 	</div>
 </div>
+<script>
+	var app_duihuanList = new Vue({
+		el:"#duihuanList",
+		data:{
+			duihuanList:[
+			{
+				tiliNum:"1500",
+				money:"50"
+			},
+			{
+				tiliNum:"1600",
+				money:"60"
+			}
+			]
+		}
+	})
+</script>
 </body>
 </html>

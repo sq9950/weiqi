@@ -13,7 +13,7 @@
 <div class="content">
 	<div class="players_chess">
 		<!--#include virtual="/public/qishou/tab.html"-->
-		<ul class="chess-center">
+		<ul class="chess-center fz0">
 			<li class="list pl10 pr10">
 				<!--#include virtual="/public/qishou/lunbo.html"-->
 				<!--#include virtual="/public/qishou/gonggao.html"-->

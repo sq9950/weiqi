@@ -1,4 +1,7 @@
-<div class="colListTab col-4 fl">
-  <p class="p fz14 col-7e7e7e">test</p>
-  <p class="num fz8 col-e09e00">1000</p>
+<div class="colListTab fl"
+	v-bind:class="{['col-'+colListTabList.length]:colListTabList.length}"
+	v-for="_colListTabList in colListTabList"
+>
+  <p class="p fz14 col-7e7e7e">{{_colListTabList.p}}</p>
+  <p class="num fz8 col-e09e00" >{{_colListTabList.span}}</p>
 </div>
