@@ -60,6 +60,42 @@
 			resize: none;
 			border-radius: 5px;
 		}
+
+		.addImgBtn{
+			width: 73px;
+			height: 73px;
+			background-color: transparent;
+			border: 1px solid #c9c9c9;
+		}
+		.addImgWaring{
+			height:33px;
+			line-height: 33px;
+		}
+		.lijitiwenBtn{
+			width:62%;
+			height: 35px;
+			line-height: 35px;
+			margin: 0 auto;
+			display: block;
+			border-radius: 5px;
+		}
+		.tiwenAddPhoto{
+			position: relative;
+		}
+		.tiwenAddImg{
+			width:74px;
+			height: 74px;
+		}
+		.tiwenAddImgClose{
+			position: absolute;
+			top:-7px;
+			right:-7px;
+		}
+		.tiwenAddImgClose img{
+			width:14px;
+			height: 14px;
+			
+		}
 	</style>
 </head>
 <body>
@@ -107,29 +143,19 @@
 			<li class="pl10 pr10 pt10">
 				<textarea class="tewenTextarea" name="" id="" cols="30" rows="3" placeholder="写下像聂平提问题内容，等待回答，超过?小时未回答，将按支付路径全额退款"></textarea>
 			</li>
-			<style>
-				.addImgBtn{
-					width: 73px;
-					height: 73px;
-					background-color: transparent;
-					border: 1px solid #c9c9c9;
-				}
-				.addImgWaring{
-					height:33px;
-					line-height: 33px;
-				}
-				.lijitiwenBtn{
-					width:62%;
-					height: 35px;
-					line-height: 35px;
-					margin: 0 auto;
-					display: block;
-					border-radius: 5px;
-				}
-			</style>
 			<li class="pl10">
 				<p class="addImgWaring col-cecece">点击图片添加图片说明/长按图片调整顺序</p>
-				<button class="addImgBtn fz60"><img src="/images/addPhoto.png" alt=""></button>
+				<div class="clearfix">
+					<div class="tiwenAddPhoto fl mr10">
+						<img class="tiwenAddImg" src="/images/tiwenAddImg.png" alt="">
+						<a class="tiwenAddImgClose" href="javascript:;">
+							<img src="/images/close.png" alt="">
+						</a>
+					</div>
+					<button class="addImgBtn fz60 fl inline-block">
+						<img src="/images/addPhoto.png" alt="">
+					</button>
+				</div>
 				<p class="addImgWaring col-cecece">提问共享，提问每被人旁听一次，你从中收益25体力值。</p>
 			</li>
 			<li class="list pb10">

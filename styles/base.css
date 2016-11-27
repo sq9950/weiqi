@@ -137,6 +137,12 @@ button{
 .fr {
   float: right;
 }
+.pos-rev{
+  position: relative;
+}
+.pos-pos{
+  position: absolute;
+}
 .sclace-half {
   transform: scale(0.5);
 }
@@ -275,6 +281,9 @@ button{
   line-height: 38px;
   padding-top:0px;
 }
+.colListTab:last-child{
+  border-right: none;
+}
 .colListTab.single .num {
   display: none
 }
@@ -294,8 +303,17 @@ button{
   height:40px;
   line-height: 40px;
 }
+.switchBtn{
+  color: #fff;
+  background-color: #e09e00;;
+}
+.switchBtn.disabled{
+  color: #fff;
+  background-color: #b7b7b7;
+}
 
-
+.switchBtn.xinbg{
+}
 .certification{
   width: 13px;
   height: 17px;

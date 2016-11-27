@@ -19,13 +19,6 @@
 		.userbg button{
 			width:92px;
 			height:27px;
-			color: #fff;
-			background-color: #b7b7b7;
-			position: absolute;
-			bottom: 17px;
-			right:10px;
-		}
-		.userbg button{
 			position: absolute;
 			bottom: 17px;
 			right:10px;
@@ -87,7 +80,7 @@
 			<li class="list clearfix">
 				<div class="userbg">
 					<img src="/images/userbg.jpg" alt="">
-					<button class="fz14">已加好友</button>
+					<button class="switchBtn disabled fz14">已加好友</button>
 				</div>
 				<div class="usermain col-636363">
 					<img class="userimg" src="/images/userimg.png" alt="">
@@ -105,7 +98,10 @@
 				</div>
 			</li>
 			<li class="pt10 pb10 clearfix">
-				<!--#include virtual="/public/person/class.html"-->
+				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
 			</li>
 			<li class="personBtn borT4 borB4">
 				<button class="whiteBtn block">私聊</button>

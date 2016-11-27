@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,14 +16,39 @@
 	<div class="players_chess back-fff">
 		<ul class="person-center">
 			<li class="list pl10 pr10">
-				<div class="setList">
-					<p class="left">
+				<div class="banner pt10 clearfix">
+					<div class="left fl clearfix">
+						<img class="userIcon block fl" src="/images/userImg.png" alt="">
+						<div class="introduction fl">
+							<span class="name block fz14 col-1b4175">围棋小公主</span>
+							<span class="level block fz10 col-636363">段位：18K</span>
+							<a class="edit block fz10 col-e09e00" href="javascript:;">编辑资料</a>
+						</div>
+					</div>
+					<div class="right fr">
+						<p class="fz14 col-7e7e7e">
+							<span class="chongzhiIcon inline-block">+</span>
+							<span>充值</span>
+							<span class="duihuanIcon inline-block" src="" alt="">&yen;</span>
+							<span>兑换</span>
+						</p>
+						<p class="tilivalue fr">
+							<span class="fz30 col-e09e00">1000</span>
+							<span class="fz12">体力值</span>
+							<img class="dianchi block" src="/images/dianchi.png" alt="">
+						</p>
 						
-					</p>
-					<p class="right">
-						
-					</p>
+					</div>
 				</div>
+			</li>
+			<li class="list pt10 pb10 clearfix">
+				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
+			</li>
+			<li class="">
+				<!--#include virtual="/public/person/menuList.html"-->
 			</li>
 		</ul>
 	</div>

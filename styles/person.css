@@ -10,9 +10,18 @@
 	margin-top: 7px;
 	margin-left: 8px;
 }
-.person-center .banner .name, .person-center .banner .level, .person-center .banner .edit {
+.person-center .banner .name,
+.person-center .banner .level,
+.person-center .banner .edit {
 	height: 20px;
 	line-height: 20px;
+}
+.personalStyle{
+	height: 14px;
+	line-height: 14px;
+	border:1px solid #e09e00;
+	border-radius: 5px;
+	text-align: center;
 }
 .person-center .banner .chongzhiIcon, .person-center .banner .duihuanIcon {
 	width: 13px;
