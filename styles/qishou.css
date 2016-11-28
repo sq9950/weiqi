@@ -78,9 +78,15 @@
 .chess-center .chess-user {
   padding-top: 5px;
 }
-.chess-center .chess-user .title {
+.chess-center .chess-user .title
+ {
   width: 49px;
   height: 49px;
+}
+
+.chess-center .chess-user .userStatus{
+  height:49px;
+  line-height: 49px;
 }
 .chess-center .chess-user .user-details {
   margin-top: 10px

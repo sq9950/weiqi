@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
 	<link rel="stylesheet" href="/styles/person.css">
-	<script src="/js/vue.js"></script>
+	<script src="/js/vue.min.js"></script>
 </head>
 <body>
 <div class="content back-efefef">

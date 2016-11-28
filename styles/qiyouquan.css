@@ -33,14 +33,3 @@
 .chess-center .frendQuery.back-col-d4d4d4{
   background-color: #d4d4d4;
 }
-.chess-center .frendQueryCon {
-  background-color: #fff;
-  border-radius: 10px;
-  padding-left:10px;
-}
-.chess-center .frendQueryCon input {
-  height: 22.5px;
-  line-height: 22.5px;
-  vertical-align: top;
-  background-color: transparent;
-}

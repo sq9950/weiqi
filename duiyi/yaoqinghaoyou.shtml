@@ -16,6 +16,12 @@
 			<li id="addfrendsTypelist">
 				<!--#include virtual="/public/person/addfrendsTypelist.html"-->
 			</li>
+			<li>
+				<!--#include virtual="/public/qiyouquan/queryFrend.html"-->
+			</li>
+			<li class="back-fff" id="userList">
+				<!--#include virtual="/public/qishou/user.html"-->
+			</li>
 		</ul>
 	</div>
 </div>
@@ -36,6 +42,27 @@
 				text:"排行榜添加好友",
 				imgSrc:"/images/leaderboard.jpg"
 			}
+			]
+		}
+	});
+	var app_userList = new Vue({
+		el:"#userList",
+		data:{
+			userlist:[
+			{
+				titleSrc:"/images/title.jpg",
+				name:"聂卫平",
+				level:"9",
+				userStatus:"空闲中",
+				statusDisabled:true
+			},
+			{
+				titleSrc:"/images/title.jpg",
+				name:"聂卫平",
+				level:"9",
+				userStatus:"空闲中"
+			}
+				
 			]
 		}
 	})

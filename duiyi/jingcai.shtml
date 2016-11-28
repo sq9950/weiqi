@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="/styles/base.css">
+	<link rel="stylesheet" href="/styles/qishou.css">
+	<style>
+		.titleMinImg{
+			width: 30px; height:30px;
+		}
+		.flagImg{
+			width:19px;height: 12px;
+		}
+		.gameing{
+			display: inline-block;
+			padding:3px; 
+			background-color: #e00019;
+		}
+		.h24{
+			height:24px;
+			line-height:24px;
+		}
+		.box-border{
+			box-sizing: border-box;
+		}
+		.time .num{
+			display: inline-block;
+			background-color: #4c4c4c;
+			margin-left:1px; 
+			color:#fff;
+			padding:2px;
+			position: relative;
+		}
+		.time .num:after{
+			content: "";
+			display: block;
+			
+			width:100%;
+			height: 1px;
+			position: absolute;
+			top:7px;
+			left:0;
+			background-color: rgba(255,255,255,.5);
+		}
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="players_chess">
+		<!--#include virtual="/public/qishou/tab.html"-->
+		<!--#include virtual="/public/qishou/lunbo.html"-->
+		<ul class="chess-center">
+			<li class="list">
+				<p class="h24 text-cen col-e00019 fz14 borB1 mb10">日本围甲第16轮物价-BGF</p>
+				<div class="clearfix pl10 pr10 box-border">
+					<div class="left w33 fl">
+						<div class="clearfix">
+							<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
+							<p class="name fz14 fl col-1b4175 mt10">123</p>
+						</div>
+						<img class="flagImg ml5 mt5" src="/images/flag-china.jpg" alt="">
+					</div>
+					<div class="center w33 fl text-cen">
+						<p class="gameing col-fff fz12">比赛中</p>
+						<p class="gameStart mt10">比赛开始</p>
+					</div>
+					<div class="right w33 fr">
+						<div class="clearfix">
+							<img class="titleMinImg fr mr5" src="/images/titleMin.jpg" alt="">
+							<p class="name fz14 fr col-1b4175 mt10">123</p>
+						</div>
+						<img class="flagImg mr10 mt5 fr" src="/images/flag-china.jpg" alt="">
+					</div>
+				</div>
+				<div class="mt5 mb5 pl10">
+					2016-05-08&nbsp;&nbsp;19:00
+				</div>
+			</li>
+			<li class="list">
+				<p class="h24 text-cen col-e09e00 fz14 borB1 mb10">日本围甲第16轮物价-BGF</p>
+				<div class="clearfix pl10 pr10 box-border">
+					<div class="left w33 fl">
+						<div class="clearfix">
+							<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
+							<p class="name fz14 fl col-1b4175 mt10">123</p>
+						</div>
+						<img class="flagImg ml5 mt5" src="/images/flag-china.jpg" alt="">
+					</div>
+					<div class="center w33 fl text-cen">
+						<p class="gameStart mb3">竞猜中</p>
+						<p class="time back-fff">
+							<span class="num">0</span>
+							<span class="num">0</span>
+							<span>:</span>
+							<span class="num">0</span>
+							<span class="num">0</span>
+						</p>
+						<p class="gameStart mt3">竞猜倒计时</p>
+					</div>
+					<div class="right w33 fr">
+						<div class="clearfix">
+							<img class="titleMinImg fr mr5" src="/images/titleMin.jpg" alt="">
+							<p class="name fz14 fr col-1b4175 mt10">123</p>
+						</div>
+						<img class="flagImg mr10 mt5 fr" src="/images/flag-china.jpg" alt="">
+					</div>
+				</div>
+				<div class="mt5 mb5 pl10">
+					2016-05-08&nbsp;&nbsp;19:00
+				</div>
+			</li>
+			<li class="list">
+				<p class="h24 text-cen col-7e7e7e fz14 borB1 mb10">日本围甲第16轮物价-BGF</p>
+				<div class="clearfix pl10 pr10 box-border">
+					<div class="left w33 fl">
+						<div class="clearfix">
+							<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
+							<p class="name fz14 fl col-1b4175 mt10">123</p>
+						</div>
+						<img class="flagImg ml5 mt5" src="/images/flag-china.jpg" alt="">
+					</div>
+					<div class="center w33 fl text-cen">
+						<p class="gameStart mb3">竞猜结束</p>
+						<p class="time back-fff">
+							<span class="num">0</span>
+							<span class="num">0</span>
+							<span>:</span>
+							<span class="num">0</span>
+							<span class="num">0</span>
+						</p>
+						<p class="gameStart mt3">等待比赛开始</p>
+					</div>
+					<div class="right w33 fr">
+						<div class="clearfix">
+							<img class="titleMinImg fr mr5" src="/images/titleMin.jpg" alt="">
+							<p class="name fz14 fr col-1b4175 mt10">123</p>
+						</div>
+						<img class="flagImg mr10 mt5 fr" src="/images/flag-china.jpg" alt="">
+					</div>
+				</div>
+				<div class="mt5 mb5 pl10">
+					2016-05-08&nbsp;&nbsp;19:00
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

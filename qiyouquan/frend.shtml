@@ -34,11 +34,8 @@
       <li class="list">
         <p class="frendtitle col-e09e00 text-cen">我的好友</p>
       </li>
-      <li class="list frendQuery text-cen fz0">
-        <div class="frendQueryCon inline-block">
-          <img class="sclace-half" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAMAAADX9CSSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyNpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChNYWNpbnRvc2gpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjcxRkFDQjNCQTEzRDExRTY4QkIzQjJGMjdFQ0E0MDVCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjcxRkFDQjNDQTEzRDExRTY4QkIzQjJGMjdFQ0E0MDVCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NzFGQUNCMzlBMTNEMTFFNjhCQjNCMkYyN0VDQTQwNUIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NzFGQUNCM0FBMTNEMTFFNjhCQjNCMkYyN0VDQTQwNUIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5DzCRkAAAAGFBMVEX5+fmXl5eEhIS3t7fKysqnp6fi4uL////hcU30AAAACHRSTlP/////////AN6DvVkAAACnSURBVHjafFFbEsQgCAvyuv+NFxGsbnc2H05NAtIATxjTGIPYvIBkJ7mgeHhJhnSp1vykyaYBQi3ALT4Z3VbDkxYPC/vGFOYVVoYtRHncwf1SIwgJnlI+YNkoyuiii4lTb96bf/v1T//1/D2P/Zjfan7XJ0RffSVzwJFuJl75ZOXgCBSmmbRU/sdawr2EbDCHKlYgKfTahFWVrdcn8DdkfP/rFvQjwADeQwok8pefGgAAAABJRU5ErkJggg==" alt="">
-          <input class="" type="text" placeholder="搜索好友昵称">
-        </div>
+      <li class="list frendQuery text-cen fz0 back-e09e00">
+        <!--#include virtual="/public/qiyouquan/queryFrend.html"-->
       </li>
       <li class="list pl10 pr10 borb1 pb5">
         <!--#include virtual="/public/qishou/user.html"-->

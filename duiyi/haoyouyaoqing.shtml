@@ -7,35 +7,7 @@
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
-	
 	<script src="/js/vue.min.js"></script>
-	<style>
-		.contacts{
-			position:relative;
-			width:100%;
-			height:64px;
-			line-height:64px;
-		}
-		.contacts img{
-			width:40px;
-			height:40px;
-			vertical-align: middle;
-		}
-		.b-bottom{
-			border-bottom:1px solid #efefef;
-		}
-		.invite-btn{
-			width:39px;
-			height:16px;
-			border:1px solid #e09e00;
-			border-radius:5px;
-			line-height:16px;
-			text-align:center;
-			float: right;
-			margin-top:23px;
-			margin-right: 10px;
-		}
-	</style>
 </head>
 <body>
 <div class="content back-efefef">
@@ -54,17 +26,20 @@
 			invitelist:[
 			{
 				name:"我是zuozuo1",
-				showdel:true,
+				span:"向您发来对弈邀请。",
+				rightBtnText:"接受邀请",
 				titleSrc:"/images/head.png"
 			},
 			{
 				name:"我是zuozuo2",
-				showdel:true,
+				span:"向您发来对弈邀请。",
+				rightBtnText:"接受邀请",
 				titleSrc:"/images/head.png"
 			},
 			{
 				name:"我是zuozuo3",
-				showdel:true,
+				span:"向您发来对弈邀请。",
+				rightBtnText:"接受邀请",
 				titleSrc:"/images/head.png"
 			}
 			]

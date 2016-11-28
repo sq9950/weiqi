@@ -1,7 +1,14 @@
-<div class="contacts b-bottom fz14" v-for="_invitelist in invitelist">
-	<img class="pl10" :src="_invitelist.titleSrc" alt="">
-	<span class="pl10">{{_invitelist.name}}</span>
-	<a href="javascript:;" class="invite-btn col-e09e00" v-bind:class="{none:!_invitelist.showdel}" >移除</a>
-	<a href="javascript:;" class="invite-btn col-e09e00">邀请</a>
-
+<div class="contacts borB1 fz14" v-for="_invitelist in invitelist">
+	<img class="pl10 block fl mt10" :src="_invitelist.titleSrc" alt="">
+	<div
+		class="fl"
+		v-bind:style="{ 'line-height': _invitelist.span?'normal':'64px'}"
+	>
+		<p class="pl10 fz14 col-1b4175" :class="{mt20:_invitelist.span}">{{_invitelist.name}}</p>
+		<p v-if="_invitelist.span" class="pl10 fz10 mt2 col-e09e00">{{_invitelist.span}}</p>
+	</div>
+	<div class="fr">
+		<a href="javascript:;" class="invite-btn col-e09e00" v-bind:class="{none:!_invitelist.showdel}" >移除</a>
+		<a href="javascript:;" class="invite-btn col-e09e00">{{_invitelist.rightBtnText?_invitelist.rightBtnText:'邀请'}}</a>
+	</div>
 </div>

@@ -6,7 +6,6 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
-	
 	<script src="/js/vue.min.js"></script>
 	<style>
 		body{
@@ -35,27 +34,57 @@
 	</style>
 </head>
 <body>
-<div class="" id="settingList">
-	<!--#include virtual="/public/person/settingList.html"-->
-	<div class="btn fz16">
-		<a class="col-fff" href="jacascript:;">删除此人</a>
+<div class="content" id="settingList">
+	<div class="players_chess">
+		<ul class="chess-center">
+			<li class="mb10">
+				<!--#include virtual="/public/person/settingList.html"-->
+				<div class="btn fz16">
+					<a class="col-fff" href="jacascript:;">删除退出该群</a>
+				</div>
+			</li>
+		</ul>
 	</div>
 </div>
 <script>
-	var app4 = new Vue({
+	var app_setList = new Vue({
 	  el: '#settingList',
 	  data: {
 	    list: [
 	      { 
-	      	text: '把他推荐给朋友',
+	      	text: '群成员头像昵称显示',
 	      	href:"javascript:;"
 	      },
 	      {
-	      	text: '加入黑名单',
+	      	text: '添加新的群成员邀请',
 	      	href:"javascript:;"
 	      },
 	      {
-	      	text: '投诉这个人',
+	      	text: '全部群成员人数及搜索',
+	      	borB4: true,
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '群名称',
+	      	span:"20MB",
+	      	
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '通群公告',
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '消息免扰',
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '群主上线提示',
+	      	borB4: true,
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '清除聊天记录',
 	      	href:"javascript:;"
 	      }
 	    ]
