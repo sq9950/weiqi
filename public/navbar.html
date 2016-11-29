@@ -1,12 +1,60 @@
-<div class="navbar fz0 clearfix">
-	<a class="left block fl" href="javascript:;">
-		<img style="width: 11px;height: 11px; margin:15px 0 0 10px;	" src="/images/navbar1.png" alt="">
-	</a>
+<div class="navbar fz0 clearfix" id="navbar">
+	<div class="left block fl">
+		<a
+			class="fz12 block fl col-fff text-cen"
+			:href="_left.href"
+			v-for="_left in left"
+			:style="{
+				width: _left.width,
+				height: _left.height,
+				'line-height': _left.height,
+				'margin':_left.margin
+			}"
+		>
+			<img
+				style="width:100%;"
+				v-if="_left.iconSrc"
+				:src="_left.iconSrc"
+				alt=""
+			>
+			{{_left.text}}
+		</a>
+	</div>
 	<p class="title block fl fz0 text-cen">
-		<img style="width:21px;height: 21px;" src="/images/navbar3.png" alt="">
-		<span class="fz14">title</span>
+		<img
+			v-if="center.iconSrc"
+			:style="{
+				width: center.iconWidth,
+				height: center.iconHeight
+			}"
+			:src="center.iconSrc" alt="" 
+		/>
+		<span
+			v-if="center.text"
+			class="fz14 col-fff"
+		>
+			&nbsp;{{center.text}}
+		</span>
 	</p>
-	<a class="right block fl" href="javascript:;">
-		<img style="width: 11px;height: 11px; margin:15px 10px 0 0;	" src="/images/navbar2.png" alt="">
-	</a>
+	<div class="right block fl" href="javascript:;">
+		<a
+			class="fz12 block fl col-fff text-cen"
+			:href="_right.href"
+			v-for="_right in right"
+			:style="{
+				width: _right.width,
+				height: _right.height,
+				'line-height': _right.height,
+				'margin':_right.margin
+			}"
+		>
+			<img
+				style="width:100%;"
+				v-if="_right.iconSrc"
+				:src="_right.iconSrc"
+				alt=""
+			>
+			{{_right.text}}
+		</a>
+	</div>
 </div>

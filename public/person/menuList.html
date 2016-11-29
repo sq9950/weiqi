@@ -3,7 +3,7 @@
 		<img style="width:19px;height:15px;" :src="_menuList.titleSrc" alt="">
 	</div>
 	<p class="fl fz16 col-636363">{{_menuList.name}}</p>
-	<p class="fr fz12 col-636363" :class="{none:!_menuList.span}" v-html="_menuList.span">
+	<p class="fr fz12 col-636363 mr20" v-if="_menuList.span" :class="{none:!_menuList.span}" v-html="_menuList.span">
 	</p>
 	<img  class="arrowLeft" src="/images/left.png" alt="" />
 </div>

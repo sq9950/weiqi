@@ -1,36 +1,3 @@
-/******************* navbar *************************/
-.navbar {
-  position: relative;
-  background-color: #e09e00;
-}
-.navbar .left {
-  width: 20%;
-  position: absolute;
-  top:0;left:0;
-  text-align: left;
-}
-.navbar .right {
-  width: 20%;
-  position: absolute;
-  top:0;right:0;
-  text-align: left;
-}
-.navbar .title {
-  width: 100%;
-  height: 35px;
-  line-height: 35px;
-}
-.navbar .title img {
-  vertical-align: middle;
-}
-.navbar .title span {
-  vertical-align: top
-}
-.navbar .right {
-  width: 20%;
-  text-align: right;
-}
-
 /*******************棋手关注*************************/
 
 .players_chess .topTab {

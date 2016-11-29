@@ -13,7 +13,7 @@
 <div class="content back-efefef">
 	<div class="players_chess">
 		<ul class="chess-center">
-			<li id="addfrendsTypelist">
+			<li class="back-fff" id="addfrendsTypelist">
 				<!--#include virtual="/public/person/addfrendsTypelist.html"-->
 			</li>
 		</ul>

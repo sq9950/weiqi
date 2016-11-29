@@ -1,5 +1,6 @@
 .person-center .list {
-	border-bottom: 4px solid #efefef;
+	/*message/index.shtml  显示时有问题 聊天 间距变大*/
+	/*border-bottom: 4px solid #efefef;*/
 }
 .person-center .banner .userIcon {
 	width: 64px;
@@ -66,7 +67,7 @@
 }
 .person-center .menulist .arrowLeft{
 	position: absolute;
-	top:15px;right:10px;
+	top:12px;right:10px;
 }
 
 .person-center .menulist .menuIcon {

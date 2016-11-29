@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="/styles/base.css">
   <link rel="stylesheet" href="/styles/qishou.css">
   <link rel="stylesheet" href="/styles/qiyouquan.css">
-  
+  <script src="/js/vue.min.js"></script>
 </head>
 <body>
 <div class="content">
+  <!--#include virtual="/public/navbar.html"-->
   <div class="players_chess">
     <ul class="chess-center">
       <li class="list">
@@ -37,20 +38,71 @@
       <li class="list frendQuery text-cen fz0 back-e09e00">
         <!--#include virtual="/public/qiyouquan/queryFrend.html"-->
       </li>
-      <li class="list pl10 pr10 borb1 pb5">
-        <!--#include virtual="/public/qishou/user.html"-->
-      </li>
-      <li class="list pl10 pr10 borb1 pb5">
-        <!--#include virtual="/public/qishou/user.html"-->
-      </li>
-      <li class="list pl10 pr10 borb1 pb5">
-        <!--#include virtual="/public/qishou/user.html"-->
-      </li>
-      <li class="list pl10 pr10 borb1 pb5">
+      <li class="list pl10 pr10 borb1 pb5" id="userList">
         <!--#include virtual="/public/qishou/user.html"-->
       </li>
     </ul>
   </div>
 </div>
+<script>
+
+  var app_userList = new Vue({
+    el:"#userList",
+    data:{
+      userlist:[
+      {
+        titleSrc:"/images/title.jpg",
+        name:"聂卫平",
+        level:"9",
+        userStatus:"空闲中",
+        statusDisabled:true
+      },
+      {
+        titleSrc:"/images/title.jpg",
+        name:"聂卫平",
+        level:"9",
+        userStatus:"空闲中"
+      }
+        
+      ]
+    }
+  })
+  var app_navbar = new Vue({
+    el:"#navbar",
+    data:{
+      center:{
+        iconSrc:"/images/navbar3.png",
+        iconWidth:"21px",
+        iconHeight:"21px",
+        text:"弈统江山"
+      },
+      left:[
+        {
+          iconSrc:"/images/navbar1.png",
+          href:"javascript:;",
+          width:"19px",
+          height:"19px",
+          margin:"10px 0px 0 10px"
+        }
+      ],
+      right:[
+        {
+          text:"发圈",
+          href:"javascript:;",
+          width:"30px",
+          height:"40px",
+          margin:"0px 3px 0 0px"
+        },
+        {
+          iconSrc:"/images/navbar2.png",
+          href:"javascript:;",
+          width:"19px",
+          height:"19px",
+          margin:"10px 10px 0 0px"
+        }
+      ]
+    }
+  })
+</script>
 </body>
 </html>
