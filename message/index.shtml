@@ -57,17 +57,16 @@
 	<!--#include virtual="/public/navbar.html"-->
 	<div class="players_chess">
 		<ul class="chess-center person-center">
-
 			<li id="menuList">
 				<!--#include virtual="/public/person/menuList.html"-->
 			</li>
 			<li class="list text-cen clearfix back-efefef">
 				<div class="frendPieceTitle fz14">
-          <img width="18px" height='15px' class="" src="/images/messageweixin.png" alt="">
-          <span class="col-e09e00">聊天</span>
-        </div>
+		          <img width="18px" height='15px' class="" src="/images/messageweixin.png" alt="">
+		          <span class="col-e09e00">聊天</span>
+		        </div>
 			</li>
-			<li class="list pl10 pr10" id="userList">
+			<li class="list" id="userList">
 				<!--#include virtual="/public/qishou/user.html"-->
 			</li>
 		</ul>

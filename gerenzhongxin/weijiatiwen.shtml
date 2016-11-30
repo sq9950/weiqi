@@ -39,7 +39,7 @@
 <div class="content back-efefef">
 	<div class="players_chess back-fff">
 		<ul class="person-center chess-center">
-			<li class="list pl10 pr10 pb10">
+			<li class="list pl10 pr10 pb10 borB4">
 				<div class="banner pt10 clearfix">
 					<div class="left fl clearfix">
 						<img class="userIcon block fl" src="/images/userImg.png" alt="">
@@ -56,27 +56,27 @@
 					</div>
 				</div>
 			</li>
-			<li class="list pt10 pb10 clearfix" id="colListTab">
+			<li class="list pt10 pb10 clearfix borB4" id="colListTab">
 				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
 			</li>
-			<li class="list pl10 pr10">
+			<li class="list pl10 pr10 borB4">
 				<!--#include virtual="/public/qiyouquan/tiwenList.html"-->
 			</li>
-			<li class="list pb10 pt10">
+			<li class="list pb10 pt10 borB4">
 				<button class="whiteBtn fz14">立即提问</button>
 				<p class="text-cen col-c1c1c1">提问该棋手需要200体力值</p>
 			</li>
-			<li class="list pl10 pr10 pb10 fz0">
+			<li class="list pl10 pr10 pb10 fz0 borB4">
 				<!--#include virtual="/public/qishou/wentititle.html"-->
 				<!--#include virtual="/public/qishou/qipuImg.html"-->
 			</li>
-			<li class="list pl10 pr10 fz0">
+			<li class="list pl10 pr10 fz0 borB4">
 				<!--#include virtual="/public/qishou/user.html"-->
 				<!--#include virtual="/public/qishou/tiwenwaring.html"-->
 				<!--#include virtual="/public/qishou/yuyin.html"-->
 				<!--#include virtual="/public/qishou/timedata.html"-->
 			</li>
-			<li class="list pl10 pr10 fz0">
+			<li class="list pl10 pr10 fz0 borB4">
 				<!--#include virtual="/public/qishou/user.html"-->
 				<!--#include virtual="/public/qishou/p.html"-->
 				<!--#include virtual="/public/qishou/qipuImg.html"-->

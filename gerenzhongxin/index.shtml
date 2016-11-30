@@ -15,7 +15,7 @@
 <div class="content back-efefef">
 	<div class="players_chess back-fff">
 		<ul class="person-center">
-			<li class="list pl10 pr10">
+			<li class="list pl10 pr10 borB4">
 				<div class="banner pt10 clearfix">
 					<div class="left fl clearfix">
 						<img class="userIcon block fl" src="/images/userImg.png" alt="">
@@ -40,7 +40,7 @@
 					</div>
 				</div>
 			</li>
-			<li class="list pt10 pb10 clearfix" id="colListTab">
+			<li class="list pt10 pb10 clearfix borB4" id="colListTab">
 				<!--#include virtual="/public/qiyouquan/colListTab.html"-->
 			</li>
 			<li class="" id="menuList">

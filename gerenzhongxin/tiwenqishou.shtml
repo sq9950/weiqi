@@ -102,7 +102,7 @@
 <div class="content back-efefef">
 	<div class="players_chess back-fff">
 		<ul class="person-center tiwenqishou">
-			<li class="list">
+			<li class="list borB4">
 				<div class="userbg fz0">
 					<img class="userbgImg" src="/images/userbg2.png" alt="">
 					<button class="col-fff fz0">
@@ -130,7 +130,7 @@
 					</div>
 				</div>
 			</li>
-			<li class="list clearfix">
+			<li class="list clearfix borB4">
 				<div class="clearfix pt10 pb10" id="colListTab">
 					<!--#include virtual="/public/qiyouquan/colListTab.html"-->
 				</div>
@@ -156,7 +156,7 @@
 				</div>
 				<p class="addImgWaring col-cecece">提问共享，提问每被人旁听一次，你从中收益25体力值。</p>
 			</li>
-			<li class="list pb10">
+			<li class="list pb10 borB4">
 				<p class="col-7e7e7e text-cen mb10">-2000体力值</p>
 				<button class="lijitiwenBtn whiteBtn">asdfas</button>
 			</li>

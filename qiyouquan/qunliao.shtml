@@ -22,12 +22,12 @@
         <!--#include virtual="/public/qiyouquan/queryFrend.html"-->
       </li>
       <li class="list text-cen fz0">
-        <div class="frendPieceTitle fz14">
+        <div class="frendPieceTitle fz14 borB1">
           <img width="12px" height='13px' class="" src="/images/hotqishouicon.png" alt="">
           <span class="col-e09e00">热推棋手群聊</span>
         </div>
       </li>
-      <li class="list pt10 text-cen clearfix">
+      <li class="list pt10 text-cen clearfix borB4">
         <div class="hotGroup fl">
             <img class="userImg" src="/images/title.jpg" alt="">
             <p class="hotUser">
@@ -55,8 +55,8 @@
         </div>
         <a class="moreGroup block fz12 fr col-e09e00 pr10" href="javascript:;">查看更多棋手群聊&nbsp;>&nbsp;</a>
       </li>
-      <li class="list text-cen">
-        <div class="frendPieceTitle fz14">
+      <li class="list text-cen borB4">
+        <div class="frendPieceTitle fz14 borB1">
           <img width="12px" height='15px' class="" src="/images/addrIcon.png" alt="">
           <span class="col-e09e00">按地域位置推荐</span>
         </div>

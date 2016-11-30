@@ -87,14 +87,15 @@
 <body>
 <div class="content">
 	<!--#include virtual="/public/navbar.html"-->
+	<!--#include virtual="/public/bottombar.html"-->
 	<div class="players_chess">
 		<ul class="chess-center">
-			<li class="list pl10">
+			<li class="list pl10 borB4">
 				<p class="tiliNum fz12 text-right col-898989">
 					当前体力值:5000000
 				</p>
 			</li>
-			<li class="list pl10 text-cen">
+			<li class="list pl10 text-cen borB4">
 				<p class=" fz14 mt10 mb5 col-e09e00">当前体力值:5000000</p>
 				<p class="fz10 mb10">2016-05-08&nbsp;&nbsp;19:00</p>
 			</li>

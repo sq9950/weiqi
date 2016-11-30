@@ -77,7 +77,7 @@
 <div class="content back-fff">
 	<div class="players_chess back-fff">
 		<ul class="person-center">
-			<li class="list clearfix">
+			<li class="list clearfix borB4">
 				<div class="userbg">
 					<img src="/images/userbg.jpg" alt="">
 					<button class="switchBtn disabled fz14">已加好友</button>

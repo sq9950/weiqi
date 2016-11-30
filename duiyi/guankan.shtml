@@ -47,7 +47,7 @@
 	<!--#include virtual="/public/navbar.html"-->
 	<div class="players_chess">
 		<ul class="chess-center" id="resultlist">
-			<li class="list clearfix pos-rev" v-for="_resultlist in resultlist">
+			<li class="list clearfix pos-rev borB4" v-for="_resultlist in resultlist">
 				<a class="guanzhan mt10" href="javascript:;">
 					<div class="clearfix">
 						<img class="titleMinImg fl mr5" src="/images/titleMin.jpg" alt="">
