@@ -7,7 +7,9 @@
 	<title>围棋</title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
 	<script src="/js/vue.min.js"></script>
+	<script src="/js/dialog.js"></script>
 	<style>
 		.duihuan .waring{
 			height:30px;
@@ -54,17 +56,10 @@
 <body>
 <div class="content">
 	<!--#include virtual="/public/navbar.html"-->
-	<div class="dialog_confirm none">
+	<div class="dialog_confirm">
 		<div class="mask"></div>
-		<div class="dialogCon dialog_duihuanCon text-cen">
-			<img class="dialog_waring" src="/images/dialog_waring.png" alt="">
-			<input class="duihuanInp" placeholder="输入充值手机号" type="text" />
-			<p class="fz12 waring mt10 mb20 col-e09e00">
-				您确定用15000体力值兑换50元话费？
-			</p>
-			<div class="dialog_button inline-block">
-				<button class="determine">确定</button>
-				<button class="cancel">取消</button>
+		<div class="_dialogCon text-cen">
+			<div class="dialogCon dialog_duihuanchenggong">	
 			</div>
 		</div>
 	</div>
@@ -94,6 +89,29 @@
 	</div>
 </div>
 <script>
+	/*dialogConfirm({
+		className:"dialog_duihuanCon",
+		content:'<input class="duihuanInp" placeholder="输入充值手机号" type="text" />\
+			<p class="fz12 waring mt10 mb20 col-e09e00">\
+				您确定用15000体力值兑换50元话费？\
+			</p>',
+		autohiden:false,
+		callback:function(){
+			console.log(111)
+		}
+	})*/
+
+	/*dialogConfirm({
+		className:"dialog_duihuanchenggong",
+		content:'<input class="duihuanInp" placeholder="输入充值手机号" type="text" />\
+			<p class="fz12 waring mt10 mb20 col-e09e00">\
+				您确定用15000体力值兑换50元话费？\
+			</p>',
+		autohiden:false,
+		callback:function(){
+			console.log(111)
+		}
+	})*/
 	var app_duihuanList = new Vue({
 		el:"#duihuanList",
 		data:{

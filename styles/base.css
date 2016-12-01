@@ -389,7 +389,7 @@ input:focus{
   height: 100%;
   background-color: rgba(0,0,0,.5);
 }
-.dialog_confirm .dialogCon{
+.dialog_confirm ._dialogCon{
   position: absolute;
   width:90%;
   height:200px;
@@ -423,13 +423,16 @@ input:focus{
   color:#e09e00;
   background-color: transparent;
 }
-
+/*------------------------------------------*/
 .dialog_duihuanCon .duihuanInp{
   width:74%;
   padding-left: 3%;
   height: 30px;
   font-size: 1.4rem;
   border-radius: 5px;
+}
+.dialog_duihuanchenggong{
+  
 }
 /******************* navbar *************************/
 .navbar {
