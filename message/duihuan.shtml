@@ -50,7 +50,41 @@
 			padding-right:5px;
 			background-color: transparent;
 		}
-		
+		.dialog_denglu .label{
+			width:80%;
+			position: relative;
+			margin-left:auto;
+			margin-right:auto;
+		}
+		.dialog_denglu .label img{
+			margin-right: 10px;
+			margin-top:8px;
+			position: absolute;
+			top:0;
+			left:0;
+		}
+		.dialog_denglu .label input{
+			width:90%;
+			margin-left:30px;
+			height:42px;
+			line-height: 42px;
+			display: block;
+			border-bottom:1px solid #e09e00;
+			color:#e09e00;
+			font-size:1.4rem;
+		}
+		.dialog_denglu .label input::-webkit-input-placeholder{
+			color:#e09e00;
+			font-size:1.4rem;
+		}
+		.dialog_denglu .orangeBtn{
+			width:50%;
+			height: 35px;
+			line-height: 35px;
+			border-radius: 10px;
+			display: block;
+			margin:20px auto 0;
+		}
 	</style>
 </head>
 <body>
@@ -60,22 +94,9 @@
 	   <div class="mask"></div> 
 	   <div class="_dialogCon text-cen center"> 
 	    <img class="dialog_waring" src="/images/dialog_waring.png" alt="" style="display: none;" /> 
-	    <div class="dialogCon dialog_pay"> 
-	     <p class="col-e09e00 fz14 mt20 mb20">支付金额</p>
-	     <label class="block">
-	     	<img class="verticalMiddle" style="width:93px;" src="/images/pay_alipay.jpg" alt="">
-	     	<input class="none" type="radio" name="payType">
-	     	<img class="verticalMiddle" style="width:14px;" src="/images/radio_check.png" alt="">
-	     </label>
-	     <label class="block mb20 borT1">
-	     	<img calss="verticalMiddle" style="width:93px;" src="/images/pay_weixin.jpg" alt="">
-	     	<img class="verticalMiddle" style="width:14px;" src="/images/radio.png" alt="">
-	     </label>
-	    </div> 
-	    <div class="dialog_button inline-block">
-	     <button class="determine">确定</button> 
-	     <button class="cancel">取消</button> 
-	    </div> 
+	    <div class="dialogCon dialog_denglu"> 
+	     
+	    </div>
 	   </div> 
 	  </div> -->
 
@@ -121,7 +142,7 @@
 		},
 	    methods:{
 	    	voucherListClick:function(){
-		    	/*****************兑换体力弹做家务***************************/
+		    	/*****************兑换体力弹窗***************************/
 				dialogConfirm({
 					className:"dialog_duihuanCon",
 					content:'<input class="duihuanInp" placeholder="输入充值手机号" type="text" />\

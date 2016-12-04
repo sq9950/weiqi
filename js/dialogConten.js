@@ -131,3 +131,51 @@
 			$(".dialog_confirm").remove();
 		}
 	})*/
+
+	/**************************登陆弹窗**********************************/
+	/*dialogConfirm({
+		className:"dialog_denglu",
+		content:'<div class="mt20">\
+	     	<img style="width:50px;" src="/images/dialog_denglu_title.jpg" alt="">\
+	     </div>\
+	     <div class="label clearfix">\
+	     	<img class="block fl" style="width:20px;" src="/images/dialog_denglu_name.jpg" alt="">\
+	     	<input class="block fl" type="text" placeholder="用户名">\
+	     </div>\
+	     <div class="label mt20 clearfix">\
+	     	<img class="fl" style="width:20px;" src="/images/dialog_denglu_mima.jpg" alt="">\
+	     	<input class="fl" type="password" placeholder="密码">\
+	     </div>\
+	     <div class="label clearfix mt10">\
+	     	<a class="col-c40000 fl" href="javascript:;">立即注册</a>\
+	     	<a class="col-c40000 fr" href="javascript:;">找回密码</a>\
+	     </div>\
+	     <button class="orangeBtn">登陆</button>\
+	     <p class="mt10 mb10 col-3d3113 fz12">用其他形式登录</p>\
+	     <div class="dengluType">\
+	     	<a class="ml10" href="javascrtip:;">\
+	     		<img style="width:20px;" src="/images/dialog_denglu_weixin.png" alt="">\
+	     	</a>\
+	     	<a class="ml10" href="javascript:;">\
+	     		<img style="width:20px;" src="/images/dialog_denglu_weibo.png" alt="">\
+	     	</a>\
+			<a class="ml10" href="javascript:;">\
+				<img style="width:16px;" src="/images/dialog_denglu_qq.png" alt="">\
+			</a>\
+	     </div>\
+	     <div class="close" onclick="$('+'\'.dialog_confirm\''+').remove()'+'">\
+			<img style="width:13px;height:13px;vertical-align: middle;" src="/images/close.png" alt="">\
+		</div>',
+		autohiden:false,
+		showIcon:false,
+		showButton:false,
+		onShow:function(){
+			var hei = $("._dialogCon").height()
+			console.log(hei)
+			$("._dialogCon").css("margin-top",-(hei/2)+"px")
+		},
+		callback:function(){
+			$(".dialog_confirm").remove();
+			app_duihuanList.dialog_duihuanchenggong();
+		}
+	})*/
