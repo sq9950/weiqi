@@ -51,26 +51,7 @@
 	
 </div>
 <script>
-	var app4 = new Vue({
-	  el: '#settingList',
-	  data: {
-	    list: [
-	      { 
-	      	text: '把他推荐给朋友',
-	      	href:"javascript:;"
-	      },
-	      {
-	      	text: '加入黑名单',
-	      	href:"javascript:;"
-	      },
-	      {
-	      	text: '投诉这个人',
-	      	href:"javascript:;"
-	      }
-	    ]
-	  }
-	})
-	var app_navbar = new Vue({
+var app_navbar = new Vue({
     el:"#navbar",
     data:{
       center:{
@@ -106,6 +87,26 @@
       ]
     }
   })
+	var app4 = new Vue({
+	  el: '#settingList',
+	  data: {
+	    list: [
+	      { 
+	      	text: '把他推荐给朋友',
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '加入黑名单',
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '投诉这个人',
+	      	href:"javascript:;"
+	      }
+	    ]
+	  }
+	})
+	
 </script>
 </body>
 </html>

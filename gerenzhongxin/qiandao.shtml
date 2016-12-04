@@ -64,6 +64,7 @@
 </head>
 <body>
 <div class="content">
+	<!--#include virtual="/public/navbar.html"-->
 	<div class="players_chess">
 		<ul class="chess-center qiandao-center" id="qiandaoList">
 			<li class="list">
@@ -98,7 +99,43 @@
 	</div>
 </div>
 <script>
-	
+
+var app_navbar = new Vue({
+    el:"#navbar",
+    data:{
+      center:{
+        iconSrc:"/images/navbar3.png",
+        iconWidth:"21px",
+        iconHeight:"21px",
+        text:"弈统江山"
+      },
+      left:[
+        {
+          iconSrc:"/images/navbar1.png",
+          href:"javascript:;",
+          width:"19px",
+          height:"19px",
+          margin:"10px 0px 0 10px"
+        }
+      ],
+      right:[
+        {
+          text:"发圈",
+          href:"javascript:;",
+          width:"30px",
+          height:"40px",
+          margin:"0px 3px 0 0px"
+        },
+        {
+          iconSrc:"/images/navbar2.png",
+          href:"javascript:;",
+          width:"19px",
+          height:"19px",
+          margin:"10px 10px 0 0px"
+        }
+      ]
+    }
+  })
 	var app_navbar = new Vue({
     el:"#qiandaoList",
     data:{

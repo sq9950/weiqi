@@ -7,8 +7,9 @@
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
-	
+	<script src="/js/jquery-3.1.1.min.js"></script>
 	<script src="/js/vue.min.js"></script>
+	<script src="/js/dialog.js"></script>
 	<style>
 		.contacts{
 			position:relative;
@@ -49,29 +50,7 @@
 	</div>
 </div>
 <script>
-	var app_inviteList = new Vue({
-		el:"#inviteList",
-		data:{
-			invitelist:[
-			{
-				name:"我是zuozuo1",
-				showdel:true,
-				titleSrc:"/images/head.png"
-			},
-			{
-				name:"我是zuozuo2",
-				showdel:true,
-				titleSrc:"/images/head.png"
-			},
-			{
-				name:"我是zuozuo3",
-				showdel:true,
-				titleSrc:"/images/head.png"
-			}
-			]
-		}
-	})
-	var app_navbar = new Vue({
+var app_navbar = new Vue({
     el:"#navbar",
     data:{
       center:{
@@ -107,6 +86,38 @@
       ]
     }
   })
+	var app_inviteList = new Vue({
+		el:"#inviteList",
+		data:{
+			invitelist:[
+			{
+				name:"我是zuozuo1",
+				showdel:true,
+				titleSrc:"/images/head.png"
+			},
+			{
+				name:"我是zuozuo2",
+				showdel:true,
+				titleSrc:"/images/head.png"
+			},
+			{
+				name:"我是zuozuo3",
+				showdel:true,
+				titleSrc:"/images/head.png"
+			}
+			],
+			removeClick:function(){
+				/*****************确定移除好友***************************/
+				dialogConfirm({
+					className:"dialog_duihuanchenggong",
+					content:'<p class="col-e09e00 mb20 mt20">确定要移除好友？</p>',
+					callback:function(){
+					}
+				})
+			}
+		}
+	})
+	
 </script>
 </body>
 </html>

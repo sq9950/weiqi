@@ -1,5 +1,11 @@
 /*******************棋手关注*************************/
-
+.chess-center{
+  padding-top: 35px;
+  padding-bottom: 50px;
+}
+.players_chess{
+  padding-bottom: 50px;
+}
 .players_chess .topTab {
   background-color: #efefef;
 }
@@ -72,7 +78,9 @@
 .chess-center .chess-user .waring {
   line-height: 16px;
   margin-top: 12px;
-  margin-left: 18%;
+  /*http://0.0.0.0/qishouguanzhu/guanzhuquery.shtml*/
+  /*margin-left: 18%;*/
+  margin-left: 5%;
 }
 .chess-center .chess-img img {
   width: 32.16666667%;

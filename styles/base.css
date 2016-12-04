@@ -188,7 +188,9 @@ input:focus{
 .back-bebebe{
   background-color: #bebebe;
 }
-
+.back-da6c6c{
+  background-color: #da6c6c;
+}
 /*******************全局样式*************************/
 .block {
   display: block;
@@ -555,7 +557,9 @@ input:focus{
 }
 /******************* navbar *************************/
 .navbar {
-  position: relative;
+  position: fixed;
+  width:100%;
+  z-index: 5;
   background-color: #e09e00;
 }
 .navbar .left {
@@ -590,7 +594,8 @@ input:focus{
   padding-top:7px;
   border-top:1px solid #bcbcbc;
   text-align: center;
-  color:#4e4e4e
+  color:#4e4e4e;
+  z-index: 5;
 }
 .bottombar .yitongImg{
   width:20px;

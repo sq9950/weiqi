@@ -70,18 +70,12 @@
         titleSrc:"/images/title.jpg",
         name:"聂卫平",
         level:"9",
-        tiwenQuery:{
-          tili:"10000"
-        },
         guanzhu:true
       },
       {
         titleSrc:"/images/title.jpg",
         name:"聂卫平",
         level:"9",
-        tiwenQuery:{
-          tili:"10000"
-        },
         guanzhu:false
       }
       ]

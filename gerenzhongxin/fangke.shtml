@@ -14,17 +14,14 @@
 	<!--#include virtual="/public/navbar.html"-->
 	<div class="players_chess">
 		<ul class="chess-center">
-			<li class="list">
-				<!--#include virtual="/public/qishou/query.html"-->
-			</li>
-			<li class="list pl10 pr10" id="userList">
+			<li class="mb10" id="userList">
 				<!--#include virtual="/public/qishou/user.html"-->
 			</li>
 		</ul>
 	</div>
 </div>
 <script>
-	var app_navbar = new Vue({
+var app_navbar = new Vue({
     el:"#navbar",
     data:{
       center:{
@@ -60,7 +57,50 @@
       ]
     }
   })
-  var app_userList = new Vue({
+	var app_setList = new Vue({
+	  el: '#settingList',
+	  data: {
+	    list: [
+	      { 
+	      	text: '修改密码',
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '修改昵称',
+	      	borB4: true,
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '邀请码',
+			borB4: true,
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '清除缓存',
+	      	span:"20MB",
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '版本更新',
+	      	borB4: true,
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '通知',
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '黑名单',
+	      	href:"javascript:;"
+	      },
+	      {
+	      	text: '意见反馈',
+	      	href:"javascript:;"
+	      }
+	    ]
+	  }
+	})
+var app_userList = new Vue({
     el:"#userList",
     data:{
       userlist:[
@@ -68,19 +108,13 @@
         titleSrc:"/images/title.jpg",
         name:"聂卫平",
         level:"9",
-        tiwenQuery:{
-          tili:"1000"
-        },
-        guanzhu:false
+        visitorsTime:"2015-10-11"
       },
       {
         titleSrc:"/images/title.jpg",
         name:"聂卫平",
         level:"9",
-        tiwenQuery:{
-          tili:"1000"
-        },
-        guanzhu:true
+        visitorsTime:"2015-10-11"
       }
         
       ]

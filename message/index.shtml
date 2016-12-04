@@ -78,8 +78,9 @@
 		data:{
 			menuList:[
 			{
-				titleSrc:"/images/duiyiIcon.png",
+				titleSrc:"/images/message_tiwen.png",
 				name:"用户提问",
+				num:"10",
 				iconColor:"b676af"
 			},
 			{
@@ -115,14 +116,12 @@
 				titleSrc:"/images/title.jpg",
 				name:"聂卫平",
 				level:"9",
-				userStatus:"空闲中",
-				statusDisabled:true
+				messageNum:10
 			},
 			{
 				titleSrc:"/images/title.jpg",
 				name:"聂卫平",
-				level:"9",
-				userStatus:"空闲中"
+				level:"9"
 			}
 			]
 		}

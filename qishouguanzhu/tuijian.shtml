@@ -19,7 +19,7 @@
 				<!--#include virtual="/public/qishou/lunbo.html"-->
 				<!--#include virtual="/public/qishou/gonggao.html"-->
 			</li>
-			<li class="list pl10 pr10 borB1" v-for="_qishouStatusCount in qishouStatusCount">
+			<li class="list pl10 pr10 borB4" v-for="_qishouStatusCount in qishouStatusCount">
         <!--#include virtual="/public/qishou/qishouStatusCount.html"-->
 			</li>
 		</ul>
@@ -68,15 +68,8 @@
     data:{
       qishouStatusCount:[
       {
-        userInfo:{
-            titleSrc:"/images/title.jpg",
-            name:"聂卫平",
-            level:"9",
-            guanzhu:true,
-            attention:true
-        },
-        tiwenP:"2016年2月18日棋国APP重磅上线！!!",
-        tiwenwaring:"该用户对棋手提问，听取需要支付50点体力值。111",
+        wentiTitle:"古力大师怎么锻炼围棋能力？",
+        tiwenP:"在下围棋初段，苦无进展，请大师指教！",
         yuyin:{
           src:"",
           tili:"33",

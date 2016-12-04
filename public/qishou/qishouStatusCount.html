@@ -1,5 +1,5 @@
 <!-- user -->
-<div class="chess-user clearfix pl10 pr10 pb5 pt5" v-if="_qishouStatusCount.userInfo">
+<div class="chess-user clearfix pb5 pt5" v-if="_qishouStatusCount.userInfo">
 	<img class="title block fl mr10" :src="_qishouStatusCount.userInfo.titleSrc" alt="title">
 	<div class="user-details block fl">
 		<p class="name col-1b4175 fz14">
@@ -12,15 +12,28 @@
 		class="heart block fr mr10 fz12"
 		:class="{ select:_qishouStatusCount.userInfo.guanzhu}"
 		v-if="_qishouStatusCount.userInfo.guanzhu!=undefined"
-
 	>
 		<span>{{_qishouStatusCount.userInfo.guanzhu?"已关注":"未关注"}}</span>
 	</div>
+	<div class="btn block fr mfr10 fz12" v-if="_qishouStatusCount.userInfo.detailBtn!=undefined">
+	<button
+		class="off inline-block"
+		:class="{
+			off:!_qishouStatusCount.userInfo.detailBtn,
+			on:_qishouStatusCount.userInfo.detailBtn
+		}">详情</button>
 </div>
-
+</div>
+<div class="problem" v-if="_qishouStatusCount.wentiTitle">
+	<span class="icon col-fff fz12 block fl mr10">
+		<strong>?</strong>
+		<strong>提问</strong>
+	</span>
+	<span class='text block fz12 fl col-e09e00'>{{_qishouStatusCount.wentiTitle}}</span>
+</div>
 <!-- p -->
 <p
-	class="p fz14 col-3b3b3b"
+	class="p fz14 col-3b3b3b mt5"
 	v-if="_qishouStatusCount.tiwenP"
 >
 	{{_qishouStatusCount.tiwenP}}
@@ -39,7 +52,7 @@
 
 <!-- qipuimg -->
 <div
-	class="chess-img fz0"
+	class="chess-img fz0 mt5"
 	v-if="_qishouStatusCount.qipuImg"
 >
 	<img :src="_qipuImg" alt="" v-for="_qipuImg in _qishouStatusCount.qipuImg" />

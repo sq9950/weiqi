@@ -1,3 +1,6 @@
+.person-center{
+	padding-top:35px;
+}
 .person-center .list {
 	/*message/index.shtml  显示时有问题 聊天 间距变大*/
 	/*border-bottom: 4px solid #efefef;*/
@@ -64,6 +67,17 @@
 	height: 43px;
 	line-height: 43px;
 	position: relative;
+}
+.person-center .menulist .messageListNum span{
+	display: block;
+	background-color: #da6c6c;
+	width:20px;
+	height: 20px;
+	line-height: 20px;
+	border-radius: 50%;
+	text-align: center;
+	color:#fff;
+	margin-top:10px;
 }
 .person-center .menulist .arrowLeft{
 	position: absolute;

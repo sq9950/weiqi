@@ -1,9 +1,16 @@
 <div class="menulist borB3 pl10 pr10" v-for="_menuList in menuList">
 	<div class="menuIcon fl " :class="{['back-'+_menuList.iconColor]:_menuList.iconColor}">
-		<img style="width:19px;height:15px;" :src="_menuList.titleSrc" alt="">
+		<img v-if="_menuList.name==='用户提问'" style="width:20px;height:20px; margin-top:4px;" :src="_menuList.titleSrc" alt="">
+		<img v-if="_menuList.name==='系统通知'" style="width:15px;height:17px; margin-top:5px;" :src="_menuList.titleSrc" alt="">
+		<img v-if="_menuList.name==='体力值'" style="width:10px;height:17px; margin-top:5px;" :src="_menuList.titleSrc" alt="">
+		<img v-if="_menuList.name==='评论/赞'" style="width:15px;height:14px;" :src="_menuList.titleSrc" alt="">
+		<img v-if="_menuList.name==='对弈邀请'" style="width:16px;height:17px;" :src="_menuList.titleSrc" alt="">
 	</div>
 	<p class="fl fz16 col-636363">{{_menuList.name}}</p>
 	<p class="fr fz12 col-636363 mr20" v-if="_menuList.span" :class="{none:!_menuList.span}" v-html="_menuList.span">
 	</p>
-	<img  class="arrowLeft" src="/images/left.png" alt="" />
+	<p class="fr fz12 col-636363 messageListNum" v-if="_menuList.num" :class="{none:!_menuList.num}">
+		<span>{{_menuList.num}}</span>
+	</p>
+	<img v-if="_menuList.arrowLeft" class="arrowLeft" src="/images/left.png" alt="" />
 </div>

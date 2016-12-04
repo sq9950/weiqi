@@ -12,12 +12,13 @@
 <body>
 <div class="content">
 	<!--#include virtual="/public/navbar.html"-->
+  <!--#include virtual="/public/bottomBar.html"-->
 	<div class="players_chess">
 		<ul class="chess-center" id="qishouStatusCount">
 			<li class="list">
 				<!--#include virtual="/public/qiyouquan/tab.html"-->
 			</li>
-			<li class="list pl10 pr10 borB1" v-for="_qishouStatusCount in qishouStatusCount">
+			<li class="list pl10 pr10 borB4" v-for="_qishouStatusCount in qishouStatusCount">
         <!--#include virtual="/public/qishou/qishouStatusCount.html"-->
 			</li>
 		</ul>

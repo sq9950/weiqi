@@ -13,6 +13,7 @@
 <body>
 <div class="content">
   <!--#include virtual="/public/navbar.html"-->
+  <!--#include virtual="/public/bottomBar.html"-->
   <div class="players_chess">
     <ul class="chess-center">
       <li class="list">
@@ -139,14 +140,13 @@
         titleSrc:"/images/title.jpg",
         name:"聂卫平",
         level:"9",
-        userStatus:"空闲中",
-        statusDisabled:true
+        isOnline:true
       },
       {
         titleSrc:"/images/title.jpg",
         name:"聂卫平",
         level:"9",
-        userStatus:"空闲中"
+        isOnline:false
       }
         
       ]
