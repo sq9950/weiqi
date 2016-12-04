@@ -43,7 +43,10 @@
 				rightBtnText:"接受邀请",
 				titleSrc:"/images/head.png"
 			}
-			]
+			],
+			removeClick:function(){
+				/**/
+			}
 		}
 	})
 	var app_navbar = new Vue({
