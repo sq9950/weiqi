@@ -22,6 +22,7 @@
 			box-sizing: border-box;
 		}
 		.user .user_img{
+			width:30px;
 			margin-top:3px;
 			margin-right:7px;
 		}
@@ -54,6 +55,15 @@
 			height: 20px;
 			line-height: 20px;
 		}
+		.certificationV{
+			width:13px;
+		}
+		.proArticleImg{
+			width:60px;
+		}
+		.proArticle{
+			margin-left:70px;
+		}
 	</style>
 	<div class="players_chess">
 		<ul class="chess-center pinglun">
@@ -65,7 +75,7 @@
 			</li>
 			<li class="pl10 pr10 pb20 borB4">
 				<div class="user clearfix">
-					<img class="user_img fl" style="width:30px;" class="fl" src="/images/head.png" alt="">
+					<img class="user_img fl" class="fl" src="/images/head.png" alt="">
 					<div class="fl">
 						<p class="p fz12 col-1b4175">我是zouzou</p>
 						<p class="span col-7e7e7e">10-20 11:00 </p>
@@ -76,36 +86,11 @@
 				</div>
 				<p class="zan_p">赞了这篇帖子</p>
 				<div class="clearfix back-f6f5f5">
-					<img class="fl" style="width:60px;" src="/images/pinglun.jpg" alt="">
-					<div style="margin-left:70px;">
+					<img class="proArticleImg fl" src="/images/pinglun.jpg" alt="">
+					<div class="proArticle">
 						<p class="user_info">
 							<span class="name verticalMiddle">聂卫平</span>
-							<img class="certification verticalBottom" style="width:13px;" src="/images/certification.jpg" alt="">
-						</p>
-						<p class="user_text">
-							厦门围棋大会世纪名人特别对局决赛在五缘水乡酒店战罢，图为赛后复盘及大盘讲解现场。
-						</p>
-					</div>
-				</div>
-			</li>
-			<li class="pl10 pr10 pb20 borB4">
-				<div class="user clearfix">
-					<img class="user_img fl" style="width:30px;" class="fl" src="/images/head.png" alt="">
-					<div class="fl">
-						<p class="p fz12 col-1b4175">我是zouzou</p>
-						<p class="span col-7e7e7e">10-20 11:00 </p>
-					</div>
-					<div class="fr">
-						<button class="btn">回复</button>
-					</div>
-				</div>
-				<p class="zan_p">赞了这篇帖子</p>
-				<div class="clearfix back-f6f5f5">
-					<img class="fl" style="width:60px;" src="/images/pinglun.jpg" alt="">
-					<div style="margin-left:70px;">
-						<p class="user_info">
-							<span class="name verticalMiddle">聂卫平</span>
-							<img class="certification verticalBottom" style="width:13px;" src="/images/certification.jpg" alt="">
+							<img class="certificationV verticalBottom" src="/images/certification.jpg" alt="">
 						</p>
 						<p class="user_text">
 							厦门围棋大会世纪名人特别对局决赛在五缘水乡酒店战罢，图为赛后复盘及大盘讲解现场。
