@@ -196,6 +196,9 @@ input:focus{
 .inline-block {
   display: inline-block;
 }
+.overHiden{
+  overflow: hidden;
+}
 .none {
   display: none;
 }

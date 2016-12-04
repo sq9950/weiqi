@@ -17,14 +17,9 @@
 			<li class="list">
 				<!--#include virtual="/public/qishou/query.html"-->
 			</li>
-			<li class="list pl10 pr10">
-				<!--#include virtual="/public/qishou/user.html"-->
-			</li>
-			<li class="list pl10 pr10">
-				<!--#include virtual="/public/qishou/user.html"-->
-			</li>
-			<li class="list pl10 pr10">
-				<!--#include virtual="/public/qishou/user.html"-->
+      <li class="list" id="userList">
+        <!--#include virtual="/public/qishou/user.html"-->
+      </li>
 			</li>
 		</ul>
 	</div>
@@ -63,6 +58,32 @@
           height:"19px",
           margin:"10px 10px 0 0px"
         }
+      ]
+    }
+  })
+
+  var app_userList = new Vue({
+    el:"#userList",
+    data:{
+      userlist:[
+      {
+        titleSrc:"/images/title.jpg",
+        name:"聂卫平",
+        level:"9",
+        tiwenQuery:{
+          tili:"10000"
+        },
+        guanzhu:true
+      },
+      {
+        titleSrc:"/images/title.jpg",
+        name:"聂卫平",
+        level:"9",
+        tiwenQuery:{
+          tili:"10000"
+        },
+        guanzhu:false
+      }
       ]
     }
   })

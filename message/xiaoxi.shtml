@@ -18,7 +18,7 @@
 <div class="content">
 	<!--#include virtual="/public/navbar.html"-->
 	<div class="players_chess">
-		<ul class="chess-center">
+		<ul class="chess-center" id="qishouStatusCount">
 		
 			<li class="list">
 				<div class="gender fz0">
@@ -26,17 +26,8 @@
 				  <button class="message"><span>福袋</span></button>
 				</div>
 			</li>
-			<li class="list pl10 pr10 fz0">
-				<!--#include virtual="/public/qishou/user.html"-->
-				<!--#include virtual="/public/qishou/p.html"-->
-				<!--#include virtual="/public/qishou/qipuimg.html"-->
-				<!--#include virtual="/public/qishou/timedata.html"-->
-			</li>
-			<li class="list pl10 pr10 fz0">
-				<!--#include virtual="/public/qishou/user.html"-->
-				<!--#include virtual="/public/qishou/p.html"-->
-				<!--#include virtual="/public/qishou/qipuvideo.html"-->
-				<!--#include virtual="/public/qishou/timedata.html"-->
+			<li class="list pl10 pr10 borB1" v-for="_qishouStatusCount in qishouStatusCount">
+        		<!--#include virtual="/public/qishou/qishouStatusCount.html"-->
 			</li>
 		</ul>
 	</div>
@@ -78,6 +69,58 @@
       ]
     }
   })
+
+	var app_qishouStatusCount = new Vue({
+    el:"#qishouStatusCount",
+    data:{
+      qishouStatusCount:[
+      {
+        userInfo:{
+            titleSrc:"/images/title.jpg",
+            name:"聂卫平",
+            level:"9",
+            attention:true
+        },
+        tiwenP:"2016年2月18日棋国APP重磅上线！!!",
+        tiwenwaring:"该用户对棋手提问，听取需要支付50点体力值。111",
+        yuyin:{
+          src:"",
+          tili:"33",
+          peopleNum:"1121"
+        },
+        qipuImg:[
+          "/images/qipu.jpg",
+          "/images/qipu.jpg",
+          "/images/qipu.jpg"
+        ],
+
+        timedata:{
+          time:"2分钟前",
+          liulan:"1001",
+          message:"1002",
+          zan:"1003"
+        }
+      },
+      {
+        userInfo:{
+            titleSrc:"/images/title.jpg",
+            name:"聂卫平",
+            level:"9",
+            attention:true
+        },
+        video:{
+        	src:"http://www.w3school.com.cn/i/movie.ogg"
+        },
+        timedata:{
+          time:"2分钟前",
+          liulan:"1001",
+          message:"1002",
+          zan:"1003"
+        }
+      }
+      ]
+    }
+  });
 </script>
 </body>
 </html>

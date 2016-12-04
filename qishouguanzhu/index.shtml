@@ -16,36 +16,9 @@
 	<div class="players_chess">
 		<!--#include virtual="/public/qishou/tab.html"-->
 		<!--#include virtual="/public/qishou/guanzhugengduo.html"-->
-		<ul class="chess-center">
-			<li class="list pl10 pr10">
-				<!--#include virtual="/public/qishou/user.html"-->
-				<!--#include virtual="/public/qishou/p.html"-->
-				<!--#include virtual="/public/qishou/qipuimg.html"-->
-				<!--#include virtual="/public/qishou/timedata.html"-->
-			</li>
-			<li class="list pl10 pr10 pb5">
-				<!--#include virtual="/public/qishou/wentititle.html"-->
-				<!--#include virtual="/public/qishou/p.html"-->
-				<!--#include virtual="/public/qishou/qipuimg.html"-->
-			</li>
-			<li class="list pl10 pr10">
-				<!--#include virtual="/public/qishou/user.html"-->
-				<!--#include virtual="/public/qishou/tiwenwaring.html"-->
-				<!--#include virtual="/public/qishou/yuyin.html"-->
-				<!--#include virtual="/public/qishou/timedata.html"-->
-			</li>
-			<li class="list pl10 pr10">
-				<!--#include virtual="/public/qishou/user.html"-->
-				<!--#include virtual="/public/qishou/p.html"-->
-				<!--#include virtual="/public/qishou/tiwenwaring.html"-->
-				<!--#include virtual="/public/qishou/yuyin.html"-->
-				<!--#include virtual="/public/qishou/timedata.html"-->
-			</li>
-			<li class="list pl10 pr10">
-				<!--#include virtual="/public/qishou/user.html"-->
-				<!--#include virtual="/public/qishou/p.html"-->
-				<!--#include virtual="/public/qishou/qipuimg.html"-->
-				<!--#include virtual="/public/qishou/timedata.html"-->
+		<ul class="chess-center" id="qishouStatusCount">
+			<li class="list pl10 pr10 borB1" v-for="_qishouStatusCount in qishouStatusCount">
+        		<!--#include virtual="/public/qishou/qishouStatusCount.html"-->
 			</li>
 		</ul>
 	</div>
@@ -87,42 +60,62 @@
 			]
 		}
 	})
-	var app_navbar = new Vue({
-    el:"#navbar",
+	var app_qishouStatusCount = new Vue({
+    el:"#qishouStatusCount",
     data:{
-      center:{
-        iconSrc:"/images/navbar3.png",
-        iconWidth:"21px",
-        iconHeight:"21px",
-        text:"弈统江山"
-      },
-      left:[
-        {
-          iconSrc:"/images/navbar1.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 0px 0 10px"
-        }
-      ],
-      right:[
-        {
-          text:"发圈",
-          href:"javascript:;",
-          width:"30px",
-          height:"40px",
-          margin:"0px 3px 0 0px"
+      qishouStatusCount:[
+      {
+        userInfo:{
+            titleSrc:"/images/title.jpg",
+            name:"聂卫平",
+            level:"9",
+            guanzhu:true,
+            attention:true
         },
-        {
-          iconSrc:"/images/navbar2.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 10px 0 0px"
+        tiwenP:"2016年2月18日棋国APP重磅上线！!!",
+        tiwenwaring:"该用户对棋手提问，听取需要支付50点体力值。111",
+        yuyin:{
+          src:"",
+          tili:"33",
+          peopleNum:"1121"
+        },
+        qipuImg:[
+          "/images/qipu.jpg",
+          "/images/qipu.jpg",
+          "/images/qipu.jpg"
+        ],
+
+        timedata:{
+          time:"2分钟前",
+          liulan:"1001",
+          message:"1002",
+          zan:"1003"
         }
+      },
+      {
+        userInfo:{
+            titleSrc:"/images/title.jpg",
+            name:"聂卫平",
+            level:"9",
+            guanzhu:false,
+            attention:true
+        },
+        tiwenwaring:"该用户对棋手提问，听取需要支付50点体力值。111",
+        yuyin:{
+          src:"",
+          tili:"33",
+          peopleNum:"1121"
+        },
+        timedata:{
+          time:"2分钟前",
+          liulan:"1001",
+          message:"1002",
+          zan:"1003"
+        }
+      }
       ]
     }
-  })
+  });
 </script>
 </body>
 </html>

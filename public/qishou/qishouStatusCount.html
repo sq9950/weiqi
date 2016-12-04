@@ -1,0 +1,93 @@
+<!-- user -->
+<div class="chess-user clearfix pl10 pr10 pb5 pt5" v-if="_qishouStatusCount.userInfo">
+	<img class="title block fl mr10" :src="_qishouStatusCount.userInfo.titleSrc" alt="title">
+	<div class="user-details block fl">
+		<p class="name col-1b4175 fz14">
+			<span>{{_qishouStatusCount.userInfo.name}}</span>
+			<img class="certification" src="/images/certification.jpg">
+		</p>
+		<p class="grade fz8 col-7e7e7e">段位：{{_qishouStatusCount.userInfo.level}}段</p>
+	</div>
+	<div class="waring block fl none">
+		<p>
+			提问需要支付
+			<br />
+			<span class="col-e09e00">1000</span>体力值
+		</p>
+	</div>
+	<div
+		class="heart block fr mr10 fz12"
+		:class="{ select:_qishouStatusCount.userInfo.guanzhu}"
+		v-if="_qishouStatusCount.userInfo.guanzhu!=undefined"
+
+	>
+		<span>{{_qishouStatusCount.userInfo.guanzhu?"已关注":"未关注"}}</span>
+	</div>
+	<div class="btn block fr col-7e7e7e none">马上回来</div>
+	<div class="num block fr col-7e7e7e none">10</div>
+</div>
+
+<!-- p -->
+<p
+	class="p fz14 col-3b3b3b"
+	v-if="_qishouStatusCount.tiwenP"
+>
+	{{_qishouStatusCount.tiwenP}}
+</p>
+
+
+
+<!-- tiwenwaring -->
+<span
+	class='problemWaring block col-7e7e7e fz12'
+	v-if="_qishouStatusCount.tiwenwaring"
+>
+	{{_qishouStatusCount.tiwenwaring}}
+</span>
+
+
+<!-- qipuimg -->
+<div
+	class="chess-img fz0"
+	v-if="_qishouStatusCount.qipuImg"
+>
+	<img :src="_qipuImg" alt="" v-for="_qipuImg in _qishouStatusCount.qipuImg" />
+</div>
+<!-- video -->
+<video
+	:src="_qishouStatusCount.video.src"
+	controls="controls"
+	v-if="_qishouStatusCount.video"
+>
+	您的浏览器不支持 video 标签。
+</video>
+<!-- yuyin -->
+<div class="voiceP clearfix mt10 overHiden" v-if="_qishouStatusCount.yuyin">
+	<div class="left col-fff fl">
+		<img class="fl" src="/images/voiceIcon.png" alt="">
+		<span class="fr fz12">旁听 -{{_qishouStatusCount.yuyin.tili}}体力值</span>
+	</div>
+	<div class="right fr">
+		<img class="sclace-half" src="/images/voiceIcon2.png" alt="">
+		<span>{{_qishouStatusCount.yuyin.peopleNum}}人</span>
+	</div>
+</div>
+
+
+<!-- timeData -->
+<div class="timeData col-7e7e7e clearfix fz0"  v-if="_qishouStatusCount.timedata">
+	<img class="bellIcon fl mt5 mr5" src="/images/bell.jpg" alt="">
+	<span class="fl fz8">{{_qishouStatusCount.timedata.time}}</span>
+	<div class="fr">
+		<img class="rightIco zanIco" src="/images/zan.jpg" alt="">
+		<span class="fz10">{{_qishouStatusCount.timedata.zan}}</span>
+	</div>
+	<div class="fr">
+		<img class="rightIco messageIco" src="/images/message.jpg" alt="">
+		<span class="fz10">{{_qishouStatusCount.timedata.message}}</span>
+	</div>
+	<div class="fr">
+		<img class="rightIco attentionIco" src="/images/attention.jpg" alt="">
+		<span class="fz10">{{_qishouStatusCount.timedata.liulan}}</span>
+	</div>
+</div>
