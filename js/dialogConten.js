@@ -32,7 +32,6 @@
 	/*dialogConfirm({
 		className:"dialog_duihuanchenggong",
 		content:'<p class="col-e09e00 mb20 mt20">确定要移除好友？</p>',
-		
 		callback:function(){
 			console.log(111)
 		}
@@ -62,6 +61,7 @@
 				<button class="back-e09e00 col-fff fz14" style="width:100%;height:41px;">取消</button>',
 		autohiden:false,
 		showIcon:false,
+		backtransparent:false,
 		showButton:false,
 		callback:function(){
 			console.log(111)
@@ -85,6 +85,7 @@
 		autohiden:false,
 		showIcon:false,
 		showButton:false,
+		backtransparent:false,
 		callback:function(){
 			console.log(111)
 		}
@@ -120,6 +121,7 @@
 		</form>',
 		autohiden:false,
 		showIcon:false,
+		backtransparent:false,
 		onShow:function(){
 			$(".dialog_pay label").on("click",function(){
 				$(".dialog_pay label .radio_img").attr("src","/images/radio.png")

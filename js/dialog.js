@@ -39,6 +39,9 @@ function dialogConfirm(o){
 	if(o.verticalAlign === "bottom"){
 		$mask.find("._dialogCon").removeClass("center").addClass("bottom")
 	}
+	if(o.backtransparent===false){
+		$mask.find("._dialogCon").css("background-color","#fff");
+	}
 	$mask.find(".dialogCon").addClass(o.className).append(o.content)
 
 	
