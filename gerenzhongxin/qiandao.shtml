@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="/styles/base.css">
+	<link rel="stylesheet" href="/styles/qishou.css">
+	<script src="/js/vue.min.js"></script>
+	<style>
+		.qiandao-center .qiandaoIcon{
+			width:49px;
+			height:49px;
+			line-height:49px;
+			text-align: center;
+			background-color: #d482bc;
+			border-radius: 50%;
+			margin-top:14px;
+		}
+		.qiandao-center .qiandaoIcon img{
+			vertical-align: middle;
+			
+		}
+		.qiandao-center .qiandao-top .p{
+			height: 25px;
+			line-height: 25px;
+			border:1px solid #e09e00;
+			display: inline-block;
+			border-radius: 4px;
+			margin-top:20px;
+			padding-left:10px;
+			padding-right: 10px;
+		}
+		.qiandaoList{
+			border-bottom:1px solid #efefef;
+			padding:0 10px 5px;
+		}
+		.qiandaolistIcon{
+			width:49px;
+			height: 49px;
+			line-height: 49px;
+			background-color: #c1c1c1;
+			border-radius: 50%;
+			text-align: center;
+			margin-top:10px;
+			margin-right: 10px;
+		}
+		.qiandaolistIcon img{
+			width:19px;
+			height: 19px;
+			vertical-align: middle;
+		}
+		.qiandaolistIcon.select{
+			background-color: #e09e00
+		}
+		.qiandaoList .p{
+			margin-top:20px;
+		}
+		.qiandaoList .span{
+			margin-top:3px;
+		}
+	</style>
+</head>
+<body>
+<div class="content">
+	<div class="players_chess">
+		<ul class="chess-center qiandao-center" id="qiandaoList">
+			<li class="list">
+				<div class="qiandao-top clearfix pl10 pr10 pb10">
+					<div class="qiandaoIcon fl mr10">
+						<img style="width:23px;" src="/images/meiriqiandao.png" alt="">
+					</div>
+					<div class="fl">
+						<p class="p col-e09e00">
+							<span class="fz14">今日签到</span>
+							<span class="fz10">（3天）</span>
+						</p>
+						<p class="mt5 col-4e4e4e">连续签到获得高额体力值奖励。</p>
+					</div>
+				</div>
+				<p class="col-e09e00 pt10 pb10 back-efefef text-cen fz14">签到详情</p>
+				<div class="qiandaoList clearfix" v-for="_qiandaoList in qiandaoList">
+					<div class="qiandaolistIcon fl" :class="{select:_qiandaoList.select}">
+						<img src="/images/dialog_duihuanchenggong.png" alt="">
+					</div>
+					<div class="fl">
+						<p class="p fz14">
+							<span>今日已签到获取</span>
+							<span class="col-d482bc">{{_qiandaoList.tiliNum}}</span>
+							<span>体力值</span>
+						</p>
+						<p class="span col-e09e00 fz10">{{_qiandaoList.span}}</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+	
+	var app_navbar = new Vue({
+    el:"#qiandaoList",
+    data:{
+      qiandaoList:[{
+      	tiliNum:21,
+      	select:true,
+      	span:"初来乍到1天/10点"
+      },
+      {
+      	tiliNum:21,
+      	select:true,
+      	span:"初来乍到1天/10点"
+      },
+      {
+      	tiliNum:21,
+      	select:true,
+      	span:"初来乍到1天/10点"
+      },
+      {
+      	tiliNum:21,
+      	span:"初来乍到1天/10点"
+      }
+      ]
+    }
+  })
+</script>
+</body>
+</html>
