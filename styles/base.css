@@ -124,6 +124,19 @@ input:focus{
 .col-d482bc{
   color:#d482bc
 }
+
+.col-eb428a{
+  color: #eb428a;
+}
+.col-ffb400{
+  color: #ffb400;
+}
+.col-42a6eb{
+  color: #42a6eb;
+}
+.col-bebebe{
+  color: #bebebe;
+}
 /*******************全局背景颜色*************************/
 .back-b676af {
   background-color: #b676af;
@@ -158,6 +171,19 @@ input:focus{
 .back-e5e5e5{
   background-color: #e5e5e5;
 }
+.back-eb428a{
+  background-color: #eb428a;
+}
+.back-ffb400{
+  background-color: #ffb400;
+}
+.back-42a6eb{
+  background-color: #42a6eb;
+}
+.back-bebebe{
+  background-color: #bebebe;
+}
+
 /*******************全局样式*************************/
 .block {
   display: block;

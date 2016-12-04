@@ -133,6 +133,22 @@
   height: 13px;
   vertical-align: middle;
 }
+.chess-center .chess-user .user_paihang{
+  height: 44px;
+  position: relative;
+}
+.chess-center .chess-user .user_paihang img{
+  width:45px;
+}
+.chess-center .chess-user .user_paihang .paihangNum{
+  position: absolute;
+  width:45px;
+  hieght:45px;
+  line-height: 45px;
+  text-align: center;;
+  top:0;
+  left:0;
+}
 /*因影响/qiyouquan/qunliao.shtml*页面的按地域位置，暂时注释/
 /*.chess-center .p {
   height: 29px;

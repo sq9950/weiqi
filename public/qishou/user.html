@@ -1,4 +1,4 @@
-<div class="chess-user clearfix borT1 pl10 pr10 pb5 pt5" v-for="_userlist in userlist">
+<div class="chess-user clearfix borT1 pl10 pr10 pb5 pt5" v-for="_userlist,index in userlist">
 	<img class="title block fl mr10" :src="_userlist.titleSrc" alt="title">
 	<div class="user-details block fl">
 		<p class="name col-1b4175 fz14">
@@ -30,6 +30,24 @@
 	>
 		{{_userlist.userStatus}}
 	</p>
+	<div
+		class="fr user_paihang col-eb428a"
+		:class="{
+			['back-eb428a']:index===0,
+			['col-eb428a']:index===0,
+			['back-ffb400']:index===1,
+			['col-ffb400']:index===1,
+			['back-42a6eb']:index===2,
+			['col-42a6eb']:index===2,
+			['back-bebebe']:index>2,
+			['col-bebebe']:index>2
+		}"
+		v-if="_userlist.paiahng"
+
+	>
+		<img src="/images/paihangbang_bg.png" alt="">
+		<p class="paihangNum">{{index}}</p>
+	</div>
 </div>
 
 
