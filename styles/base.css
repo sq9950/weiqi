@@ -124,7 +124,9 @@ input:focus{
 .col-d482bc{
   color:#d482bc
 }
-
+.col-bbbaba{
+  color:#bbbaba
+}
 .col-eb428a{
   color: #eb428a;
 }
@@ -164,6 +166,9 @@ input:focus{
 }
 .back-7d6ec6{
   background-color: #7d6ec6;
+}
+.back-f6f5f5{
+  background-color: #f6f5f5;
 }
 .back-e09e00{
   background-color: #e09e00;
@@ -228,6 +233,9 @@ input:focus{
 }
 .verticalMiddle {
   vertical-align: middle;
+}
+.verticalBottom {
+  vertical-align: bottom;
 }
 
 /*******************   margin   padding   *************************/
@@ -345,6 +353,16 @@ input:focus{
   width: 33.33333333%;
 }
 /******************* border *************************/
+
+.borT1 {
+  border-top: 1px solid #efefef
+}
+.borT2 {
+  border-top: 2px solid #efefef
+}
+.borT4 {
+  border-top: 4px solid #efefef
+}
 .borB1 {
   border-bottom: 1px solid #efefef
 }
@@ -357,14 +375,11 @@ input:focus{
 .borB4 {
   border-bottom: 4px solid #efefef
 }
-.borT1 {
-  border-top: 1px solid #efefef
+.borR1 {
+  border-right: 1px solid #efefef
 }
-.borT2 {
-  border-top: 2px solid #efefef
-}
-.borT4 {
-  border-top: 4px solid #efefef
+.borR2 {
+  border-right: 2px solid #efefef
 }
 .col-3{
   width:33.333333333%;
