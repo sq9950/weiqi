@@ -90,10 +90,13 @@
 			position: absolute;
 			top:-7px;
 			right:-7px;
+			background-color: #e09e00;
+			border-radius: 50%;
 		}
 		.tiwenAddImgClose img{
 			width:14px;
 			height: 14px;
+
 			
 		}
 	</style>

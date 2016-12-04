@@ -20,7 +20,7 @@
 function dialogConfirm(o){
 	var $mask = $('<div class="dialog_confirm">\
 		<div class="mask"></div>\
-		<div class="_dialogCon text-cen">\
+		<div class="_dialogCon center text-cen">\
 			<img class="dialog_waring" src="/images/dialog_waring.png" alt="">\
 			<div class="dialogCon">\
 			</div>\
@@ -30,8 +30,18 @@ function dialogConfirm(o){
 			</div>\
 		</div>\
 	</div>')
+	if(o.showButton === false){
+		$mask.find(".dialog_button").hide();
+	}
+	if(o.showIcon === false){
+		$mask.find(".dialog_waring").hide();
+	}
+	if(o.verticalAlign === "bottom"){
+		$mask.find("._dialogCon").removeClass("center").addClass("bottom")
+	}
 	$mask.find(".dialogCon").addClass(o.className).append(o.content)
-	$(".content").append($mask)
+
+	
 
 	$mask.find(".dialog_button .determine").on("click",function(){
 		o.autohiden!=false&&$(".dialog_confirm").remove();
@@ -40,4 +50,13 @@ function dialogConfirm(o){
 	$mask.find(".dialog_button .cancel").on("click",function(){
 		$(".dialog_confirm").remove();
 	})
+
+	$(".content").append($mask)
+	o.onShow&&o.onShow();
 }
+
+
+
+
+
+
