@@ -1,22 +1,3 @@
-/*<div class="dialog_confirm">
-		<div class="mask"></div>
-		<div class="dialogCon dialog_duihuanCon text-cen">
-			<img class="dialog_waring" src="/images/dialog_waring.png" alt="">
-			<input class="duihuanInp" placeholder="输入充值手机号" type="text" />
-			<p class="fz12 waring mt10 mb20 col-e09e00">
-				您确定用15000体力值兑换50元话费？
-			</p>
-			<div class="dialog_button inline-block">
-				<button class="determine">确定</button>
-				<button class="cancel">取消</button>
-			</div>
-		</div>
-	</div>*/
-/*
-
-			
-			
- */
 function dialogConfirm(o){
 	var $mask = $('<div class="dialog_confirm">\
 		<div class="mask"></div>\
@@ -61,5 +42,34 @@ function dialogConfirm(o){
 
 
 
+;
 
-
+dialogConfirm_fabiao=function(){
+dialogConfirm({
+	className:"dialog_fabiao",
+	verticalAlign:"bottom",
+	content:'<div class="dialog_fabiao_list clearfix">\
+				<a class="fl block" href="/tiwen/index.shtml">\
+					<img style="width: 32px;height: 32px;" src="/images/dialog_fabiao_tiwen.png" alt="">\
+					<p class="mt5">提问</p>\
+				</a>\
+				<a class="fl block" href="javascript:;">\
+					<img style="width: 32px;height: 32px;" src="/images/dialog_fabiao_tuwen.png" alt="">\
+					<p class="mt5">图文</p>\
+				</a>\
+				<a class="fl block" href="javascript:;">\
+					<img style="width: 22px;height: 31px;" src="/images/dialog_fabiao_yuyin.png" alt="">\
+					<p class="mt5">私密语音</p>\
+				</a>\
+				<a class="fl block" href="javascript:;">\
+					<img style="width: 32px;height: 32px;" src="/images/dialog_fabiao_video.png" alt="">\
+					<p class="mt5">小视频</p>\
+				</a>\
+			</div>\
+			<button class="back-e09e00 col-fff fz14" style="width:100%;height:41px;" onclick="$('+'\'.dialog_confirm\''+').remove()'+'">取消</button>',
+	autohiden:false,
+	showIcon:false,
+	backtransparent:false,
+	showButton:false
+})	
+}

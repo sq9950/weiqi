@@ -7,14 +7,14 @@
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
+  <script src="/js/jquery-3.1.1.min.js"></script>
 	<script src="/js/vue.min.js"></script>
+  <script src="/js/dialog.js"></script>
 </head>
 <body>
 <div class="content">
 	<!--#include virtual="/public/navbar.html"-->
   <!--#include virtual="/public/bottombar.html"-->
-	<!--#include virtual="/public/qishou/tab.html"-->
-
 	<div class="players_chess">
 		<!--#include virtual="/public/qishou/tab.html"-->
 		<!--#include virtual="/public/qishou/guanzhugengduo.html"-->
@@ -26,6 +26,7 @@
 	</div>
 </div>
 <script>
+  document.querySelectorAll(".topTab a")[0].className += "select";
 	var app_navbar = new Vue({
 		el:"#navbar",
 		data:{
@@ -50,14 +51,16 @@
 					href:"javascript:;",
 					width:"30px",
 					height:"40px",
-					margin:"0px 3px 0 0px"
+					margin:"0px 3px 0 0px",
+          onclick:dialogConfirm_fabiao
 				},
 				{
 					iconSrc:"/images/navbar2.png",
 					href:"javascript:;",
 					width:"19px",
 					height:"19px",
-					margin:"10px 10px 0 0px"
+					margin:"10px 10px 0 0px",
+          onclick:dialogConfirm_fabiao
 				}
 			]
 		}

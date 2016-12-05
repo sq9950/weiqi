@@ -15,8 +15,8 @@
 <div class="content back-efefef">
 	<!--#include virtual="/public/navbar.html"-->
 	<!--#include virtual="/public/bottomBar.html"-->
-	<div class="players_chess back-fff">
-		<ul class="person-center">
+	<div class="players_chess person-center back-fff">
+		<ul class="">
 			<li class="list pl10 pr10 borB4">
 				<div class="banner pt10 clearfix">
 					<div class="left fl clearfix">
@@ -52,6 +52,7 @@
 	</div>
 </div>
 <script>
+document.querySelectorAll(".bottombar a")[3].className+=" select"
 var app_navbar = new Vue({
     el:"#navbar",
     data:{

@@ -51,6 +51,7 @@
 <body>
 <div class="content">
 	<!--#include virtual="/public/navbar.html"-->
+	<!--#include virtual="/public/bottomBar.html"-->
 	<div class="players_chess">
 		<!--#include virtual="/public/qishou/tab.html"-->
 		<!--#include virtual="/public/qishou/lunbo.html"-->
@@ -151,6 +152,7 @@
 	</div>
 </div>
 <script>
+  document.querySelectorAll(".topTab a")[3].className += "select";
 	var app_navbar = new Vue({
     el:"#navbar",
     data:{

@@ -1,9 +1,10 @@
 /*******************棋手关注*************************/
 .chess-center{
-  padding-top: 35px;
   padding-bottom: 50px;
 }
 .players_chess{
+  /*qishouguanzhu/index.shtml*/
+  padding-top: 35px;
   padding-bottom: 50px;
 }
 .players_chess .topTab {
@@ -273,7 +274,7 @@
   margin: 0 auto;
 }
 .chess-center .query .inp {
-  width: 80%;
+  width: 75%;
   height: 100%;
   margin: 0 auto;
   background-color: #fff;
@@ -292,7 +293,7 @@
   height: 22px;
 }
 .chess-center .query .cancelBtn {
-  width: 19%;
+  width: 20%;
   height: 100%;
   display: inline-block;
   text-align: center;
@@ -301,11 +302,18 @@
 .chess-center .gender {
   border-bottom: 1px solid #fff;
 }
+.chess-center .gender a,
 .chess-center .gender button {
   width: 33.33333333%;
+  display: block;
+  float: left;
+  color:#000;
+  box-sizing: border-box;
+  text-align: center;
   height: 44px;
   line-height: 44px;
-  margin-top: 4px;
+  /*/qishouguanzhu/qishouguanzhu.shtml*/
+  /*margin-top: 4px;*/
   font-size: 1.4rem;
   background-color: #efefef;
   border-right: 1px solid #fff;
@@ -313,6 +321,7 @@
 .chess-center .gender span {
   position: relative;
 }
+.chess-center .gender a.message span:after,
 .chess-center .gender button.message span:after {
   content: "";
   width: 8px;
@@ -324,9 +333,11 @@
   right: -10px;
   font-size: 64px;
 }
+.chess-center .gender a:last-child,
 .chess-center .gender button:last-child {
   border-right: none;
 }
+.chess-center .gender a.select,
 .chess-center .gender button.select {
   background-color: #ffefc8
 }

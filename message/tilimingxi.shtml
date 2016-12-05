@@ -48,8 +48,8 @@
 			</li>
 			<li class="list">
 				<div class="monthPeriod">
-					<span class="left fz14 inline-block col-e09e00">本月</span>
-					<span class="right fz14 inline-block col-e09e00">查看月账单</span>
+					<a class="left fz14 inline-block col-e09e00" href="javascript:;">本月</a>
+					<a class="right fz14 inline-block col-e09e00" href="/message/tili.shtml">查看月账单</a>
 				</div>
 				<div class="tilimingxiList clearfix pl10 pr10 fz0">
 					<div class="left fl">
@@ -80,34 +80,33 @@
     el:"#navbar",
     data:{
       center:{
-        iconSrc:"/images/navbar3.png",
         iconWidth:"21px",
         iconHeight:"21px",
-        text:"弈统江山"
+        text:"体力值"
       },
       left:[
         {
-          iconSrc:"/images/navbar1.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 0px 0 10px"
+          iconSrc:"/images/arrowBack.png",
+          href:"javascript:history.go(-1)",
+          width:"14px",
+          height:"14px",
+          margin:"12px 0px 0 10px"
+        },
+        {
+          text:"返回",
+          href:"javascript:history.go(-1)",
+          width:"28px",
+          height:"28px",
+          margin:"6px 0px 0 4px"
         }
       ],
       right:[
         {
-          text:"发圈",
-          href:"javascript:;",
-          width:"30px",
+          text:"￥兑换话费",
+          href:"/message/duihuan.shtml",
+          width:"80px",
           height:"40px",
           margin:"0px 3px 0 0px"
-        },
-        {
-          iconSrc:"/images/navbar2.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 10px 0 0px"
         }
       ]
     }

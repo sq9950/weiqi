@@ -597,6 +597,12 @@ input:focus{
   color:#4e4e4e;
   z-index: 5;
 }
+.bottombar a{
+  color:#4e4e4e;
+}
+.bottombar a.select{
+  color:#e09e00;
+}
 .bottombar .yitongImg{
   width:20px;
   height: 18px;

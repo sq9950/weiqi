@@ -17,33 +17,33 @@
 			<li class="tili">
 				<!--#include virtual="/public/tili/nowtili.html"-->
 				<p class="year pl10 col-7e7e7e back-efefef">2016</p>
-				<div class="pl10 monthPeriod clearfix">
+				<a class="pl10 monthPeriod clearfix block col-7e7e7e" href="/message/tilimingxi.shtml">
 					<div class="fl left">
 						<p class="col-3b3b3d month fz12">10月体力值</p>
-						<p class="col-7e7e7e period fz8">10.1-11.1</p>
+						<p class="period fz8">10.1-11.1</p>
 					</div>
 					<div class="right number fr fz14 pr10 col-e09e00">
 						1800&nbsp;&nbsp;>
 					</div>
-				</div>
-				<div class="pl10 monthPeriod clearfix">
+				</a>
+				<a class="pl10 monthPeriod clearfix block col-7e7e7e" href="/message/tilimingxi.shtml">
 					<div class="fl left">
 						<p class="col-3b3b3d month fz12">10月体力值</p>
-						<p class="col-7e7e7e period fz8">10.1-11.1</p>
+						<p class="period fz8">10.1-11.1</p>
 					</div>
 					<div class="right number fr fz14 pr10 col-e09e00">
 						1800&nbsp;&nbsp;>
 					</div>
-				</div>
-				<div class="pl10 monthPeriod clearfix">
+				</a>
+				<a class="pl10 monthPeriod clearfix block col-7e7e7e" href="/message/tilimingxi.shtml">
 					<div class="fl left">
 						<p class="col-3b3b3d month fz12">10月体力值</p>
-						<p class="col-7e7e7e period fz8">10.1-11.1</p>
+						<p class="period fz8">10.1-11.1</p>
 					</div>
 					<div class="right number fr fz14 pr10 col-e09e00">
 						1800&nbsp;&nbsp;>
 					</div>
-				</div>
+				</a>
 			</li>
 		</ul>
 	</div>

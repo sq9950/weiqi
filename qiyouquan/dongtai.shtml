@@ -25,6 +25,8 @@
 	</div>
 </div>
 <script>
+document.querySelectorAll(".gender a")[0].className+="select"
+document.querySelectorAll(".bottombar a")[4].className+=" select"
 	var app_navbar = new Vue({
     el:"#navbar",
     data:{

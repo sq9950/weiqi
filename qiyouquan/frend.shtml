@@ -19,7 +19,7 @@
         <!--#include virtual="/public/qiyouquan/tab.html"-->
       </li>
       <li class="list pb5 pt5 text-cen">
-        <a class="addfrend inline-block" class="addfrend" href="javascript:;">
+        <a class="addfrend inline-block" class="addfrend" href="/qiyouquan/addfrendsTypelist.shtml">
           <img class="" src="/images/addfrend.png" alt="">
           <span class="fz14 col-fff">添加好友</span>
         </a>
@@ -45,7 +45,7 @@
   </div>
 </div>
 <script>
-
+document.querySelectorAll(".gender a")[2].className+="select"
   var app_userList = new Vue({
     el:"#userList",
     data:{

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="/styles/qishou.css">
 	<script src="/js/vue.min.js"></script>
 	<style>
-		.chess-center .gender button{
+		.chess-center .gender a{
 			width:50%;
 		}
 		.tongzhiList{
@@ -66,9 +66,9 @@
 	<div class="players_chess">
 		<ul class="chess-center ">
 			<li class="list back-fff" id="fudaiList">
-				<div class="gender fz0">
-				  <button class="message"><span>消息</span></button>
-				  <button class="message"><span>福袋</span></button>
+				<div class="gender fz0 clearfix">
+				  <a class="message" href="/message/xiaoxi.shtml"><span>消息</span></a>
+				  <a class="message select" href="/message/fudai.shtml"><span>福袋</span></a>
 				</div>
 				<div class="tongzhiList fz0 clearfix" v-for="_fudaiList in fudaiList">
 					<div class="left fl fz12">
@@ -92,6 +92,33 @@
 	</div>
 </div>
 <script>
+var app_navbar = new Vue({
+    el:"#navbar",
+    data:{
+      center:{
+        iconWidth:"21px",
+        iconHeight:"21px",
+        text:"通知"
+      },
+      left:[
+        {
+          iconSrc:"/images/arrowBack.png",
+          href:"javascript:history.go(-1)",
+          width:"14px",
+          height:"14px",
+          margin:"12px 0px 0 10px"
+        },
+        {
+          text:"返回",
+          href:"javascript:history.go(-1)",
+          width:"28px",
+          height:"28px",
+          margin:"6px 0px 0 4px"
+        }
+      ],
+      right:[]
+    }
+  })
 	var app_fudaiList = new Vue({
 		el:"#fudaiList",
 		data:{
@@ -107,42 +134,6 @@
 			]
 		}
 	})
-	var app_navbar = new Vue({
-    el:"#navbar",
-    data:{
-      center:{
-        iconSrc:"/images/navbar3.png",
-        iconWidth:"21px",
-        iconHeight:"21px",
-        text:"弈统江山"
-      },
-      left:[
-        {
-          iconSrc:"/images/navbar1.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 0px 0 10px"
-        }
-      ],
-      right:[
-        {
-          text:"发圈",
-          href:"javascript:;",
-          width:"30px",
-          height:"40px",
-          margin:"0px 3px 0 0px"
-        },
-        {
-          iconSrc:"/images/navbar2.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 10px 0 0px"
-        }
-      ]
-    }
-  })
 </script>
 </body>
 </html>

@@ -55,8 +55,9 @@
 <body>
 <div class="content">
 	<!--#include virtual="/public/navbar.html"-->
-	<div class="players_chess">
-		<ul class="chess-center person-center">
+	<!--#include virtual="/public/bottomBar.html"-->
+	<div class="chess-center person-center">
+		<ul class="">
 			<li id="menuList">
 				<!--#include virtual="/public/person/menuList.html"-->
 			</li>
@@ -73,6 +74,8 @@
 	</div>
 </div>
 <script>
+
+document.querySelectorAll(".bottombar a")[1].className+=" select"
 	var app_menuList = new Vue({
 		el:"#menuList",
 		data:{
@@ -81,27 +84,32 @@
 				titleSrc:"/images/message_tiwen.png",
 				name:"用户提问",
 				num:"10",
-				iconColor:"b676af"
+				iconColor:"b676af",
+				href:"javascript:;"
 			},
 			{
 				titleSrc:"/images/messagetongzhi.png",
 				iconColor:"449ecd",
-				name:"系统通知"
+				name:"系统通知",
+				href:"javascript:;"
 			},
 			{
 				titleSrc:"/images/messagetili.png",
 				iconColor:"5bab60",
-				name:"体力值"
+				name:"体力值",
+				href:"/message/tili.shtml"
 			},
 			{
 				titleSrc:"/images/messagepinglun.png",
 				iconColor:"c3bd5d",
-				name:"评论/赞"
+				name:"评论/赞",
+				href:"javascript:;"
 			},
 			{
 				titleSrc:"/images/messageyaoqing.png",
 				iconColor:"4fb5aa",
-				name:"对弈邀请"
+				name:"对弈邀请",
+				href:"javascript:;"
 			}
 
 			]
