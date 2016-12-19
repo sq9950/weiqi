@@ -27,6 +27,7 @@
 </div>
 <script>
   document.querySelectorAll(".topTab a")[0].className += "select";
+  document.querySelectorAll(".bottombar a")[0].className+=" select"
 	var app_navbar = new Vue({
 		el:"#navbar",
 		data:{
