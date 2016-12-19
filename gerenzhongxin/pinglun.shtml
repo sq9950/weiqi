@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="/styles/base.css">
+	<link rel="stylesheet" href="/styles/qishou.css">
+	<link rel="stylesheet" href="/styles/person.css">
+	<script src="/js/vue.min.js"></script>
+	<style>
+		.right{
+			margin-left:60px;
+		}
+		.right .title{
+			
+		}
+	</style>
+</head>
+<body>
+<div class="content back-efefef">
+	<!--#include virtual="/public/navbar.html"-->
+	<div class="players_chess back-fff">
+		<ul class="chess-center" id="qishouStatusCount">
+			<li class="list pl10 pr10 borB1 pb10" v-for="_qishouStatusCount in qishouStatusCount">
+        		<!--#include virtual="/public/qishou/qishouStatusCount.html"-->
+			</li>
+			<li class="clearfix">
+				<div class="left fl">
+					<img class="titleImg mt15 mr10" src="/images/title.jpg" alt="">
+				</div>
+				<div class="right 111">
+					<div class="clearfix title">
+						<span class="col-1b4175 fz14 fl">围棋小公主</span>
+						<span class="fr">举报</span>
+					</div>
+					<p class="col-3c3c3c fz14">
+						厦门围棋大会世纪名人
+					</p>
+					<p>
+						<span class="fl">
+							<img src="" alt="">
+							asdf
+						</span>
+						<span class="fr">
+							<img src="" alt="">
+							asdf
+						</span>
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+var app_navbar = new Vue({
+    el:"#navbar",
+    data:{
+      center:{
+        iconSrc:"/images/navbar3.png",
+        iconWidth:"21px",
+        iconHeight:"21px",
+        text:"弈统江山"
+      },
+      left:[
+        {
+          iconSrc:"/images/navbar1.png",
+          href:"javascript:;",
+          width:"19px",
+          height:"19px",
+          margin:"10px 0px 0 10px"
+        }
+      ],
+      right:[
+        {
+          text:"发圈",
+          href:"javascript:;",
+          width:"30px",
+          height:"40px",
+          margin:"0px 3px 0 0px"
+        },
+        {
+          iconSrc:"/images/navbar2.png",
+          href:"javascript:;",
+          width:"19px",
+          height:"19px",
+          margin:"10px 10px 0 0px"
+        }
+      ]
+    }
+  })
+var app_qishouStatusCount = new Vue({
+    el:"#qishouStatusCount",
+    data:{
+      qishouStatusCount:[
+      {
+        userInfo:{
+            titleSrc:"/images/title.jpg",
+            name:"聂卫平",
+            level:"9"
+        },
+        tiwenP:"2016年2月18日棋国APP重磅上线！!!",
+        maxImgSrc:"/images/maxImg.jpg",
+        introduction:"厦门围棋大会世纪名人特别对局决赛在五缘水乡酒店战罢，图为赛后复盘及大盘讲解现场。",
+        timedata:{
+          time:"2分钟前",
+          liulan:"1001",
+          message:"1002",
+          zan:"1003"
+        }
+      }
+      ]
+    }
+  });
+	
+</script>
+</body>
+</html>

@@ -707,3 +707,8 @@ input:focus{
 .players_chess{
   padding-top: 35px;
 }
+
+.titleImg{
+  width:49px;
+  height: 49px;
+}

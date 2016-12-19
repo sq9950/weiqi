@@ -57,6 +57,13 @@
 >
 	<img :src="_qipuImg" alt="" v-for="_qipuImg in _qishouStatusCount.qipuImg" />
 </div>
+<!-- 大图img gerenzhongxin/pinglun-->
+<div
+	class="chess-maxImg fz0 mt5 111"
+	v-if="_qishouStatusCount.maxImgSrc"
+>
+	<img :src="_qishouStatusCount.maxImgSrc" alt=""/>
+</div>
 <!-- video -->
 <video
 	:src="_qishouStatusCount.video.src"
@@ -65,6 +72,15 @@
 >
 	您的浏览器不支持 video 标签。
 </video>
+<!-- 介绍 -->
+<p
+	class="p fz14 col-3b3b3b mt5"
+	v-if="_qishouStatusCount.introduction"
+>
+	{{_qishouStatusCount.introduction}}
+</p>
+
+
 <!-- yuyin -->
 <div class="voiceP clearfix mt10 overHiden" v-if="_qishouStatusCount.yuyin">
 	<div class="left col-fff fl">

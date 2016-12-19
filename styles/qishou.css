@@ -86,6 +86,9 @@
 .chess-center .chess-img img {
   width: 32.16666667%;
 }
+.chess-center .chess-maxImg img{
+  width:100%;
+}
 .chess-center .chess-img img:nth-child(2) {
   margin-left: 1.75%;
   margin-right: 1.75%;
