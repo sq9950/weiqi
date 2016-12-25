@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>围棋</title>
+	<link rel="stylesheet" href="/styles/base.css">
+	<link rel="stylesheet" href="/styles/qishou.css">
+	
+	<script src="/js/vue.min.js"></script>
+	<style>
+		.vipImg{
+			width:37px;
+			height: 37px;
+		}
+	</style>
+</head>
+<body class="back-efefef">
+<div class="content">
+	<!--#include virtual="/public/navbar.html"-->
+	<div class="players_chess">
+		<ul class="chess-center back-fff">
+			<li class="text-cen">
+				<p class="title pt10 mb5">
+					<img class="vipImg" src="/images/vip.png" alt="">
+				</p>
+				<p class="h1 fz16 mb5">充值<span>15000</span>体力值获得V1特权</p>
+				<p class="text pl10 pr10 pb10 text-left">可加入<span>5</span>个明星棋友会（90天后可随意更换），并可在棋友会发起话题和评论话题；可选择加入1个分舵（1年有效），可加入1个分舵（365天有效），发起话题和评论，并可报名参加分舵举办的线上线下活动；观看独家线上视频教学、死活题闯关、挑战明星棋手、考取棋院证书。</p>
+				<div class="borT2" id="vip1">
+					<div v-for="_paylist in paylist">
+					<!--#include virtual="/public/pay/payList.html"-->
+					</div>
+				</div>
+			</li>
+			<li class="text-cen">
+				<p class="title pt10 mb5">
+					<img class="vipImg" src="/images/vip.png" alt="">
+				</p>
+				<p class="h1 fz16 mb5">充值<span>15000</span>体力值获得V1特权</p>
+				<p class="text pl10 pr10 pb10 text-left">可加入<span>5</span>个明星棋友会（90天后可随意更换），并可在棋友会发起话题和评论话题；可选择加入1个分舵（1年有效），可加入1个分舵（365天有效），发起话题和评论，并可报名参加分舵举办的线上线下活动；观看独家线上视频教学、死活题闯关、挑战明星棋手、考取棋院证书。</p>
+				<div class="borT2"id="vip2">
+					<div v-for="_paylist in paylist">
+					<!--#include virtual="/public/pay/payList.html"-->
+					</div>
+				</div>
+			</li>
+			<li class="text-cen borB1">
+				<img class="mt10" src="/images/dianchi.png" alt="">
+				<p class="mb10 mt10">补充体力值</p>
+			</li>
+			<li class="list clearfix" id="setList">
+			    <div v-for="_paylist in paylist">
+			    	<!--#include virtual="/public/pay/payList.html"-->
+			    </div>
+			</li>
+		</ul>
+	</div>
+</div>
+<script>
+	
+	var app_navbar = new Vue({
+    el:"#navbar",
+    data:{
+      center:{
+        iconSrc:"/images/navbar3.png",
+        iconWidth:"21px",
+        iconHeight:"21px",
+        text:"弈统江山"
+      },
+      left:[
+        {
+          iconSrc:"/images/navbar1.png",
+          href:"javascript:;",
+          width:"19px",
+          height:"19px",
+          margin:"10px 0px 0 10px"
+        }
+      ],
+      right:[
+        {
+          text:"发圈",
+          href:"javascript:;",
+          width:"30px",
+          height:"40px",
+          margin:"0px 3px 0 0px"
+        },
+        {
+          iconSrc:"/images/navbar2.png",
+          href:"javascript:;",
+          width:"19px",
+          height:"19px",
+          margin:"10px 10px 0 0px"
+        }
+      ]
+    }
+  })
+	var app_payList = new Vue({
+	  el: '#vip1',
+	  data: {
+	    paylist: [
+	      { 
+	      	num: 2000,
+	      	color:"c3bd5d",
+	      	money:"￥：160.00",
+	      	href:"javascript:;"
+	      }
+	    ]
+	  }
+	})
+	var app_payList = new Vue({
+	  el: '#vip2',
+	  data: {
+	    paylist: [
+	      { 
+	      	num: 2000,
+	      	color:"4fb5aa",
+	      	money:"￥：170.00",
+	      	href:"javascript:;"
+	      }
+	    ]
+	  }
+	})
+	var app_payList = new Vue({
+	  el: '#setList',
+	  data: {
+	    paylist: [
+	      { 
+	      	num: 1000,
+	      	color:"b676af",
+	      	money:"￥：110.00",
+	      	href:"javascript:;"
+	      },
+	      {
+	      	num: 2000,
+	      	color:"5bab60",
+	      	money:"￥：150.00",
+	      	href:"javascript:;"
+	      },
+	      {
+	      	num: 2000,
+	      	color:"c3bd5d",
+	      	money:"￥：160.00",
+	      	href:"javascript:;"
+	      },
+	      {
+	      	num: 2000,
+	      	color:"4fb5aa",
+	      	money:"￥：170.00",
+	      	href:"javascript:;"
+	      },
+	      {
+	      	num: 2000,
+	      	color:"7d6ec6",
+	      	money:"￥：140.00",
+	      	href:"javascript:;"
+	      }
+	    ]
+	  }
+	})
+</script>
+</body>
+</html>

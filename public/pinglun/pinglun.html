@@ -1,0 +1,36 @@
+
+<div class="left fl">
+	<img class="titleImg mt15 mr10" src="/images/title.jpg" alt="">
+</div>
+<div class="right">
+	<div class="clearfix title">
+		<span class="name col-1b4175 fz14 fl">{{_huifuData.userInfo.name}}</span>
+		<span class="report fr pr10 col-7e7e7e">举报</span>
+	</div>
+	<p class="text col-3c3c3c fz14 mt10">
+		{{_huifuData.p}}
+	</p>
+  <div class="mt10 none">
+  <!--#include virtual="/public/qishou/yuyin.html"-->
+  </div>
+  <div class="maxImg mt10">
+    <img :src="_huifuData.imgSrc" alt="">
+  </div>
+  
+	<div class="timeData col-7e7e7e clearfix fz0 mt5 pr10">
+    <div class="fl">
+      <img class="bellIcon fl mt5 mr5" src="/images/bell.jpg" alt="">
+      <span class="fl fz8">{{_huifuData.timedata.time}}</span>
+    </div>
+    <div class="fr">
+      <img class="rightIco zanIco" src="/images/zan.jpg" alt="">
+      <span class="fz10">{{_huifuData.timedata.zan}}</span>
+    </div>
+  </div>
+  <div v-for="_gentie in _huifuData.gentie">
+    <!--#include virtual="/public/pinglun/huifu.html"-->
+  </div>
+  <div>
+    <!--#include virtual="/public/pinglun/more.html"-->
+  </div>
+</div>

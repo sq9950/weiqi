@@ -9,47 +9,6 @@
 	<link rel="stylesheet" href="/styles/qishou.css">
 	
 	<script src="/js/vue.min.js"></script>
-	<style>
-		.list{
-			padding:10px;
-			position: relative;
-		}
-		.kuan{
-			width:96px;
-			height:24px;
-			padding-left:40px;
-			padding-right:15px;
-			border-radius: 5px;
-			position: relative;
-			color:#fff;
-			line-height:24px;
-			background-size:20px 11px;
-		}
-		.yuan{
-			width:27px;
-			height:27px;
-			border-radius: 50%;
-			position: absolute;
-			top:-2px;
-			left:-4px;
-			z-index: 2;
-		}
-		.dianchi-white-Level{
-			width:20px;
-			height:11px;
-			position: absolute;
-			top:7px;left:7px;
-			z-index: 3;
-		}
-		.price{
-			height:24px;
-			line-height: 24px;
-			padding-left:30px;
-		}
-		.arrowLeft{
-			position: absolute;	top:13px;right:5px;
-		}
-	</style>
 </head>
 <body class="back-efefef">
 <div class="content">

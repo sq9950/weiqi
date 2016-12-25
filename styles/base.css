@@ -191,6 +191,13 @@ input:focus{
 .back-da6c6c{
   background-color: #da6c6c;
 }
+/*******************全局高*************************/
+.h20{
+  line-height: 20px;
+}
+.lin20{
+  line-height: 20px;
+}
 /*******************全局样式*************************/
 .block {
   display: block;
@@ -224,6 +231,9 @@ input:focus{
 }
 .text-right {
   text-align: right;
+}
+.text-left {
+  text-align: left;
 }
 .clearfix:after {
   visibility: hidden;

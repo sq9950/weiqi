@@ -10,49 +10,54 @@
 	<link rel="stylesheet" href="/styles/qishou.css">
 	<link rel="stylesheet" href="/styles/person.css">
 	<script src="/js/vue.min.js"></script>
-	<style>
-		.right{
-			margin-left:60px;
-		}
-		.right .title{
-			
-		}
-	</style>
+  <style>
+    .right{
+      margin-left:60px;
+    }
+    .right .title{
+      padding-top:17px;
+      height: 20px;
+    }
+    .titleImg{
+      border-radius: 50%;
+    }
+    .right .con_con{
+      border-top: 1px solid #fff; 
+      padding-left:10px;
+    }
+    .right .more{
+      height: 20px;
+      line-height: 20px;
+      border-top: 1px solid #fff; 
+    }
+    .right .maxImg img{
+      width:90%;
+    }
+    .chess-center .p{
+      line-height: 20px;
+      
+    }
+  </style>
 </head>
 <body>
 <div class="content back-efefef">
 	<!--#include virtual="/public/navbar.html"-->
 	<div class="players_chess back-fff">
-		<ul class="chess-center" id="qishouStatusCount">
-			<li class="list pl10 pr10 borB1 pb10" v-for="_qishouStatusCount in qishouStatusCount">
-        		<!--#include virtual="/public/qishou/qishouStatusCount.html"-->
+		<ul class="chess-center">
+			<li class="list pl10 pr10 borB1 pb10" id="qishouStatusCount">
+          <div v-for="_qishouStatusCount 
+in qishouStatusCount">
+        	<!--#include virtual="/public/qishou/qishouStatusCount.html"-->
+          </div>
 			</li>
-			<li class="clearfix">
-				<div class="left fl">
-					<img class="titleImg mt15 mr10" src="/images/title.jpg" alt="">
-				</div>
-				<div class="right 111">
-					<div class="clearfix title">
-						<span class="col-1b4175 fz14 fl">围棋小公主</span>
-						<span class="fr">举报</span>
-					</div>
-					<p class="col-3c3c3c fz14">
-						厦门围棋大会世纪名人
-					</p>
-					<p>
-						<span class="fl">
-							<img src="" alt="">
-							asdf
-						</span>
-						<span class="fr">
-							<img src="" alt="">
-							asdf
-						</span>
-					</p>
-				</div>
-			</li>
+			<li class="clearfix borB4" id="huifuCon">
+        <div class="borB4" v-for="_huifuData in huifuData">
+          <!--#include virtual="/public/pinglun/pinglun.html"-->
+        </div>
+      </li>
 		</ul>
 	</div>
+  <!--#include virtual="/public/pinglun/bottom.html"-->
 </div>
 <script>
 var app_navbar = new Vue({
@@ -110,6 +115,52 @@ var app_qishouStatusCount = new Vue({
           message:"1002",
           zan:"1003"
         }
+      }
+      ]
+    }
+  });
+var app_qishouStatusCount = new Vue({
+    el:"#huifuCon",
+    data:{
+      huifuData:[
+      {
+        userInfo:{
+            titleSrc:"/images/title.jpg",
+            name:"围棋小公主"
+        },
+        p:"厦门围棋大会世纪名人",
+        yuyin:{
+          src:"/images/maxImg.jpg",
+          tili:30
+        },
+        imgSrc:"/images/maxImg.jpg",
+        timedata:{
+          time:"2分钟前",
+          zan:"1004"
+        },
+        gentie:[
+        {
+          userInfo:{
+            titleSrc:"/images/title.jpg",
+            name:"聂卫平1"
+          },
+          p:"跟帖!!",
+          timedata:{
+            time:"2分钟前"
+          }
+        },
+        {
+          userInfo:{
+            titleSrc:"/images/title.jpg",
+            name:"聂卫平2"
+          },
+          p:"跟帖!!",
+          timedata:{
+            time:"2分钟前"
+          }
+        }
+        ],
+        more:11
       }
       ]
     }
