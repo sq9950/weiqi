@@ -1,10 +1,11 @@
 <link rel="stylesheet" href="/styles/payList.css">
 <div class="payList clearfix borB2">
-	<div class="fl kuan fz16" v-bind:class="{['back-'+_paylist.color]:_paylist.color}">
+<!-- gerenzhongxin/pay.shtml -->
+	<div class="fl kuan fz12" v-bind:class="{['back-'+_paylist.color]:_paylist.color}">
 		<div class="fl yuan" v-bind:class="{['back-'+_paylist.color]:_paylist.color}"></div>
 		<img class="dianchi-white-Level" src="/images/dianchi-white-Level.png" alt="">
 		<span>{{_paylist.num}}体力值</span>
 	</div>
-	<p class="fl price fz16">{{_paylist.money}}</p>
+	<p class="fl price fz16 col-636363">{{_paylist.money}}</p>
 	<img class="arrowLeft" src="/images/left.png" alt="">
 </div>

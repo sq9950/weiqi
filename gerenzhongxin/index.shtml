@@ -57,51 +57,33 @@ var app_navbar = new Vue({
     el:"#navbar",
     data:{
       center:{
-        iconSrc:"/images/navbar3.png",
-        iconWidth:"21px",
-        iconHeight:"21px",
-        text:"弈统江山"
+        text:"个人中心"
       },
       left:[
-        {
-          iconSrc:"/images/arrowBack.png",
-          href:"javascript:history.go(-1)",
-          width:"14px",
-          height:"14px",
-          margin:"12px 0px 0 10px"
-        },
-        {
-          text:"返回",
-          href:"javascript:history.go(-1)",
-          width:"28px",
-          height:"28px",
-          margin:"6px 0px 0 4px"
-        }
-      ],
-      right:[
         {
           iconSrc:"/images/navbar_saoma.png",
           href:"javascript:;",
           width:"17px",
           height:"16px",
-          margin:"10px 3px 0 0px"
+          margin:"10px 3px 0 5px"
         },
         {
           iconSrc:"/images/navbar_erweima.png",
           href:"javascript:;",
           width:"17px",
           height:"16px",
-          margin:"10px 3px 0 0px"
-        },
+          margin:"10px 3px 0 5px"
+        }
+      ],
+      right:[
         {
           iconSrc:"/images/navbar_setting.png",
           href:"javascript:;",
           width:"17px",
           height:"16px",
-          margin:"10px 3px 0 0px"
+          margin:"10px 5px 0 0px"
         }
-
-      ]
+       ]
     }
   })
 	var app_colListTab = new Vue({

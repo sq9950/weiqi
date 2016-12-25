@@ -48,14 +48,6 @@
 			],
 			right:[
 				{
-					text:"发圈",
-					href:"javascript:;",
-					width:"30px",
-					height:"40px",
-					margin:"0px 3px 0 0px",
-          onclick:dialogConfirm_fabiao
-				},
-				{
 					iconSrc:"/images/navbar2.png",
 					href:"javascript:;",
 					width:"19px",

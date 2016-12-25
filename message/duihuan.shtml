@@ -132,7 +132,7 @@ var app_navbar = new Vue({
       center:{
         iconWidth:"21px",
         iconHeight:"21px",
-        text:"兑换话费"
+        text:"体力值"
       },
       left:[
         {
@@ -150,7 +150,15 @@ var app_navbar = new Vue({
           margin:"6px 0px 0 4px"
         }
       ],
-      right:[]
+      right:[
+        {
+          text:"￥兑换话费",
+          href:"javascript:history.go(-1)",
+          width:"60px",
+          height:"28px",
+          margin:"6px 10px 0 4px"
+        }
+      ]
     }
   })
 	var app_duihuanList = new Vue({

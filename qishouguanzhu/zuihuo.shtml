@@ -11,6 +11,7 @@
 	<script src="/js/vue.min.js"></script>
   <script src="/js/jquery-3.1.1.min.js"></script>
   <script src="/js/swiper-3.4.1.jquery.min.js"></script>
+  <script src="/js/dialog.js"></script>
   <style>
     .swiper-container {
           width: 100%;
@@ -64,22 +65,15 @@
         iconHeight:"21px",
         text:"弈统江山"
       },
-      left:[
-        {
-          iconSrc:"/images/navbar1.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 0px 0 10px"
-        }
-      ],
+      left:[],
       right:[
         {
           iconSrc:"/images/navbar2.png",
           href:"javascript:;",
           width:"19px",
           height:"19px",
-          margin:"10px 10px 0 0px"
+          margin:"10px 10px 0 0px",
+          onclick:dialogConfirm_fabiao
         }
       ]
     }

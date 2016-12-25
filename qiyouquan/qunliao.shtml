@@ -106,20 +106,12 @@ document.querySelectorAll(".gender a")[1].className+="select"
         iconHeight:"21px",
         text:"弈统江山"
       },
-      left:[
-        {
-          iconSrc:"/images/navbar1.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 0px 0 10px"
-        }
-      ],
+      left:[],
       right:[
         {
-          iconSrc:"/images/navbar2.png",
+          text:"创建群聊+",
           href:"javascript:;",
-          width:"19px",
+          width:"60px",
           height:"19px",
           margin:"10px 10px 0 0px"
         }

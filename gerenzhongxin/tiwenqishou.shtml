@@ -7,7 +7,9 @@
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/person.css">
+	<script src="/js/jquery-3.1.1.min.js"></script>
 	<script src="/js/vue.min.js"></script>
+	<script src="/js/dialog.js"></script>
 	<style>
 		.tiwenqishou .userbg{
 			position: relative;
@@ -103,8 +105,8 @@
 <body>
 <div class="content back-efefef">
 	<!--#include virtual="/public/navbar.html"-->
-	<div class="players_chess back-fff">
-		<ul class="person-center tiwenqishou">
+	<div class="players_chess person-center back-fff">
+		<ul class="tiwenqishou">
 			<li class="list borB4">
 				<div class="userbg fz0">
 					<img class="userbgImg" src="/images/userbg2.png" alt="">
@@ -174,27 +176,32 @@ var app_navbar = new Vue({
     el:"#navbar",
     data:{
       center:{
-        iconSrc:"/images/navbar3.png",
-        iconWidth:"21px",
-        iconHeight:"21px",
-        text:"弈统江山"
+        text:"提问棋手"
       },
       left:[
         {
-          iconSrc:"/images/navbar1.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 0px 0 10px"
+          iconSrc:"/images/arrowBack.png",
+          href:"javascript:history.go(-1)",
+          width:"14px",
+          height:"14px",
+          margin:"12px 0px 0 10px"
+        },
+        {
+          text:"返回",
+          href:"javascript:history.go(-1)",
+          width:"28px",
+          height:"28px",
+          margin:"6px 0px 0 4px"
         }
       ],
       right:[
         {
-          iconSrc:"/images/navbar2.png",
+          iconSrc:"/images/navbar_share.png",
           href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 10px 0 0px"
+          width:"14px",
+          height:"14px",
+          margin:"10px 10px 0 0px",
+          onclick:dialogConfirm_share
         }
       ]
     }

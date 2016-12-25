@@ -73,3 +73,35 @@ dialogConfirm({
 	showButton:false
 })	
 }
+dialogConfirm_share=function(){
+	dialogConfirm({
+		className:"dialog_fabiao",
+		verticalAlign:"bottom",
+		content:'<div class="dialog_fabiao_list clearfix">\
+					<a class="fl block" href="javascript:;">\
+						<img style="width: 42px;height: 42px;margin-top:4px;" src="/images/dialog_share_app.png" alt="">\
+					</a>\
+					<a class="fl block" href="javascript:;">\
+						<img style="width: 40px;height: 38px;margin-top:7px;" src="/images/dialog_share_pengyouquan.png" alt="">\
+					</a>\
+					<a class="fl block" href="javascript:;">\
+						<img style="width: 40px;height: 40px;margin-top:5px;" src="/images/dialog_share_weixin.png" alt="">\
+					</a>\
+					<a class="fl block" href="javascript:;">\
+						<img style="width: 30px;height: 40px;margin-top:5px;" src="/images/dialog_share_qq.png" alt="">\
+					</a>\
+				</div>\
+				<button class="back-e09e00 col-fff fz14" style="width:100%;height:41px;" onclick="$('+'\'.dialog_confirm\''+').remove()'+'">取消</button>',
+		autohiden:false,
+		showIcon:false,
+		backtransparent:false,
+		showButton:false,
+		callback:function(){
+			console.log(111)
+		}
+	})
+}
+
+
+	/*****************发表***************************/
+	

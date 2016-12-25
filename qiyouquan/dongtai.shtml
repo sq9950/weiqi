@@ -36,24 +36,8 @@ document.querySelectorAll(".bottombar a")[4].className+=" select"
         iconHeight:"21px",
         text:"弈统江山"
       },
-      left:[
-        {
-          iconSrc:"/images/navbar1.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 0px 0 10px"
-        }
-      ],
-      right:[
-        {
-          iconSrc:"/images/navbar2.png",
-          href:"javascript:;",
-          width:"19px",
-          height:"19px",
-          margin:"10px 10px 0 0px"
-        }
-      ]
+      left:[],
+      right:[]
     }
   })
   var app_qishouStatusCount = new Vue({
