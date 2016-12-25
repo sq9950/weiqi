@@ -7,13 +7,41 @@
 	<title></title>
 	<link rel="stylesheet" href="/styles/base.css">
 	<link rel="stylesheet" href="/styles/qishou.css">
+  <link rel="stylesheet" href="/styles/swiper-3.4.1.min.css">
 	<script src="/js/vue.min.js"></script>
+  <script src="/js/jquery-3.1.1.min.js"></script>
+  <script src="/js/swiper-3.4.1.jquery.min.js"></script>
+  <style>
+    .swiper-container {
+          width: 100%;
+      }
+      .swiper-slide {
+          background-position: center;
+          background-size: cover;
+          width: 82%;
+          padding:0 2%;
+          height: 112px;
+      }
+      .swiper-container img{
+      width:100%;
+      height: 112px;
+      }
+  </style>
 </head>
 <body>
 <div class="content">
 	<!--#include virtual="/public/navbar.html"-->
 	<div class="players_chess">
 		<!--#include virtual="/public/qishou/tab.html"-->
+    <div class="swiper-container borB4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/images/lunbo.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/images/lunbo.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="/images/lunbo.jpg" alt=""></div>
+      </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+    </div>
 		<ul class="chess-center fz0" id="qishouStatusCount">
 			<li class="list pl10 pr10 borB4">
 				<!--#include virtual="/public/qishou/lunbo.html"-->
@@ -113,6 +141,17 @@
       ]
     }
   });
+
+var swiper = new Swiper('.swiper-container', {
+    roundLengths : true, 
+  initialSlide :2,
+  speed:600,
+  pagination:".swiper-pagination",
+  slidesPerView:"auto",
+  centeredSlides : true,
+  followFinger : false,
+  loop: true
+});
 </script>
 </body>
 </html>

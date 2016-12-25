@@ -25,11 +25,11 @@
 				<p class="title pt10 mb5">
 					<img class="vipImg" src="/images/vip.png" alt="">
 				</p>
-				<p class="h1 fz16 mb5">充值<span>15000</span>体力值获得V1特权</p>
-				<p class="text pl10 pr10 pb10 text-left">可加入<span>5</span>个明星棋友会（90天后可随意更换），并可在棋友会发起话题和评论话题；可选择加入1个分舵（1年有效），可加入1个分舵（365天有效），发起话题和评论，并可报名参加分舵举办的线上线下活动；观看独家线上视频教学、死活题闯关、挑战明星棋手、考取棋院证书。</p>
+				<p class="h1 fz16 mb5">充值<span class="col-ee3646">15000</span>体力值获得V1特权</p>
+				<p class="text pl10 pr10 pb10 text-left">可加入<span class="col-ee3646">5</span>个明星棋友会（90天后可随意更换），并可在棋友会发起话题和评论话题；可选择加入1个分舵（1年有效），可加入1个分舵（365天有效），发起话题和评论，并可报名参加分舵举办的线上线下活动；观看独家线上视频教学、死活题闯关、挑战明星棋手、考取棋院证书。</p>
 				<div class="borT2" id="vip1">
 					<div v-for="_paylist in paylist">
-					<!--#include virtual="/public/pay/payList.html"-->
+						<!--#include virtual="/public/pay/payList.html"-->
 					</div>
 				</div>
 			</li>
@@ -37,11 +37,11 @@
 				<p class="title pt10 mb5">
 					<img class="vipImg" src="/images/vip.png" alt="">
 				</p>
-				<p class="h1 fz16 mb5">充值<span>15000</span>体力值获得V1特权</p>
-				<p class="text pl10 pr10 pb10 text-left">可加入<span>5</span>个明星棋友会（90天后可随意更换），并可在棋友会发起话题和评论话题；可选择加入1个分舵（1年有效），可加入1个分舵（365天有效），发起话题和评论，并可报名参加分舵举办的线上线下活动；观看独家线上视频教学、死活题闯关、挑战明星棋手、考取棋院证书。</p>
+				<p class="h1 fz16 mb5">充值<span class="col-ee3646">15000</span>体力值获得V1特权</p>
+				<p class="text pl10 pr10 pb10 text-left">可加入<span class="col-ee3646">5</span>个明星棋友会（90天后可随意更换），并可在棋友会发起话题和评论话题；可选择加入1个分舵（1年有效），可加入1个分舵（365天有效），发起话题和评论，并可报名参加分舵举办的线上线下活动；观看独家线上视频教学、死活题闯关、挑战明星棋手、考取棋院证书。</p>
 				<div class="borT2"id="vip2">
 					<div v-for="_paylist in paylist">
-					<!--#include virtual="/public/pay/payList.html"-->
+						<!--#include virtual="/public/pay/payList.html"-->
 					</div>
 				</div>
 			</li>
